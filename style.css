@@ -5,7 +5,7 @@
 * Browsers: > 1%
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 body, html {
   margin: 0;
@@ -38,7 +38,7 @@ p, a {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 
