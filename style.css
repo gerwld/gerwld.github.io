@@ -187,7 +187,7 @@ and (max-device-width : 667px) {
     font-size: 120px;
   }
   .main-info p {
-    font-size: 75px;
+    font-size: 70px;
     margin: 50px 0 25%;
   }
   body {
@@ -215,8 +215,8 @@ and (max-device-width : 667px) {
   }
   .tech-icon img {
     display: inline-block;
-    width: 46px;
-    height: 46px;
+    width: 60px;
+    height: 60px;
     margin-bottom: -5px;
     margin-left: 5px;
   }
