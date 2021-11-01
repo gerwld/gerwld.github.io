@@ -1,4 +1,4 @@
-# my-site
-My bio & contact information. Made it for learn how github works
+# personal-site
+My bio & contact information. 
 
 http://gerwld.github.io/
