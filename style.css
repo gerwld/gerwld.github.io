@@ -78,6 +78,9 @@ h1 {
   z-index: -1;
 }
 
+#particles-js-mobile {
+  display: none;
+}
 
 .main-info,
 .addit-contact-info {
