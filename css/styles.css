@@ -134,7 +134,8 @@ main > .tagline {
   @media (max-width: 390px) {
 	main > .intro {
 		text-align: left;
-		
+		font-size: 3.65em;
+    	font-weight: 900;
 	}
 }
 @media (max-width: 330px) {
