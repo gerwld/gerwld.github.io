@@ -147,6 +147,15 @@ main > .tagline {
     	font-weight: bold;
 		letter-spacing: 0em;
 	}
+
+	.g2-hover a {
+		border-radius: 15px!important;
+	}
+
+	a.g2-hover__ld i {
+		margin-left: 3px!important;
+		margin-right: 3px!important;
+	}
 }
 @media (max-width: 330px) {
 	main > .intro {
@@ -162,7 +171,6 @@ main > .tagline {
 	display: block;
 	position: relative;
 	border-radius: 25px;
-	/* overflow: hidden; */
 	transition: 0.1s ease-in;
 }
 
