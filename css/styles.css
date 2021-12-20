@@ -1,0 +1,146 @@
+/* Typography */
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+	main > .intro {
+		text-align: left!important;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.icons-social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    margin: 60px auto 0;
+}
+
+.icons-social i {
+	font-size: 3em;
+}
+
+.block-wh {
+	display: block;
+	height: 1px!important;
+	overflow: hidden;
+	opacity: 0;
+	padding-right: 5px;
+}
+
+/* Custom Styles */
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 20px;
+	text-align: center;
+	background: #303F9F;
+	color: #FAFAFA;
+}
+
+main > .intro {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+	min-height: 137px;
+}
+
+main > .tagline {
+	font-size: 1.5rem;
+	line-height: 1.9rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+.icons-social a {
+	color: #FAFAFA;
+}
+
+.icons-social a svg path{
+	fill: #FAFAFA;
+}
+
+.devto {
+	margin-bottom: -0.20rem;
+}
+
+.devto svg {
+	margin-bottom: -0.20rem;
+	margin-left: 0.675rem;;
+	width: 2.65rem;
+	height: 2.65rem;
+}
+
+.addit-contact-info a {
+	display: inline-block;
+	padding: 5px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.addit-contact-info i {
+	transform: translateY(3px);
+	margin-right: 8px; 
+}
+
+.intro {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#changingText {
+	color: #ffffff;
+	padding-right: 5px;
+	border-right: 1px solid rgb(255, 255, 255);
+	animation: cursoranim 1.5s linear infinite;
+  }
+  
+  @keyframes cursoranim {
+	50% {
+	  border-right: 1px solid rgba(0, 0, 0, 0);
+	}
+  }
+
+  @media (max-width: 390px) {
+	main > .intro {
+		text-align: left;
+		
+	}
+}
+@media (max-width: 330px) {
+	main > .intro {
+		font-size: 3em;
+		min-height: 118px;
+		
+	}
+}
