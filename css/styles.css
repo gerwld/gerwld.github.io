@@ -135,7 +135,7 @@ main > .tagline {
 	main > .intro {
 		text-align: left;
 		font-size: 3.65em;
-    	font-weight: 700;
+    	font-weight: bold;
 		letter-spacing: 0em;
 	}
 }
