@@ -16,9 +16,16 @@
 	<link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css?v=1.2.455">
+	<style>
+		.preloader{display:flex;justify-content:center;align-items:center;position:absolute;opacity:1;top:0;bottom:0;left:0;right:0;width:100vw;height:100vh;background-color:#353a85;z-index:100000;transition:opacity .2s ease-in;user-select:none}.preloader_ld{display:inline-block;width:80px;height:80px;animation:show 1.2s linear forwards}.preloader_ld:after{content:" ";display:block;width:64px;height:64px;margin:8px;border-radius:50%;border:3px solid #fff;border-color:#fff transparent #fff transparent;animation:lds-dual-ring 1.2s linear infinite}@keyframes lds-dual-ring{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes show{0%{opacity:0}35%{opacity:0}100%{opacity:1}}
+	</style>
 </head>
 
 <body>
+	<!-- preloader -->
+	<span class="preloader">
+		<span class="preloader_ld"></span>
+	</span>
 	<main>
 		<div class="intro">
 			<span class="block-wh">Hello, i'm Patrick Jaworski</span>
@@ -41,22 +48,27 @@
 					class="fa fa-envelope"></i>pjaworski.dev@gmail.com</a></span>
 	</main>
 	<script>
-		let nametext = "i'm Patrick Jaworski";
-		let x = 0;
-		let txt = nametext.split("");
-		let out = "";
-		var tmTyping = setTimeout(function () {
-			var retyping = setInterval(function () {
-				document.getElementById("changingText").innerHTML = out;
-				if (x > txt.length - 1) {
-					clearInterval(retyping);
-					clearTimeout(tmTyping);
-				} else {
-					out += txt[x];
-				}
-				x++;
-			}, 150);
-		}, 800);
+		window.onload = function () {
+			document.querySelector(".preloader").style.opacity = "0";
+			document.querySelector(".preloader").remove();
+
+			let nametext = "i'm Patrick Jaworski";
+			let x = 0;
+			let txt = nametext.split("");
+			let out = "";
+			var tmTyping = setTimeout(function () {
+				var retyping = setInterval(function () {
+					document.getElementById("changingText").innerHTML = out;
+					if (x > txt.length - 1) {
+						clearInterval(retyping);
+						clearTimeout(tmTyping);
+					} else {
+						out += txt[x];
+					}
+					x++;
+				}, 150);
+			}, 1200);
+		}
 
 	</script>
 </body>
