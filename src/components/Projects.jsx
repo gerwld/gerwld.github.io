@@ -47,7 +47,7 @@ const Projects = ({ latestPosts }) => {
 
   return (
     <section className="projects content_wrapper">
-      {/* <h2 className="section__title">{t("projects.title")} ({latestPosts?.length}):</h2> */}
+      <h2 className="section__title hld">{t("projects.title")} ({latestPosts?.length}):</h2>
 
       <div className="projects__content">
         {latestPosts?.length ? (

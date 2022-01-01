@@ -1,12 +1,12 @@
 import { pfp_img, pfp_img__jpg } from "@/assets";
 import { useTranslation } from "react-i18next";
-import { AiOutlineGithub, AiFillLinkedin, AiOutlineTwitter, AiOutlineBehance, AiOutlineInstagram, AiOutlineCodepen } from "react-icons/ai";
+import { AiOutlineGithub, AiFillLinkedin, AiOutlineBehance, AiOutlineInstagram, AiOutlineCodepen } from "react-icons/ai";
 import { IoMailOutline } from "react-icons/io5";
-import "./Hero.scss";
 import { toast, Toaster } from "./rht.mjs";
-import { useRef, useState } from "preact/hooks";
+import { useState } from "preact/hooks";
+import "./Hero.scss";
 
-const Hero = () => {
+export const Hero = () => {
   const { t } = useTranslation();
   const [isError, setError] = useState(false);
 
@@ -20,37 +20,37 @@ const Hero = () => {
   }
 
   const copyEmail = () => {
-    const cp = 'pjaworski.dev@gmail.com'
+    const cp = 'pjaworski.dev@gmail.com';
     if (!isError) {
       if (!navigator.clipboard) {
-        copyToClipboard(cp)
-        toast.success(t("notifications.email-copied"), { duration: 2000 })
+        copyToClipboard(cp);
+        toast.success(t("notifications.email-copied"), { duration: 2000 });
       } else {
         navigator.clipboard.writeText(cp).then(
           () => {
-            toast.success(t("notifications.email-copied"), { duration: 2000 })
+            toast.success(t("notifications.email-copied"), { duration: 2000 });
           })
           .catch(
             () => {
-              toast.error(t("notifications.email-ns"), { duration: 2000 })
-              setError(true)
-            })
+              toast.error(t("notifications.email-ns"), { duration: 2000 });
+              setError(true);
+            });
       }
     }
-  }
+  };
 
   const openEmail = () => {
-    toast.loading(t("notifications.email-client"), { duration: 2000 })
-  }
+    toast.loading(t("notifications.email-client"), { duration: 2000 });
+  };
 
   return (
     <section className="hero content_wrapper">
       <Toaster />
       <div className="hero_l1">
         <div className="hero_block hero_block__1">
-          {/* <h1 className="hero__title">{t("hero.title")}</h1> */}
+          <h1 className="hero__title hld">{t("hero.title")}</h1>
           <p className="hero__desc">
-            {/* 
+            {/*
             <code>
               Hi! I’m Patryk and I'm a front-end developer with 3+ years of experience. I specialise in creating modern responsive websites, browser extensions, progressive web applications, client-side code optimisations and more. I love to code from scratch, but I can deliver the HTML, CSS, and JS you need packaged within a modern web framework.
               I achieve high-quality products with a proven software development process. Take a look at my profile and, let's chat!
@@ -69,7 +69,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero_block hero_socials">
-          <h2>{t("hero.subtitle")}:</h2>
+          <h2 className="hld">{t("hero.subtitle")}:</h2>
           <div className="hero_socials__links">
             <a href="https://github.com/gerwld" data-title="Github" target="_blank" rel="noopener">
               <AiOutlineGithub />
@@ -103,8 +103,7 @@ const Hero = () => {
                 <a onClick={openEmail} href="mailto:pjaworski.dev@gmail.com" className="grho grho__sml">
                   {t("hero.email-client")}
                 </a>
-                <button onClick={copyEmail} className={isError ? "textlnk" : "grho grho__sml"}  >{isError ? "pjaworski.dev@gmail.com" : t("hero.email-copy")
-                }</button>
+                <button onClick={copyEmail} className={isError ? "textlnk" : "grho grho__sml"}>{isError ? "pjaworski.dev@gmail.com" : t("hero.email-copy")}</button>
               </div>
             </div>
           </div>
@@ -112,6 +111,7 @@ const Hero = () => {
       </div>
       <div className="hero_l2">
         <div className="rfc">
+
           <div className="rfcg rfcg-1"></div>
           <div className="rfcg rfcg-2"></div>
           <div className="rfcg rfcg-3"></div>
@@ -214,7 +214,7 @@ const Hero = () => {
           <div className="rfcg rfcg-100"></div>
           <div className="rfcc hero_pfp">
             <picture>
-              {/* <source srcset={pfp_img} type="image/webp" /> */}
+              <source srcset={pfp_img} type="image/webp" />
               <source srcset={pfp_img__jpg} type="image/jpeg" />
               <img className="img-fluid" src={pfp_img__jpg} alt="Profile Picture" />
             </picture>
@@ -225,5 +225,3 @@ const Hero = () => {
     </section>
   );
 };
-
-export default Hero;
