@@ -235,6 +235,10 @@ main > .tagline {
 		letter-spacing: 0em;
 	}
 
+	.addit-contact-info i {
+		transform: translateY(1px);
+	}
+
 	.g2-hover a {
 		border-radius: 15px!important;
 	}
