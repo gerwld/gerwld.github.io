@@ -1,4 +1,88 @@
+/* reset.css */
+html{box-sizing:border-box;font-size:12px}*,:after,:before{box-sizing:inherit}body,h1,h2,h3,h4,h5,h6,ol,p,ul{margin:0;padding:0;font-weight:400}ol,ul{list-style:none}img{max-width:100%;height:auto}
+
+
 /* Typography */
+
+/* latin */
+@font-face {
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/reemkufi/reemkufi_600.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* icons */
+
+@font-face {
+  font-family: 'gerw_icons';
+  src: url('../fonts/gerw_icons/gerw_icons.eot?2860963');
+  src: url('../fonts/gerw_icons/gerw_icons.eot?2860963#iefix') format('embedded-opentype'),
+       url('../fonts/gerw_icons/gerw_icons.woff2?2860963') format('woff2'),
+       url('../fonts/gerw_icons/gerw_icons.woff?2860963') format('woff'),
+       url('../fonts/gerw_icons/gerw_icons.ttf?2860963') format('truetype'),
+       url('../fonts/gerw_icons/gerw_icons.svg?2860963#gerw_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "gerw_icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+	height: 1em;
+  text-align: center;
+
+	text-rendering: auto;
+	line-height: 1;
+
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-behance:before { content: '\e800'; } 
+.icon-linkedin:before { content: '\e801'; } 
+.icon-facebook:before { content: '\e802'; } 
+.icon-twitter:before { content: '\e803'; } 
+.icon-telegram:before { content: '\e807'; }
+.icon-github:before { content: '\e805'; } 
+.icon-envelope:before { content: '\e806'; }
+
+.fab {
+	display: inline-block;
+}
+
+/* icons end */
+
 
 html {
 	font-family: 'Roboto', sans-serif;
@@ -39,11 +123,13 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: stretch;
+	align-items: center;
     margin: 60px auto 0;
 }
 
 .icons-social i {
+	display: block;
+	line-height: 0;
 	font-size: 3em;
 }
 
@@ -79,7 +165,7 @@ main > .tagline {
 	font-size: 1.5rem;
 	line-height: 1.9rem;
 	margin: 1.5rem 0;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 .icons-social i {
@@ -118,6 +204,7 @@ main > .tagline {
 }
 
 .addit-contact-info i {
+	display: inline-block;
 	transform: translateY(3px);
 	margin-right: 8px; 
 }
@@ -144,7 +231,7 @@ main > .tagline {
 	main > .intro {
 		text-align: left;
 		font-size: 3.60em;
-    	font-weight: bold;
+    font-weight: 600;
 		letter-spacing: 0em;
 	}
 
