@@ -14,11 +14,27 @@
 	<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Roboto:wght@300&display=swap"
 		rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
+	<style>
+		.preloader {display: flex;justify-content: center;align-items: center;position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100vw;height: 100vh;background: #353a85;z-index: 100000;user-select: none;}.preloader_ld {position: relative;display: inline-block;width: 80px;height: 80px;animation: show 1.2s linear forwards;}.preloader_ld:after {content: " ";display: block;width: 64px;height: 64px;margin: 8px;border-radius: 50%;border: 3px solid #fff;border-color: #fff transparent #fff transparent;animation: lds-dual-ring 1.2s linear infinite;}@keyframes lds-dual-ring {0% {transform: rotate(0);}100% {transform: rotate(360deg);}}@keyframes show {0% {opacity: 0;}35% {opacity: 0;}100% {opacity: 1;}}
+	</style>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css?v=1.2.455">
-	<style>
-		.preloader {display: flex;justify-content: center;align-items: center;position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100vw;height: 100vh;background: #353a85;z-index: 100000;user-select: none;}.preloader_ld {display: inline-block;width: 80px;height: 80px;animation: show 1.2s linear forwards;}.preloader_ld:after {content: " ";display: block;width: 64px;height: 64px;margin: 8px;border-radius: 50%;border: 3px solid #fff;border-color: #fff transparent #fff transparent;animation: lds-dual-ring 1.2s linear infinite;}@keyframes lds-dual-ring {0% {transform: rotate(0);}100% {transform: rotate(360deg);}}@keyframes show {0% {opacity: 0;}35% {opacity: 0;}100% {opacity: 1;}}
-	</style>
+	<noscript>
+		<style>
+		.preloader_ld:before {
+			content: 'JavaScript is disabled in your browser. Please enable it and try again.';
+			width: 270px;
+			position: absolute;
+			top: 100%;
+			left: calc(50% - 135px);
+			margin-top: 20px;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			line-height: 1.4em;
+		}
+		</style>
+	</noscript>
 </head>
 
 <body>
@@ -29,7 +45,7 @@
 	<main>
 		<div class="intro">
 			<span class="block-wh">Hello, i'm Patrick Jaworski</span>
-			Hello, <span id="changingText"></span>
+			<span class="block-wh-js">Hello, <span id="changingText"></span></span>
 		</div>
 		<div class="tagline">Front-end Dev | Code Enthusiast | Coffee lover</div>
 		<div class="icons-social g2-hover">
