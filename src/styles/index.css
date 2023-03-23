@@ -1,0 +1,145 @@
+:root {
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+
+  line-height: 1.5em;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #ffffff;
+  background-color: #1c1c2a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+  --main-bg-color: #1c1c2a;
+  --main-text-color: #fff;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+  padding: 0 3px;
+  margin: 0 2px 0 -2px;
+  color: #74d1f3;
+  text-decoration: none;
+
+  border-radius: 3px;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+a>* {
+  pointer-events: none;
+}
+
+.content_wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 5vh;
+}
+
+.hero_block__1 {
+  max-width: 600px;
+}
+
+.hero_pfp {
+  width: 230px;
+  height: 230px;
+  background-color: rgba(255, 255, 255, 0.3);
+  user-select: none;
+  pointer-events: none;
+}
+
+.hero_pfp img {
+  width: 92%;
+  height: 92%;
+  margin: 4%;
+}
+
+.hero_pfp,
+.hero_pfp img {
+  border-radius: 50%;
+}
+
+.hero_socials h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hero_socials a {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 0;
+  line-height: 0;
+  width: 36px;
+  height: 36px;
+}
+
+.hero_socials a:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.hero_socials svg {
+  display: block;
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  margin: 4px auto;
+
+}
+
+.hero_socials__links a {
+  position: relative;
+}
+
+.hero_socials__links a::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: block;
+  padding: 5px;
+  margin: 2px 0 0;
+  font-size: 0.92rem;
+  line-height: 100%;
+
+  color: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #e3e3e3;
+  background-color: var(--main-bg-color);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero_socials__links a:hover::before {
+  opacity: 1;
+  pointer-events: all;
+}
