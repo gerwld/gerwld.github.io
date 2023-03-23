@@ -9,8 +9,9 @@ const Hero = () => {
   <section className="hero content_wrapper">
    <div className="hero_l1">
     <div className="hero_block hero_block__1">
-     <h1>Hi, I'm Patryk, Frontend Developer</h1>
-     <p>I enjoy learning new things, constantly improving myself, producing web projects and contributing to them. I'm also interested in running and playing chess.</p>
+     <h1 className="hero__title">Hi, I'm Patryk, Frontend Developer</h1>
+     <p className="hero__desc">I enjoy learning new things, constantly improving myself, producing web projects and contributing to them.
+      I am also interested in running and playing chess.</p>
     </div>
     <div className="hero_block hero_socials">
      <h2>Follow me:</h2>
