@@ -1,0 +1,15 @@
+{
+ "name": "OnlineStats",
+ "menu": {
+   "main": "Overview",
+   "tracking": "Online Tracker",
+   "info": "Get User Info",
+   "contacts": "User Contacts (Beta)"
+ },
+ "greeting": "Welcome back",
+ "content": "Content",
+ "auth": {
+  "premium": "Buy Premium",
+  "logout": "Log Out"
+}
+}
