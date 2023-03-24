@@ -120,7 +120,7 @@
   }
 
   .skills__content {
-    grid-gap: 5px;
+    grid-gap: 8px;
   }
 
   .projects {
@@ -129,7 +129,7 @@
 
   .skills__icon {
     height: 50%;
-    max-height: 35px;
+    max-height: 33px;
   }
 
   .skills__item {

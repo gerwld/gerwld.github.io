@@ -11,8 +11,8 @@ const App = () => {
  }));
 
  useEffect(() => {
-  setTimeout(() => d(setInit(true)), 500);
-  return clearTimeout(() => d(setInit(true)), 500);
+  setTimeout(() => d(setInit(true)), 300);
+  return clearTimeout(() => d(setInit(true)), 300);
  }, []);
 
  return (

@@ -17,7 +17,7 @@
 
   background-color: var(--main-bg-color);
   z-index: 100;
-  transition: opacity 0.3s ease, height 0s linear 0.3s;
+  transition: opacity 0.28s ease, height 0s linear 0.28s;
 }
 
 .loader_ready {

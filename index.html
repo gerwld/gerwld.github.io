@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- ALL RIGHTS RESERVED, © Gerwld INC -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,6 +28,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const bgColor = (localStorage.getItem("currentTheme") === "light") ? "#f2f5fb" : '#1c1c2a';
+      document.querySelector("html").style.backgroundColor = bgColor;
+      document.querySelector('meta[name="theme-color"]').setAttribute("content", bgColor);
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
