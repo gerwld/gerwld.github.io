@@ -35,7 +35,7 @@
     padding: 5px;
     font-size: 0.92rem;
     line-height: 100%;
-  
+
     color: var(--main-text-color);
     border-radius: 2px;
     border: 1px solid #e3e3e3;
@@ -44,7 +44,7 @@
     opacity: 0;
     pointer-events: none;
   }
-  
+
   .hero_socials__links a:hover::before {
     opacity: 1;
   }
@@ -54,20 +54,21 @@
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(82px, 1fr));
   }
+
   .skills__item:hover {
     transform: scale(1.15);
   }
-  
+
   .skills__item:hover .skills__icon {
     top: calc(50% - 10px);
   }
-  
+
   .skills__item:hover .skills__title {
     top: calc(50% + 25px);
     opacity: 1;
   }
 
-  .skills__title { 
+  .skills__title {
     font-size: 11.5px;
   }
 
@@ -76,18 +77,18 @@
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 25px;
-}
+  }
 
-.projects__img {
-  flex: 0 1 490px;
-  max-width: 40%;
-  height: 190px;
-  margin-right: 20px;
+  .projects__img {
+    flex: 0 1 490px;
+    max-width: 40%;
+    height: 190px;
+    margin-right: 20px;
 
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-}
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -99,9 +100,11 @@
 @media only screen and (max-width: 320px) {
   :root {
     font-size: 14px;
+    --vp-header: 65px;
   }
+
   .app_content {
-    padding: 0 15px;
+    padding: 0 12px;
   }
 
   .hero {
@@ -123,5 +126,14 @@
 
   .projects {
     padding-top: 20px;
-}
+  }
+
+  .skills__icon {
+    height: 50%;
+    max-height: 35px;
+  }
+
+  .skills__item {
+    border-radius: 10px;
+  }
 }

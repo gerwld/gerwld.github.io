@@ -1,0 +1,10 @@
+
+pre {
+  padding: 30px 5px;
+  background-color: rgba(200, 200, 200, 0.5);
+  overflow-y: scroll;
+}
+
+h3 {
+  font-style: italic;
+}

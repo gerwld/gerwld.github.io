@@ -388,6 +388,8 @@ a.active_lang {
 
 .skills__item:hover {
   transform: scale(1.2);
+  z-index: 40;
+  background-color: var(--main-bg-color);
 }
 
 .skills__item:hover .skills__icon {

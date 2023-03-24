@@ -37,6 +37,7 @@
  opacity: 1;
  pointer-events: all;
  user-select: all;
+ z-index: 100;
 }
 
 .modal_window ul {
@@ -52,11 +53,11 @@
 .modal_window a {
  display: block;
  width: 100%;
- padding: 10px 15px;
+ padding: 14px 15px;
  margin: 0;
 
  font: inherit;
- font-size: 0.85rem;
+ font-size: 15px;
  font-weight: 400;
  text-align: left;
  text-decoration: none;
@@ -74,4 +75,13 @@
 .modal_window button:hover,
 .modal_window a:hover {
  background-color: var(--tone-1);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal_window span,
+  .modal_window button,
+  .modal_window a {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
 }
