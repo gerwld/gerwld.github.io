@@ -1,13 +1,19 @@
 import React from "react";
 import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Hero, MainLoader, Navbar, Projects, Skills } from "./components/";
+import { setInit } from "./redux/reducers/app-reducer";
 
 const App = () => {
-  const {isInit, setInit} = useEffect(false);
+ const d = useDispatch();
+ const { isInit } = useSelector(({ app }) => ({
+  isInit: app.isInit,
+ }));
 
-  React.useEffect(() => {
-    setInterval(() => setInit(true), 1000);
-  }, [])
+ useEffect(() => {
+  setTimeout(() => d(setInit(true)), 500);
+  return clearTimeout(() => d(setInit(true)), 500);
+ }, []);
 
  return (
   <div className="app_content">
@@ -16,7 +22,7 @@ const App = () => {
    <Skills />
    <Projects />
 
-   <MainLoader isInit={isInit}/>
+   <MainLoader isInit={isInit} />
   </div>
  );
 };

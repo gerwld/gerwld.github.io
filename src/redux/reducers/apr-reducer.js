@@ -1,4 +1,4 @@
-const SET_THEME = "@@telegram/apr_reducer/SET_THEME";
+const SET_THEME = "@@gerwld/apr_reducer/SET_THEME";
 export const onSetTheme = (themeID) => ({ type: SET_THEME, payload: themeID });
 
 let initialState = {

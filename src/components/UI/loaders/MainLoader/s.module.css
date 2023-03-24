@@ -1,11 +1,3 @@
-.loader_ready {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  user-select: none;
-  pointer-events: none;
-}
-
 .loader_content {
   position: fixed;
   left:0;
@@ -26,6 +18,14 @@
   background-color: var(--main-bg-color);
   z-index: 100;
   transition: opacity 0.3s ease, height 0s linear 0.3s;
+}
+
+.loader_ready {
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
 }
 
 .lds_roller {
