@@ -5,6 +5,7 @@
 
   line-height: 1.5em;
   font-weight: 400;
+  font-size: 16px;
 
   color-scheme: light dark;
   color: #ffffff;
@@ -35,6 +36,16 @@ body {
   overflow-x: hidden;
 }
 
+h2 {
+  display: block;
+  font-size: 1.4em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 a {
   display: inline-block;
   padding: 0 3px;
@@ -58,7 +69,7 @@ a>* {
 }
 
 .content_wrapper {
-  max-width: 912px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -71,7 +82,7 @@ a>* {
 }
 
 .hero_l1 {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .hero_block__1 {
@@ -111,7 +122,7 @@ a>* {
 }
 
 .hero_socials h2 {
-  font-size: 0.9rem;
+  font-size: 0.87rem;
   font-weight: 500;
   opacity: 0.5;
   margin: 0 0 3px;
@@ -225,15 +236,17 @@ a>* {
 
 .skills__content {
   display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 }
 
 .skills__item {
+  max-width: 103px;
   position: relative;
   border-radius: 14px;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
   border: 1px solid var(--border-color);
   transition: transform 0.1s ease-in-out;
 }
@@ -243,13 +256,14 @@ a>* {
 }
 
 .skills__title {
+  font-family: 'Noto Sans', sans-serif;
   display: block;
   position: absolute;
-  top: calc(50% + 20px);
+  top: calc(50% + 15px);
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1em;
-  font-size: 12.7px;
+  font-size: 11.5px;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -257,18 +271,25 @@ a>* {
   pointer-events: none;
   user-select: none;
 
-  transition: opacity 0.1s ease-in-out, top 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, top 0.14s ease-in-out;
+  z-index: 1;
 }
 
 .skills__icon {
   position: absolute;
   top: 50%;
   left: 50%;
-
-  height: 46%;
+  height: 44%;
+  max-height: 44px;
   transform: translate(-50%, -50%);
 
-  transition: top 0.1s ease-in-out;
+  transition: top 0.17s ease-in-out;
+  z-index: 10;
+}
+
+.skills__item__bigger .skills__icon {
+  height: 54%;
+  max-height: 54px;
 }
 
 .skills__icon svg {
@@ -277,7 +298,7 @@ a>* {
 }
 
 .skills__item:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .skills__item:hover .skills__icon {
@@ -285,6 +306,6 @@ a>* {
 }
 
 .skills__item:hover .skills__title {
-  top: calc(50% + 30px);
+  top: calc(50% + 25px);
   opacity: 1;
 }
