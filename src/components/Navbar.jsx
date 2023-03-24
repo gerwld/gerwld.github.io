@@ -1,16 +1,16 @@
 import React from "react";
 import { compose } from "redux";
 import { withTranslation } from "react-i18next";
-import { withDarkmodeToggle } from "@/hoc/";
+import { withLightmodeToggle } from "@/hoc/";
 import { ModalSetLang } from ".";
 
 import { BsMoon, BsSun } from "react-icons/bs";
 
-const Navbar = ({ t, hocToggleDarkmode, hocIsDark }) => {
+const Navbar = ({ t, hocToggleLightmode, hocIsLight }) => {
  return (
   <div className="header content_wrapper">
-   <button onClick={hocToggleDarkmode} className="header__theme-btn">
-   {hocIsDark ? <BsSun /> : <BsMoon />}
+   <button onClick={hocToggleLightmode} className="header__theme-btn">
+   {hocIsLight ? <BsMoon /> : <BsSun />}
    </button>
 
    <ModalSetLang />
@@ -19,4 +19,4 @@ const Navbar = ({ t, hocToggleDarkmode, hocIsDark }) => {
  );
 };
 
-export default compose(withDarkmodeToggle, withTranslation())(Navbar);
+export default compose(withLightmodeToggle, withTranslation())(Navbar);

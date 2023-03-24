@@ -21,21 +21,21 @@
   --border-color: #333;
   --basic-blue-text: #049be0;
   --tone-1: rgba(255, 255, 255, 0.1);
-  --tone-2: rgba(255, 255, 255, 0.2);
+  --tone-2: rgba(225, 238, 240, 0.2);
   --tone-3: rgba(255, 255, 255, 0.3);
   --tone-4: rgba(255, 255, 255, 0.4);
   --tone-5: rgba(255, 255, 255, 0.5);
   --vp-header: 70px;
 }
 
-body.darkModeOn {
+body.lightModeOn {
   --main-bg-color: #fff;
   --sec-bg-color: #ffffff;
   --main-text-color: #1c1c2a;
   --border-color: #e6eaee;
   --basic-blue-text: #049be0;
   --tone-1: rgba(158, 171, 191, 0.1);
-  --tone-2: rgba(0, 0, 0, 0.2);
+  --tone-2: rgb(157, 198, 243, 0.2);
   --tone-3: rgba(182, 188, 206, 0.3);
   --tone-4: rgba(0, 0, 0, 0.4);
   --tone-5: rgba(0, 0, 0, 0.5);
@@ -270,7 +270,7 @@ a.active_lang {
   font-size: 0.92rem;
   line-height: 100%;
 
-  color: #ffffff;
+  color: var(--main-text-color);
   border-radius: 2px;
   border: 1px solid #e3e3e3;
   background-color: var(--main-bg-color);
