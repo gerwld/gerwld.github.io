@@ -1,9 +1,10 @@
 import React from "react";
 import SkillsItem from "./UI/SkillsItem";
 
-const Skills = () => {
+const Skills = ({isInit}) => {
+
  return (
-  <section className="projects content_wrapper">
+  <section className={`projects content_wrapper ${isInit ? 'projects_init' : ''}`}>
    <h2 className="section__title">Skills:</h2>
 
    <div className="skills__content">

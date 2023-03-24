@@ -19,7 +19,7 @@ const App = () => {
   <div className="app_content">
    <Navbar />
    <Hero />
-   <Skills />
+   <Skills isInit={isInit} />
    <Projects />
 
    <MainLoader isInit={isInit} />
