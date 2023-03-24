@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { compose } from "redux";
 import {withClickOutside, withUrlLangSetter} from "../../hoc";
 import s from "./s.module.css";
+import {HiLanguage} from 'react-icons/hi2';
 
 const ModalSetLang = ({hocLang, hocIsCurrent, isShow, toggleShow, refElement}) => {
  return (

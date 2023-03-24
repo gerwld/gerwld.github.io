@@ -1,4 +1,4 @@
-const currentThemeFromStorage = localStorage.getItem("currentTheme") || window.matchMedia("(prefers-color-scheme: dark)").matches && "dark" || "light";
+const currentThemeFromStorage = localStorage.getItem("currentTheme") || "dark";
 const currentLangFromStorage = localStorage.getItem("i18nextLng") || "en";
 
 const initialState = {

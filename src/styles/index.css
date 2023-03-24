@@ -19,7 +19,7 @@
   --sec-bg-color: #21212e;
   --main-text-color: #fff;
   --border-color: #333;
-  --basic-blue-text: #049be0;
+  --basic-link-color: #74d1f3;
   --tone-1: rgba(255, 255, 255, 0.1);
   --tone-2: rgba(225, 238, 240, 0.2);
   --tone-3: rgba(255, 255, 255, 0.3);
@@ -29,11 +29,11 @@
 }
 
 body.lightModeOn {
-  --main-bg-color: #fff;
+  --main-bg-color: #f2f5fb;
   --sec-bg-color: #ffffff;
   --main-text-color: #1c1c2a;
-  --border-color: #e6eaee;
-  --basic-blue-text: #049be0;
+  --border-color: #d3dfec;
+  --basic-link-color: #087ea4;
   --tone-1: rgba(158, 171, 191, 0.1);
   --tone-2: rgb(157, 198, 243, 0.2);
   --tone-3: rgba(182, 188, 206, 0.3);
@@ -73,7 +73,7 @@ a {
   display: inline-block;
   padding: 0 3px;
   margin: 0 2px 0 -2px;
-  color: #74d1f3;
+  color: var(--basic-link-color);
   text-decoration: none;
 
   border-radius: 3px;
@@ -133,6 +133,7 @@ a.active_lang {
   padding: 5px 10px;
   height: 40px;
   font-size: 0.8rem;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -149,9 +150,9 @@ a.active_lang {
 }
 
 .header__theme-btn svg {
-  font-size: 17px;
-  width: 17px;
-  height: 17px;
+  font-size: 19px;
+  width: 19px;
+  height: 19px;
   line-height: 1em;
 }
 

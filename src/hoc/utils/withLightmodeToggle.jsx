@@ -17,14 +17,14 @@ const withLightmodeToggle = (WrappedComponent) => {
 
   //Goes to WrappedComponent, so theme can be manually changed
   const hocToggleLightmodeManual = () => {
-   let theme = currentTheme && currentTheme === "Light" ? "light" : "Light";
+   let theme = currentTheme && currentTheme === "light" ? "dark" : "light";
    toggleLightmode(theme);
   };
 
   //If system theme changes, so both user & sys can change it
   React.useEffect(() => {
    const sysThemeMedia = window.matchMedia("(prefers-color-scheme: Light)");
-   let onThemeChangeSet = (e) => toggleLightmode(e.matches ? "Light" : "light");
+   let onThemeChangeSet = (e) => toggleLightmode(e.matches ? "light" : "dark") && console.log('changed');;
 
    sysThemeMedia.addEventListener && sysThemeMedia.addEventListener("change", onThemeChangeSet);
    return () => sysThemeMedia.removeEventListener("change", onThemeChangeSet);
@@ -32,10 +32,10 @@ const withLightmodeToggle = (WrappedComponent) => {
 
   //Body class toggle on change
   React.useEffect(() => {
-   document.body.classList.toggle("lightModeOn", currentTheme === "Light");
+   document.body.classList.toggle("lightModeOn", currentTheme === "light");
   }, [currentTheme]);
 
-  return <WrappedComponent {...props} hocToggleLightmode={hocToggleLightmodeManual} hocIsLight={currentTheme === "Light"} />;
+  return <WrappedComponent {...props} hocToggleLightmode={hocToggleLightmodeManual} hocIsLight={currentTheme === "light"} />;
  };
 };
 

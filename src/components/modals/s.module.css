@@ -3,6 +3,11 @@
  position: relative;
 }
 
+.content button > svg {
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
 .modal_window {
  position: absolute;
  top: 100%;
@@ -57,7 +62,7 @@
  text-decoration: none;
  text-transform: capitalize;
  white-space: nowrap;
- color: var(--basic-blue-text);
+ color: var(--basic-link-color);
 
  border-radius: 2px;
  border: none;
