@@ -8,8 +8,6 @@
   font-size: 16px;
 
   color-scheme: light dark;
-  color: #ffffff;
-  background-color: #1c1c2a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,16 +15,41 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-
   --main-bg-color: #1c1c2a;
+  --sec-bg-color: #21212e;
   --main-text-color: #fff;
   --border-color: #333;
+  --basic-blue-text: #049be0;
+  --tone-1: rgba(255, 255, 255, 0.1);
+  --tone-2: rgba(255, 255, 255, 0.2);
+  --tone-3: rgba(255, 255, 255, 0.3);
+  --tone-4: rgba(255, 255, 255, 0.4);
+  --tone-5: rgba(255, 255, 255, 0.5);
   --vp-header: 70px;
 }
+
+body.darkModeOn {
+  --main-bg-color: #fff;
+  --sec-bg-color: #ffffff;
+  --main-text-color: #1c1c2a;
+  --border-color: #e6eaee;
+  --basic-blue-text: #049be0;
+  --tone-1: rgba(158, 171, 191, 0.1);
+  --tone-2: rgba(0, 0, 0, 0.2);
+  --tone-3: rgba(182, 188, 206, 0.3);
+  --tone-4: rgba(0, 0, 0, 0.4);
+  --tone-5: rgba(0, 0, 0, 0.5);
+  --vp-header: 70px;
+  }
 
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
 }
 
 html,
@@ -57,7 +80,7 @@ a {
 }
 
 a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--tone-2);
 }
 
 button {
@@ -66,6 +89,12 @@ button {
   font: inherit;
   line-height: 140%;
   user-select: none;
+  transition: outline 0.1s ease-in-out;
+  outline: 0px;
+}
+
+button:focus {
+  outline: 3px solid var(--tone-3);
 }
 
 img,
@@ -92,10 +121,19 @@ a>* {
   height: var(--vp-header);
 }
 
+
+a.active_lang {
+  pointer-events: none;
+  font-weight: 400;
+  color: var(--text-color-contrast);
+}
+
+
 .header__lang-btn {
   padding: 5px 10px;
   height: 40px;
   font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 
@@ -107,6 +145,7 @@ a>* {
 
 .header__theme-btn {
   width: 36px;
+  margin-right: 10px;
 }
 
 .header__theme-btn svg {
@@ -122,24 +161,22 @@ a>* {
   align-items: center;
   justify-content: center;
 
-  margin-right: 10px;
-
   height: 36px;
   border: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--tone-1);
   background-color: transparent;
   border-radius: 4px; 
 }
 
-.header button:nth-last-child(1) {
-  margin-right: 0;
-}
-
 .header button:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--tone-1);
 }
 
-
+.modal_l03 {
+  background-color: var(--sec-bg-color);
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+}
 
 .hero {
   display: flex;
@@ -160,7 +197,7 @@ a>* {
 .hero_pfp {
   width: 230px;
   height: 230px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--tone-3);
   user-select: none;
   pointer-events: none;
 }
@@ -377,3 +414,4 @@ a>* {
   top: calc(50% + 25px);
   opacity: 1;
 }
+
