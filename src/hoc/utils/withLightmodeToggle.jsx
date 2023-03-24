@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { onSetTheme } from "../../redux/reducers/apr-reducer";
+import setCurrentTheme from "../../utils/setCurrentTheme";
 
 // ** TOGGLE LIGHT MODE ** //
 const withLightmodeToggle = (WrappedComponent) => {
@@ -27,12 +28,12 @@ const withLightmodeToggle = (WrappedComponent) => {
    let onThemeChangeSet = (e) => toggleLightmode(e.matches ? "light" : "dark") && console.log('changed');;
 
    sysThemeMedia.addEventListener && sysThemeMedia.addEventListener("change", onThemeChangeSet);
-   return () => sysThemeMedia.removeEventListener("change", onThemeChangeSet);
+   return () =>  sysThemeMedia?.removeEventListener && sysThemeMedia.removeEventListener("change", onThemeChangeSet);
   }, []);
 
   //Body class toggle on change
   React.useEffect(() => {
-   document.body.classList.toggle("lightModeOn", currentTheme === "light");
+    setCurrentTheme(currentTheme);
   }, [currentTheme]);
 
   return <WrappedComponent {...props} hocToggleLightmode={hocToggleLightmodeManual} hocIsLight={currentTheme === "light"} />;

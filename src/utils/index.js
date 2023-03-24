@@ -1,1 +1,1 @@
-export {default as withLightmodeStorage} from './withLightmodeStorage';
+export {default as setLightmodeStorage} from './setLightmodeStorage';
