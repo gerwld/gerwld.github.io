@@ -9,6 +9,7 @@ import "./i18n";
 
 import "./styles/index.css";
 import "./styles/media.css";
+import "./styles/connect.css";
 
 setThemeFromStorage();
 
