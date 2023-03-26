@@ -14,7 +14,7 @@ const Projects = ({latestPosts}) => {
     : <SecLoader/>}
    </div>
    <div className="projects__footer">
-    <a href="" className="projects__seemore"><span>View more</span><HiArrowRight/></a>
+    <a href="https://github.com/gerwld?tab=repositories" className="projects__seemore" target="_blank" rel="noopener"><span>View more</span><HiArrowRight/></a>
    </div>
   </section>
  );

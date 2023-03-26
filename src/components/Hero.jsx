@@ -16,13 +16,13 @@ const Hero = () => {
     <div className="hero_block hero_socials">
      <h2>Follow me:</h2>
      <div className="hero_socials__links">
-      <a href="#" data-title="Github"><AiOutlineGithub/>Github</a>
-      <a href="#" data-title="Linkedin"><AiFillLinkedin/>Linkedin</a>
-      <a href="#" data-title="Twitter"><AiOutlineTwitter/>Twitter</a>
-      <a href="#" data-title="Behance"><AiOutlineBehance/>Behance</a>
-      <a href="#" data-title="Instagram"><AiOutlineInstagram/>Instagram</a>
-      <a href="https://codepen.io/gerwld" data-title="Codepen"><AiOutlineCodepen/>Codepen</a>
-      <a href="#" data-title="Contact Email"><IoMailOutline/>Email</a>
+      <a href="https://github.com/gerwld" data-title="Github" target="_blank" rel="noopener"><AiOutlineGithub/>Github</a>
+      <a href="https://www.linkedin.com/in/p-jaworski" data-title="Linkedin" target="_blank" rel="noopener"><AiFillLinkedin/>Linkedin</a>
+      <a href="https://twitter.com/p_jaworski63" data-title="Twitter" target="_blank" rel="noopener"><AiOutlineTwitter/>Twitter</a>
+      <a href="https://www.behance.net/patryk_jaworski" data-title="Behance" target="_blank" rel="noopener"><AiOutlineBehance/>Behance</a>
+      <a href="https://www.instagram.com/p_jaworski63" data-title="Instagram" target="_blank" rel="noopener"><AiOutlineInstagram/>Instagram</a>
+      <a href="https://codepen.io/gerwld" data-title="Codepen" target="_blank" rel="noopener"><AiOutlineCodepen/>Codepen</a>
+      <a href="mailto:pjaworski.dev@gmail.com" data-title="Contact Email"><IoMailOutline/>Email</a>
      </div>
     </div>
    </div>

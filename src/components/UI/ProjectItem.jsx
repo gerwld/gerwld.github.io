@@ -3,7 +3,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 
-const ProjectItem = ({ title, desc, img, source_url, preview_url, id }) => {
+const ProjectItem = ({ title, desc, img, source_url, preview_url }) => {
  return (
   <article className="projects__item">
    <div className="projects__group">
@@ -11,8 +11,8 @@ const ProjectItem = ({ title, desc, img, source_url, preview_url, id }) => {
     <p className="project__desc">{desc}</p>
 
     <div className="project__links">
-      <NavLink><HiOutlineExternalLink/>Live demo</NavLink>
-      <NavLink><AiOutlineGithub/>View source</NavLink>
+      <a href={preview_url} className={preview_url?.length ? '' : 'inactive'} target="_blank" rel="noopener"><HiOutlineExternalLink/>Live demo</a>
+      <a href={source_url} className={source_url?.length ? '' : 'inactive'} target="_blank" rel="noopener"><AiOutlineGithub/>View source</a>
     </div>
    </div>
    <div className="projects__img">
