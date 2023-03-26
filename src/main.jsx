@@ -4,13 +4,13 @@ import { RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import { routes } from "./routes/publicRoutes";
-import { setLightmodeStorage } from "./utils";
+import { setThemeFromStorage } from "./utils";
 import "./i18n";
 
 import "./styles/index.css";
 import "./styles/media.css";
 
-setLightmodeStorage();
+setThemeFromStorage();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
  <React.StrictMode>

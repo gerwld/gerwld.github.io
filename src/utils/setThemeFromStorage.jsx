@@ -1,9 +1,9 @@
 import setCurrentTheme from "./setCurrentTheme";
 
 //prevents theme blinking
-const setLightmodeStorage = () => {
+const setThemeFromStorage = () => {
  const theme = localStorage.getItem("currentTheme");
  setCurrentTheme(theme);
 };
 
-export default setLightmodeStorage;
+export default setThemeFromStorage;
