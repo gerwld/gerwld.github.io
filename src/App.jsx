@@ -21,7 +21,6 @@ const App = () => {
    <Hero />
    <Skills isInit={isInit} />
    <Projects />
-
    <MainLoader isInit={isInit} />
   </div>
  );

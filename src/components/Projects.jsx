@@ -1,18 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import ProjectItem from "./UI/ProjectItem";
 import {HiArrowRight} from 'react-icons/hi';
+import { withLatestPosts } from "../hoc";
+import {SecLoader, ProjectItem} from ".";
 
-const Projects = () => {
+const Projects = ({latestPosts}) => {
  return (
   <section className="projects content_wrapper">
-   <h2 className="section__title">Last Projects:</h2>
+   <h2 className="section__title">Latest Projects:</h2>
 
    <div className="projects__content">
-    <ProjectItem />
-    <ProjectItem />
-    <ProjectItem />
-    <ProjectItem />
+    {latestPosts?.length 
+    ? latestPosts.map(i => <ProjectItem key={i.id} {...i} />) 
+    : <SecLoader/>}
    </div>
    <div className="projects__footer">
     <a href="" className="projects__seemore"><span>View more</span><HiArrowRight/></a>
@@ -21,4 +20,4 @@ const Projects = () => {
  );
 };
 
-export default Projects;
+export default withLatestPosts(Projects);
