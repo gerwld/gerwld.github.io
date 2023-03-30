@@ -11,7 +11,7 @@
 .modal_window {
  position: absolute;
  top: 100%;
- right: -3px;
+ right: -2px;
  left: auto;
 
  min-width: 100%;
@@ -53,10 +53,12 @@
 .modal_window a {
  display: block;
  width: 100%;
- padding: 14px 15px;
+ height: 48px;
+ padding: 0 15px;
  margin: 0;
 
  font: inherit;
+ line-height: 48px;
  font-size: 15px;
  font-weight: 400;
  text-align: left;
@@ -82,6 +84,12 @@
   .modal_window button,
   .modal_window a {
     font-size: 0.9rem;
-    padding: 10px 15px;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+
   }
 }
+
+[aria-hidden="true"] { visibility: hidden; }
+svg[aria-hidden="true"] { visibility: visible; }
