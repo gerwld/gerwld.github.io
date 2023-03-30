@@ -10,9 +10,9 @@ const ModalSetLang = ({hocLang, hocIsCurrent, isShow, toggleShow, refElement}) =
   <div ref={refElement} className={s.content}>
    
    <button onClick={toggleShow}
-           className={`text_btn header__lang-btn select_line ${isShow ? "select_line-active" : ""}`}>{hocLang}</button>
+           className={`text_btn header__lang-btn select_line ${isShow ? "select_line-active" : ""}`} title="Change language">{hocLang}</button>
 
-   <div className={`${s.modal_window} ${isShow ? s.modal_visible : ""} modal_l03`}>
+   <div className={`${s.modal_window} ${isShow ? s.modal_visible : ""} modal_l03`} aria-hidden={!isShow}>
     <ul>
      <li><NavLink to="?setLn=en" className={hocIsCurrent("en")}>English</NavLink></li>
      <li><NavLink to="?setLn=uk" className={hocIsCurrent("uk")}>Українська</NavLink></li>

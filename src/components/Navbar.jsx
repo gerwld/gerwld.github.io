@@ -9,7 +9,7 @@ import { BiMoon, BiSun } from "react-icons/bi";
 const Navbar = ({ t, hocToggleLightmode, hocIsLight }) => {
  return (
   <div className="header content_wrapper">
-   <button onClick={hocToggleLightmode} className="header__theme-btn">
+   <button onClick={hocToggleLightmode} className="header__theme-btn" title={`Change theme to ${hocIsLight ? 'dark' : 'light'}`}>
    {hocIsLight ? <BiMoon /> : <BiSun />}
    </button>
 
