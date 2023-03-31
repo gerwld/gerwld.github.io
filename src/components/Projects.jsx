@@ -1,4 +1,3 @@
-import React from "react";
 import {HiArrowRight} from 'react-icons/hi';
 import { withLatestPosts } from "../hoc";
 import {SecLoader, ProjectItem} from ".";

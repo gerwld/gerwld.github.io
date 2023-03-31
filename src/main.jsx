@@ -1,24 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
+import { render } from "preact";
+import { Router, Route } from "preact-router";
+import App from "./App";
+
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import { routes } from "./routes/publicRoutes";
 import { setThemeFromStorage } from "./utils";
 import "./i18n";
 
 import "./styles/index.css";
 import "./styles/media.css";
 import "./styles/connect.css";
+import { routes } from "./routes/publicRoutes";
+
+import { Suspense, lazy } from "preact/compat";
 
 setThemeFromStorage();
 
-ReactDOM.createRoot(document.getElementById("root")).render(
- <React.StrictMode>
-  <React.Suspense>
-   <Provider store={store}>
-    <RouterProvider router={routes} />
-   </Provider>
-  </React.Suspense>
- </React.StrictMode>
+render(
+ <Suspense>
+  <Provider store={store}>
+   <Router>
+    <App path="/" />
+   </Router>
+  </Provider>
+ </Suspense>,
+ document.getElementById("root")
 );

@@ -1,6 +1,4 @@
-import React from "react";
 import pfp from "@/assets/pfp.webp";
-
 import {AiOutlineGithub, AiFillLinkedin, AiOutlineTwitter, AiOutlineBehance, AiOutlineInstagram, AiOutlineCodepen} from 'react-icons/ai';
 import {IoMailOutline} from 'react-icons/io5';
 

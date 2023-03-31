@@ -1,9 +1,14 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import preact from "@preact/preset-vite";
 import path from "path";
 
 export default defineConfig({
- plugins: [react()],
+ plugins: [preact()],
+ esbuild: {
+  jsxFactory: "h",
+  jsxFragment: "Fragment",
+  jsxInject: `import { h, Fragment } from 'preact'`,
+ },
  base: "./",
  define: {
   APP_VERSION: JSON.stringify(process.env.npm_package_version),

@@ -1,9 +1,7 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from 'preact-router/match';
 import { compose } from "redux";
-import {withClickOutside, withUrlLangSetter} from "../../hoc";
+import {withClickOutside, withUrlLangSetter} from "@/hoc";
 import s from "./s.module.css";
-import {HiLanguage} from 'react-icons/hi2';
 
 const ModalSetLang = ({hocLang, hocIsCurrent, isShow, toggleShow, refElement}) => {
  return (
@@ -14,13 +12,13 @@ const ModalSetLang = ({hocLang, hocIsCurrent, isShow, toggleShow, refElement}) =
 
    <div className={`${s.modal_window} ${isShow ? s.modal_visible : ""} modal_l03`} aria-hidden={!isShow}>
     <ul>
-     <li><NavLink to="?setLn=en" className={hocIsCurrent("en")}>English</NavLink></li>
-     <li><NavLink to="?setLn=uk" className={hocIsCurrent("uk")}>Українська</NavLink></li>
-     <li><NavLink to="?setLn=be" className={hocIsCurrent("be")}>Беларуская</NavLink></li>
-     <li><NavLink to="?setLn=pl" className={hocIsCurrent("pl")}>Polski</NavLink></li>
-     <li><NavLink to="?setLn=ka" className={hocIsCurrent("ka")}>ქართული (Beta)</NavLink></li>
-     <li><NavLink to="?setLn=tr" className={hocIsCurrent("tr")}>Türkçe (Beta)</NavLink></li>
-     <li><NavLink to="?setLn=de" className={hocIsCurrent("de")}>Deutsch (Beta)</NavLink></li>
+     <li><Link href="/?setLn=en" className={hocIsCurrent("en")}>English</Link></li>
+     <li><Link href="/?setLn=uk" className={hocIsCurrent("uk")}>Українська</Link></li>
+     <li><Link href="/?setLn=be" className={hocIsCurrent("be")}>Беларуская</Link></li>
+     <li><Link href="/?setLn=pl" className={hocIsCurrent("pl")}>Polski</Link></li>
+     <li><Link href="/?setLn=ka" className={hocIsCurrent("ka")}>ქართული (Beta)</Link></li>
+     <li><Link href="/?setLn=tr" className={hocIsCurrent("tr")}>Türkçe (Beta)</Link></li>
+     <li><Link href="/?setLn=de" className={hocIsCurrent("de")}>Deutsch (Beta)</Link></li>
     </ul>
    </div>
 

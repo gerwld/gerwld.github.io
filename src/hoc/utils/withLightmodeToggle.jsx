@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "preact/hooks";
 import { useDispatch, useSelector } from "react-redux";
 import { onSetTheme } from "../../redux/reducers/apr-reducer";
 import setCurrentTheme from "../../utils/setCurrentTheme";
@@ -23,17 +23,17 @@ const withLightmodeToggle = (WrappedComponent) => {
   };
 
   //If system theme changes, so both user & sys can change it
-  React.useEffect(() => {
+  useEffect(() => {
    const sysThemeMedia = window.matchMedia("(prefers-color-scheme: Light)");
-   let onThemeChangeSet = (e) => toggleLightmode(e.matches ? "light" : "dark") && console.log('changed');;
+   let onThemeChangeSet = (e) => toggleLightmode(e.matches ? "light" : "dark") && console.log("changed");
 
    sysThemeMedia.addEventListener && sysThemeMedia.addEventListener("change", onThemeChangeSet);
-   return () =>  sysThemeMedia?.removeEventListener && sysThemeMedia.removeEventListener("change", onThemeChangeSet);
+   return () => sysThemeMedia?.removeEventListener && sysThemeMedia.removeEventListener("change", onThemeChangeSet);
   }, []);
 
   //Body class toggle on change
-  React.useEffect(() => {
-    setCurrentTheme(currentTheme);
+  useEffect(() => {
+   setCurrentTheme(currentTheme);
   }, [currentTheme]);
 
   return <WrappedComponent {...props} hocToggleLightmode={hocToggleLightmodeManual} hocIsLight={currentTheme === "light"} />;

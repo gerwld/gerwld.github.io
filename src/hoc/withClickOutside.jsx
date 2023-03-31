@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "preact/hooks";
 
 // ** OUTSIDE CLICK TO HIDE ELEMENT ** //
 const withClickOutside = (WrappedComponent) => {
@@ -13,8 +13,9 @@ const withClickOutside = (WrappedComponent) => {
     let refCurr = ref?.current;
     let igCurr = ignoreRef?.current;
 
-    if(refCurr && !igCurr &&
-      !ref.current.contains(target)) setShow(false);
+    if(refCurr && !igCurr && !ref.current.contains(target)) {
+      setShow(false);
+    } 
     else if(refCurr && igCurr && 
       !ignoreRef.current.contains(target) && !ref.current.contains(target)) setShow(false);
    }

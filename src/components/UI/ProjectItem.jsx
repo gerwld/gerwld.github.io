@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
 

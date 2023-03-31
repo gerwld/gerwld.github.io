@@ -1,5 +1,3 @@
-import React from "react";
-import { useRouteError } from "react-router-dom";
 import s from "./s.module.css";
 
 function RootBoundary() {

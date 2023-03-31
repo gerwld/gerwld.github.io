@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
+import { useEffect } from "preact/hooks";
 import { useDispatch, useSelector } from "react-redux";
 import { Hero, MainLoader, Navbar, Projects, Skills } from "./components/";
 import { setInit } from "./redux/reducers/app-reducer";

@@ -1,4 +1,3 @@
-import React from "react";
 
 const SkillsItem = ({ children, title, bigger_style }) => {
  return (

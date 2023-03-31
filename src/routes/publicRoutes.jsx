@@ -1,12 +1,11 @@
-import { Navigate } from "react-router-dom";
-import { createHashRouter } from "react-router-dom";
+import { route } from 'preact-router';
 import App from "../App";
 import { MainLoader, RootBoundary} from "@/components";
 
-export const routes = createHashRouter([
+export const routes = [
  {
   path: "*",
-  element: <Navigate to="/" />,
+  element: () => route('/'),
   loader: MainLoader,
   errorElement: <RootBoundary/>,
  },
@@ -15,4 +14,4 @@ export const routes = createHashRouter([
   element: <App />,
   errorElement: <RootBoundary/>,
  },
-]);
+];
