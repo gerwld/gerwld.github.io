@@ -491,6 +491,7 @@ a.active_lang {
   opacity: 1;
 }
 
+.project__links span,
 .project__links a {
   display: inline-flex;
   align-items: center;
