@@ -1,4 +1,4 @@
-import pfp from "@/assets/pfp.webp";
+import {pfp_img} from "@/assets";
 import {AiOutlineGithub, AiFillLinkedin, AiOutlineTwitter, AiOutlineBehance, AiOutlineInstagram, AiOutlineCodepen} from 'react-icons/ai';
 import {IoMailOutline} from 'react-icons/io5';
 
@@ -26,7 +26,7 @@ const Hero = () => {
    </div>
    <div className="hero_l2">
     <div className="hero_pfp">
-     <img src={pfp} alt="Profile Picture" />
+     <img src={pfp_img} alt="Profile Picture" />
     </div>
    </div>
   </section>
