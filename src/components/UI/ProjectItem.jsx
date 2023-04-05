@@ -2,7 +2,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { useImgCache } from "../../hooks/useImgCache";
 
-const ProjectItem = ({ title, desc, img, source_url, preview_url }) => {
+const ProjectItem = ({ title, desc, img, img__jpg, source_url, preview_url }) => {
   useImgCache([img]);
 
  return (
@@ -24,7 +24,11 @@ const ProjectItem = ({ title, desc, img, source_url, preview_url }) => {
     </div>
    </div>
    <div className="projects__img">
-    <img src={img} alt={title} />
+    <picture>
+      <source srcset={img} type="image/webp"/>
+      <source srcset={img__jpg} type="image/jpeg"/>
+      <img class="img-fluid" src={img__jpg} alt={title}/>
+    </picture>
    </div>
   </article>
  );
