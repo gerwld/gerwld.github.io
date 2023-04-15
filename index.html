@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- ALL RIGHTS RESERVED, © Gerwld INC -->
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,6 +32,7 @@
       const bgColor = (localStorage.getItem("currentTheme") === "light") ? "#f2f5fb" : '#1c1c2a';
       document.querySelector("html").style.backgroundColor = bgColor;
       document.querySelector('meta[name="theme-color"]').setAttribute("content", bgColor);
+      document.querySelector("html").setAttribute("lang", localStorage.getItem("i18nextLng") || "en")
     </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>

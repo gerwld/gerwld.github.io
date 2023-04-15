@@ -3,8 +3,6 @@ import { music_app_img, nolk_template_img, twitter_clone_img, anydo_clone_img, m
 const currentThemeFromStorage = localStorage.getItem("currentTheme") || "dark"
 const currentLangFromStorage = localStorage.getItem("i18nextLng") || "en"
 
-document.querySelector("html").setAttribute("lang", currentLangFromStorage)
-
 const initialState = {
  apr: {
   currentTheme: currentThemeFromStorage,
