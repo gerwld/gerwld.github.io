@@ -1,44 +1,43 @@
 {
-  "main": {
-   "view-more": "View more",
-   "theme": {
-    "light": "Change theme to light",
-    "dark": "Change theme to dark"
-   }
+ "main": {
+  "view-more": "Паглядзець больш",
+  "theme": {
+   "light": "Змяніць тэму на светлую",
+   "dark": "Змяніць тэму на цёмную"
+  }
+ },
+ "hero": {
+  "title": "Прывітанне, я Патрык, Frontend распрацоўшчык",
+  "desc": "Мне падабаецца вучыцца новаму, пастаянна ўдасканальвацца, ствараць вэб-праекты і паляпшаць іх. Акрамя таго, у вольны час я люблю бегаць і гуляць у шахматы.",
+  "email-lable": "Кантактная электронная пошта",
+  "subtitle": "Мае сацыяльныя сеті"
+ },
+ "skills": {
+  "title": "Навыкі"
+ },
+ "projects": {
+  "title": "Апошнія праекты",
+  "navigation": {
+   "live": "Дэма",
+   "source": "Праглядзець зыходны код"
   },
-  "hero": {
-   "title": "Hi, I'm Patryk, Frontend Developer",
-   "desc": "I enjoy learning new things, constantly improving myself, producing web projects and contributing to them. I am also interested in running and playing chess.",
-   "email-lable": "Contact Email",
-   "subtitle": "Follow me"
-  },
-  "skills": {
-   "title": "Skills"
-  },
-  "projects": {
-   "title": "Latest Projects",
-   "navigation": {
-    "live": "Live Demo",
-    "source": "View Source"
+  "items": {
+   "dbf0-beqr0b890eq9r8b98": {
+    "title": "Музычная праграма music-app",
+    "desc": "Музычны прайгравальнік ReactJS і Redux. Уключае зручную для мабільных прылад версію, кэш localStorage. Таксама працуе з AudioSession API, таму функцыі браўзера (напрыклад, гарачыя клавішы «Next/Prev», прагляд шаблонаў і г.д.) працуюць правільна."
    },
-   "items": {
-    "dbf0-beqr0b890eq9r8b98": {
-     "title": "Music App Project",
-     "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Also works with AudioSession Api, so hotkey Next/Prev buttons is working right."
-    },
-    "fbd07wavab0987erab709adb": {
-     "title": "AnyDo Clone ReactJs Project",
-     "desc": "Anydo-like To-do list. Functional: all CRUD operations (add, update, read or delete any task), sort by tags, JWT Auth. Also contains mobile verison with Safari viewport improvements."
-    },
-    "fadb0978a8f90b7986da0968": {
-     "title": "Twitter ReactTs Project",
-     "desc": "Clone of Twitter. Currently works: final-form validation, tweet posting, routings and  tweets fetching. Created on ReactTS CRA, but currently is used on Vite"
-    },
-    "0879fbd9078adfb0a7dfb908": {
-     "title": "Nolk Template",
-     "desc": "Just a responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
-    }
+   "fbd07wavab0987erab709adb": {
+    "title": "Праект AnyDo Clone ReactJs",
+    "desc": "Спіс спраў, як Anydo. Функцыянальнасць: усе аперацыі CRUD (даданне, абнаўленне, чытанне або выдаленне любой задачы), сартаванне па тэгах, JWT Auth. Таксама ўключае мабільную версію з выпраўленнямі Safari."
+   },
+   "fadb0978a8f90b7986da0968": {
+    "title": "Твітэр-праект на ReactTs",
+    "desc": "Клон Twitter. Гатова: праверка канчатковай формы, публікацыя твітаў, маршрутызацыя і сартаванне твітаў. Першапачаткова пабудаваны на ReactTS CRA, але цяпер выкарыстоўваецца з Vite"
+   },
+   "0879fbd9078adfb0a7dfb908": {
+    "title": "Шаблон Nolk",
+    "desc": "Спагадны шаблон. Выкарыстоўвае SVG-анімацыю і простую 3-крокавую форму, убудаваную ў javascript. Таксама мае даволі прыгожую анімацыю і пераходы. Праграма выканання задач для мінімізацыі файлаў і г.д. - Gulp."
    }
   }
  }
- 
+}

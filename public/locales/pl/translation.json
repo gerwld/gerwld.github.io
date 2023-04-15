@@ -1,42 +1,42 @@
 {
   "main": {
-   "view-more": "View more",
+   "view-more": "Zobacz więcej",
    "theme": {
-    "light": "Change theme to light",
-    "dark": "Change theme to dark"
+    "light": "Zmień motyw na jasny",
+    "dark": "Zmień motyw na ciemny"
    }
   },
   "hero": {
-   "title": "Hi, I'm Patryk, Frontend Developer",
-   "desc": "I enjoy learning new things, constantly improving myself, producing web projects and contributing to them. I am also interested in running and playing chess.",
-   "email-lable": "Contact Email",
-   "subtitle": "Follow me"
+   "title": "Cześć, jestem Patryk, Frontend Developer",
+   "desc": "Lubię uczyć się nowych rzeczy, ciągle się doskonalić, tworzyć projekty internetowe i je ulepszać. Poza tym, w wolnym czasie lubię biegać i grać w szachy.",
+   "email-lable": "E-mail kontaktowy",
+   "subtitle": "Moje sieci społecznościowe"
   },
   "skills": {
-   "title": "Skills"
+   "title": "Umiejętności"
   },
   "projects": {
-   "title": "Latest Projects",
+   "title": "Ostatnie Projekty",
    "navigation": {
-    "live": "Live Demo",
-    "source": "View Source"
+    "live": "Demo na żywo",
+    "source": "Pokaż źródło"
    },
    "items": {
     "dbf0-beqr0b890eq9r8b98": {
-     "title": "Music App Project",
-     "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Also works with AudioSession Api, so hotkey Next/Prev buttons is working right."
+     "title": "Projekt aplikacji muzycznej music-app",
+     "desc": "Odtwarzacz muzyczny ReactJS i Redux. Zawiera użyteczną wersję mobilną, pamięć podręczną localStorage. Działa również z AudioSession Api, więc przyciski skrótu Następny/Poprzedni działają poprawnie."
     },
     "fbd07wavab0987erab709adb": {
-     "title": "AnyDo Clone ReactJs Project",
-     "desc": "Anydo-like To-do list. Functional: all CRUD operations (add, update, read or delete any task), sort by tags, JWT Auth. Also contains mobile verison with Safari viewport improvements."
+     "title": "Projekt AnyDo Clone ReactJs",
+     "desc": "Lista rzeczy do zrobienia podobna do Anydo. Funkcjonalne: wszystkie operacje CRUD (dodawanie, aktualizacja, odczyt lub usuwanie dowolnego zadania), sortowanie po tagach, JWT Auth. Zawiera również wersję mobilną z ulepszeniami przeglądarki Safari."
     },
     "fadb0978a8f90b7986da0968": {
      "title": "Twitter ReactTs Project",
-     "desc": "Clone of Twitter. Currently works: final-form validation, tweet posting, routings and  tweets fetching. Created on ReactTS CRA, but currently is used on Vite"
+     "desc": "Klon Twittera. Obecnie działa: walidacja final-form, wysyłanie tweetów, trasowanie i pobieranie tweetów. Stworzony na ReactTS CRA, ale obecnie jest używany na Vite"
     },
     "0879fbd9078adfb0a7dfb908": {
      "title": "Nolk Template",
-     "desc": "Just a responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+     "desc": "Responsywny szablon. Wykorzystuje animację svg i prosty 3-etapowy formularz stworzony na javascript. Zawiera również dość ładne animacje i przejścia. Task-runner dla minifikacji plików itp. — Gulp."
     }
    }
   }

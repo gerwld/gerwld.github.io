@@ -1,44 +1,43 @@
 {
   "main": {
-   "view-more": "View more",
+   "view-more": "Mehr anzeigen",
    "theme": {
-    "light": "Change theme to light",
-    "dark": "Change theme to dark"
+    "light": "Ändern Sie das Motiv auf licht",
+    "dark": "Ändere das Design auf dunkel"
    }
   },
   "hero": {
-   "title": "Hi, I'm Patryk, Frontend Developer",
-   "desc": "I enjoy learning new things, constantly improving myself, producing web projects and contributing to them. I am also interested in running and playing chess.",
-   "email-lable": "Contact Email",
-   "subtitle": "Follow me"
+   "title": "Hallo, ich bin Patryk, Frontend Entwickler",
+   "desc": "Ich lerne gerne Neues, verbessere mich ständig, produziere Webprojekte und trage dazu bei. Außerdem interessiere ich mich fürs Laufen und Schachspielen.",
+   "email-lable": "Kontakt-E-Mail",
+   "subtitle": "Folge mir"
   },
   "skills": {
-   "title": "Skills"
+   "title": "Fähigkeiten"
   },
   "projects": {
-   "title": "Latest Projects",
+   "title": "Neueste Projekte",
    "navigation": {
-    "live": "Live Demo",
-    "source": "View Source"
+    "live": "Live-Demo",
+    "source": "Quelle anzeigen"
    },
    "items": {
     "dbf0-beqr0b890eq9r8b98": {
-     "title": "Music App Project",
-     "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Also works with AudioSession Api, so hotkey Next/Prev buttons is working right."
+     "title": "Musik-App-Projekt",
+     "desc": "ReactJS & Redux Music Player. Enthält nutzbare mobile Version, lokalen Speicher-Cache. Funktioniert auch mit AudioSession Api, daher funktionieren die Hotkey-Tasten Next/Prev richtig."
     },
     "fbd07wavab0987erab709adb": {
-     "title": "AnyDo Clone ReactJs Project",
-     "desc": "Anydo-like To-do list. Functional: all CRUD operations (add, update, read or delete any task), sort by tags, JWT Auth. Also contains mobile verison with Safari viewport improvements."
+     "title": "AnyDo Clone ReactJs-Projekt",
+     "desc": "Anydo-ähnliche To-do-Liste. Funktional: alle CRUD-Operationen (jede Aufgabe hinzufügen, aktualisieren, lesen oder löschen), nach Tags sortieren, JWT-Auth. Enthält auch die mobile Version mit Verbesserungen des Safari-Ansichtsfensters."
     },
     "fadb0978a8f90b7986da0968": {
-     "title": "Twitter ReactTs Project",
-     "desc": "Clone of Twitter. Currently works: final-form validation, tweet posting, routings and  tweets fetching. Created on ReactTS CRA, but currently is used on Vite"
+     "title": "Twitter ReactTs-Projekt",
+     "desc": "Klon von Twitter. Funktioniert derzeit: Endform-Validierung, Tweet-Posting, Routings und Tweets-Abruf. Erstellt auf ReactTS CRA, wird aber derzeit auf Vite verwendet"
     },
     "0879fbd9078adfb0a7dfb908": {
-     "title": "Nolk Template",
-     "desc": "Just a responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+     "title": "Nolk-Vorlage",
+     "desc": "Nur eine ansprechende Vorlage. Verwendet SVG-Animation und ein einfaches 3-Schritte-Formular, das auf Vanilla Js erstellt wurde. Enthält auch schöne CSS-Animationen und Übergänge. Task-Runner für Minify-Dateien usw. - Gulp."
     }
    }
   }
  }
- 

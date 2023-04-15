@@ -24,7 +24,7 @@
    "items": {
     "dbf0-beqr0b890eq9r8b98": {
      "title": "Music App Project",
-     "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Also works with AudioSession Api, so hotkey Next/Prev buttons is working right."
+     "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Works with AudioSession Api, so browser features (like hotkey buttons Next/Prev, album preview) is working right."
     },
     "fbd07wavab0987erab709adb": {
      "title": "AnyDo Clone ReactJs Project",

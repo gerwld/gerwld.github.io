@@ -20,9 +20,11 @@ const withUrlLangSetter = (WrappedComponent) => {
     isLocale = langLok.indexOf(pLang) !== -1;
 
    if (pLang && lang !== pLang && isLocale) {
-    i18n.changeLanguage(pLang);
-    document.body.style.opacity = "0";
-    window.location.reload(false);
+    i18n.changeLanguage(pLang, () => {
+      localStorage.setItem("i18nextLng", pLang);
+      document.body.style.opacity = "0";
+      window.location.reload(false);
+    });
    }
   }, [searchParams.matches.setLn]);
 

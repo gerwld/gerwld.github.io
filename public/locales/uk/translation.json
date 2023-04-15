@@ -1,43 +1,44 @@
 {
- "main": {
-  "view-more": "Переглянути більше",
-  "theme": {
-    "light": "Змінити тему на світлу",
-    "dark": "Змінити тему на темну"
-  }
- },
- "hero": {
-  "title": "Вітаю. Мене звати Патрик, я фронтенд розробник",
-  "desc": "Я люблю вивчати нове, постійно самовдосконалюватися, створювати веб-проекти і покращувати їх. Мій основний стек React, Redux, Preact i TypeScript. Є досвід роботи із Vue і Svelte. Також, в вільний час захоплююсь бігом та грою в шахи.",
-  "email-lable": "Контактна пошта",
-  "subtitle": "Мої соцмережі"
- },
- "skills": {
-  "title": "Навички"
- },
- "projects": {
-  "title": "Останні проекти",
-  "navigation": {
-   "live": "Live Demo",
-   "source": "View Source"
+  "main": {
+   "view-more": "Переглянути більше",
+   "theme": {
+     "light": "Змінити тему на світлу",
+     "dark": "Змінити тему на темну"
+   }
   },
-  "items": {
-   "dbf0-beqr0b890eq9r8b98": {
-    "title": "Music App Project",
-    "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Also works with AudioSession Api, so hotkey Next/Prev buttons is working right."
+  "hero": {
+   "title": "Привіт, я Патрик, Frontend розробник",
+   "desc": "Я люблю дізнаватись нове, постійно самовдосконалюватись, створювати веб-проекти і покращувати їх. Також, в вільний час захоплююсь бігом і грою в шахи.",
+   "email-lable": "Контактна пошта",
+   "subtitle": "Мої соцмережі"
+  },
+  "skills": {
+   "title": "Навички"
+  },
+  "projects": {
+   "title": "Останні проекти",
+   "navigation": {
+    "live": "Демо",
+    "source": "Переглянути джерело"
    },
-   "fbd07wavab0987erab709adb": {
-    "title": "AnyDo Clone ReactJs Project",
-    "desc": "Anydo-like To-do list. Functional: all CRUD operations (add, update, read or delete any task), sort by tags, JWT Auth. Also contains mobile verison with Safari viewport improvements."
-   },
-   "fadb0978a8f90b7986da0968": {
-    "title": "Twitter ReactTs Project",
-    "desc": "Clone of Twitter. Currently works: final-form validation, tweet posting, routings and  tweets fetching. Created on ReactTS CRA, but currently is used on Vite"
-   },
-   "0879fbd9078adfb0a7dfb908": {
-    "title": "Nolk Template",
-    "desc": "Just a responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+   "items": {
+    "dbf0-beqr0b890eq9r8b98": {
+     "title": "Музичний додаток music-app",
+     "desc": "Музичний плеєр ReactJS & Redux. Містить зручну для використання мобільну версію, кеш localStorage. Працює з AudioSession API, тому браузерні функції (такі як кнопки швидкого доступу «Next/Prev», перегляд шаблону тощо) працюють правильно."
+    },
+    "fbd07wavab0987erab709adb": {
+     "title": "Проект AnyDo Clone ReactJs",
+     "desc": "Список справ, схожий за принципом роботи на Anydo. Функціональність: всі операції CRUD (додавання, оновлення, читання чи видалення будь-якого завдання), сортування за тегами, JWT Auth. Також містить мобільну версію з фіксами Safari."
+    },
+    "fadb0978a8f90b7986da0968": {
+     "title": "Проект Twitter на ReactTs",
+     "desc": "Клон Twitter. Зроблено: валідація final-form, публікація твітів, маршрутизація та сортування твітів. Початково створено на ReactTS CRA, але зараз використовується з Vite"
+    },
+    "0879fbd9078adfb0a7dfb908": {
+     "title": "Шаблон Nolk",
+     "desc": "Адаптивний шаблон. Використовує анімацію svg і просту форму з 3 кроків, створену на джаваскріпт. Також має досить непогані анімації та переходи. Task-runner для мінімізації файлів, тощо - Gulp."
+    }
    }
   }
  }
-}
+ 

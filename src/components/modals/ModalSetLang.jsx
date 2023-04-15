@@ -15,9 +15,8 @@ const ModalSetLang = ({hocLang, hocIsCurrent, isShow, toggleShow, refElement}) =
      <li><Link href="/?setLn=en" className={hocIsCurrent("en")}>English</Link></li>
      <li><Link href="/?setLn=uk" className={hocIsCurrent("uk")}>Українська</Link></li>
      <li><Link href="/?setLn=be" className={hocIsCurrent("be")}>Беларуская</Link></li>
-     <li><Link href="/?setLn=pl" className={hocIsCurrent("pl")}>Polski</Link></li>
+     <li><Link href="/?setLn=pl" className={hocIsCurrent("pl")}>Polski (Beta)</Link></li>
      <li><Link href="/?setLn=ka" className={hocIsCurrent("ka")}>ქართული (Beta)</Link></li>
-     <li><Link href="/?setLn=tr" className={hocIsCurrent("tr")}>Türkçe (Beta)</Link></li>
      <li><Link href="/?setLn=de" className={hocIsCurrent("de")}>Deutsch (Beta)</Link></li>
     </ul>
    </div>
