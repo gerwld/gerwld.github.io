@@ -37,6 +37,9 @@ dependencies:
   redux:
     specifier: ^4.2.1
     version: 4.2.1
+  udid:
+    specifier: ^0.1.4
+    version: 0.1.4
 
 devDependencies:
   '@preact/preset-vite':
@@ -724,6 +727,12 @@ packages:
   /convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
 
+  /count-tabs@0.2.5:
+    resolution: {integrity: sha512-MMoWsrsKj3XP54dDr8mXDNW3uMytbY3M/OhzS8TaoXNWZSHq6U5fhSrpUFmfz0iXZv1KCzwxFLCIvZ14L/PCtA==}
+    dependencies:
+      shasum: 0.0.3
+    dev: false
+
   /cross-fetch@3.1.5:
     resolution: {integrity: sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==}
     dependencies:
@@ -1296,6 +1305,10 @@ packages:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
     hasBin: true
 
+  /shasum@0.0.3:
+    resolution: {integrity: sha512-wlpEUI3wET9br4mvksV29cAcCC+yFnW7kek4/vpttr2b9eLF6++059f6nEksi4y6rAflQVyi7Pa0NkkzEpGkAA==}
+    dev: false
+
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -1331,6 +1344,13 @@ packages:
     dependencies:
       escape-string-regexp: 1.0.5
     dev: true
+
+  /udid@0.1.4:
+    resolution: {integrity: sha512-kQ+JOilIZJ9lMpB7dnUQMY6qtcvicfvKQAJ/IQ2tYPsQSRmlQwZee+i+m5+BNr0j1/CzZb9cK9fCN5EDt1fb0g==}
+    dependencies:
+      count-tabs: 0.2.5
+      shasum: 0.0.3
+    dev: false
 
   /universalify@0.1.2:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}

@@ -1,25 +1,27 @@
 import { AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { useImgCache } from "../../hooks/useImgCache";
+import { useTranslation } from "react-i18next";
 
-const ProjectItem = ({ title, desc, img, img__jpg, source_url, preview_url }) => {
+const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url }) => {
+  const {t} = useTranslation();
   useImgCache([img]);
 
  return (
   <article className="projects__item">
    <div className="projects__group">
-    <h3 className="projects__title">{title}</h3>
-    <p className="project__desc">{desc}</p>
+    <h3 className="projects__title">{t(`projects.items.${id}.title`)}</h3>
+    <p className="project__desc">{t(`projects.items.${id}.desc`)}</p>
 
     <div className="project__links">
       {preview_url?.length ? 
-        <a href={preview_url}  target="_blank" rel="noopener"><HiOutlineExternalLink/>Live demo</a>
-        : <span className='inactive' target="_blank" rel="noopener"><HiOutlineExternalLink/>Live demo</span>
+        <a href={preview_url}  target="_blank" rel="noopener"><HiOutlineExternalLink/>{t("projects.navigation.live")}</a>
+        : <span className='inactive' target="_blank" rel="noopener"><HiOutlineExternalLink/>{t("projects.navigation.live")}</span>
       }
       
       {source_url?.length ?
-        <a href={source_url} target="_blank" rel="noopener"><AiOutlineGithub/>View source</a>
-        : <span className='inactive' target="_blank" rel="noopener"><AiOutlineGithub/>View source</span>
+        <a href={source_url} target="_blank" rel="noopener"><AiOutlineGithub/>{t("projects.navigation.source")}</a>
+        : <span className='inactive' target="_blank" rel="noopener"><AiOutlineGithub/>{t("projects.navigation.source")}</span>
       }
     </div>
    </div>
