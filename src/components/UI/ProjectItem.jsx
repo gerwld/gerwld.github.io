@@ -10,7 +10,11 @@ const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url }
  return (
   <article className="projects__item">
    <div className="projects__group">
-    <h3 className="projects__title">{t(`projects.items.${id}.title`)}</h3>
+    <h3 className="projects__title">
+      <a href={preview_url?.length ? preview_url :  source_url}  target="_blank" rel="noopener">
+        {t(`projects.items.${id}.title`)}
+      </a>
+    </h3>
     <p className="project__desc">{t(`projects.items.${id}.desc`)}</p>
 
     <div className="project__links">

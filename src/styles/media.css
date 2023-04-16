@@ -69,7 +69,7 @@
   }
 
   .skills__item:hover .skills__title {
-    top: calc(50% + 25px);
+    top: calc(50% + 26px);
     opacity: 1;
   }
 

@@ -19,6 +19,7 @@
   --sec-bg-color: #21212e;
   --main-text-color: #fff;
   --border-color: #2a2c36;
+
   --basic-link-color: #74d1f3;
   --tone-1: rgba(255, 255, 255, 0.1);
   --tone-2: rgba(225, 238, 240, 0.2);
@@ -32,7 +33,7 @@ body.lightModeOn {
   --main-bg-color: #f2f5fb;
   --sec-bg-color: #ffffff;
   --main-text-color: #1c1c2a;
-  --border-color: #d3dfec;
+  --border-color: #dae5f3;
   --basic-link-color: #087ea4;
   --tone-1: rgba(158, 171, 191, 0.1);
   --tone-2: rgb(157, 198, 243, 0.2);
@@ -326,6 +327,18 @@ a.active_lang {
 
 .projects__title {
   margin-top: 0;
+}
+
+.projects__title a {
+  position: relative;
+  display: inline;
+  padding: 3px 4px;
+  margin-left: -3px;
+  color: var(--main-text-color);
+}
+
+.projects__title a:hover {
+  background-color: transparent;
 }
 
 .section__title {
