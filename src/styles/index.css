@@ -80,6 +80,7 @@ h3 {
 p {
   margin: 0.7em 0;
   line-height: 175%;
+  font-size: 0.96rem;
 }
 
 a {
@@ -311,9 +312,10 @@ a.active_lang {
   max-height: 490px;
   margin: -2px -2px 20px;
 
+  opacity: 0.96;
   overflow: hidden;
   border: 1px solid var(--border-color);
-  border-radius: 5px;
+  border-radius: 3px;
   box-sizing: content-box;
 }
 

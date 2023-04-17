@@ -3,7 +3,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import { useImgCache } from "../../hooks/useImgCache";
 import { useTranslation } from "react-i18next";
 
-const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url }) => {
+const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url, is_act }) => {
   const {t} = useTranslation();
   useImgCache([img]);
 

@@ -18,25 +18,33 @@
   "projects": {
    "title": "Latest Projects",
    "navigation": {
-    "live": "Live Demo",
+    "live": "Live Preview",
     "source": "View Source"
    },
    "items": {
+    "db64-be46b8r8b54e3f" : {
+      "title": "TrainingPeaks - Sport Monitoring",
+      "desc": "Monitoring for personal trainings. Contains 3 main resources - plans, day feel and trainings. Every section is customizable, and its possible to simply drag-n-drop some training from one day to another, or get a weekly statistics."
+     },
+    "dbf0-beqr56b8r8brbe5l": {
+      "title": "OnlineStats.info - Tracking Service",
+      "desc": "Startup service for monitoring your own or your kids online status in Telegram Messenger. Works with JWT Auth, bizcharts charts, final-form for forms. Also has implemented i18n locales and dark theme."
+     },
     "dbf0-beqr0b890eq9r8b98": {
      "title": "Music App Project",
      "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Works with AudioSession Api, so browser features (like hotkey buttons Next/Prev, album preview) is working right."
     },
     "fbd07wavab0987erab709adb": {
-     "title": "AnyDo Clone ReactJs Project",
-     "desc": "Anydo-like To-do list. Functional: all CRUD operations (add, update, read or delete any task), sort by tags, JWT Auth. Also contains mobile verison with Safari viewport improvements."
+     "title": "AnyDo Clone ReactJs",
+     "desc": "Anydo-like To-do list. Functional: all CRUD operations (add, update, read or delete any task), sort by tags, JWT Auth. Also contains mobile verison with Safari viewport and other improvements."
     },
     "fadb0978a8f90b7986da0968": {
      "title": "Twitter ReactTs Project",
-     "desc": "Clone of Twitter. Currently works: final-form validation, tweet posting, routings and  tweets fetching. Created on ReactTS CRA, but currently is used on Vite"
+     "desc": "Clone of Twitter. Currently works: final-form validation, tweet posting, routings and  tweets fetching. Created on ReactTS CRA, but currently is used on Vite."
     },
     "0879fbd9078adfb0a7dfb908": {
      "title": "Nolk Template",
-     "desc": "Just a responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+     "desc": "Responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
     }
    }
   }
