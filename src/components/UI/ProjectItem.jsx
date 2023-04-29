@@ -33,7 +33,7 @@ const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url, 
     <picture>
       <source srcset={img} type="image/webp"/>
       <source srcset={img__jpg} type="image/jpeg"/>
-      <img class="img-fluid" src={img__jpg} alt={title}/>
+      <img class="img-fluid" src={img__jpg} alt={title ? title : t(`projects.items.${id}.title`)}/>
     </picture>
    </div>
   </article>
