@@ -6,9 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && pnpm add-domain",
     "deploy": "gh-pages -d dist",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "add-domain": "echo \"pjaworskidev.com\" > build/CNAME"
   },
   "dependencies": {
     "@prefresh/vite": "^2.2.9",

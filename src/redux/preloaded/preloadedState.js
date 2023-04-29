@@ -1,4 +1,4 @@
-import { music_app_img, nolk_template_img, twitter_clone_img, anydo_clone_img, music_app_img__jpg, anydo_clone_img__jpg, twitter_clone_img__jpg, nolk_template_img__jpg, onlinestats__jpg, training_app__jpg } from "@/assets"
+import { training_app__img, onlinestats__img, music_app_img, nolk_template_img, twitter_clone_img, anydo_clone_img, music_app_img__jpg, anydo_clone_img__jpg, twitter_clone_img__jpg, nolk_template_img__jpg, onlinestats__jpg, training_app__jpg } from "@/assets"
 
 const currentThemeFromStorage = localStorage.getItem("currentTheme") || "dark"
 const currentLangFromStorage = localStorage.getItem("i18nextLng") || "en"
@@ -10,7 +10,7 @@ const initialState = {
   lastProjects: [
     {
       id: "db64-be46b8r8b54e3f",
-      img: null,
+      img: training_app__img,
       img__jpg: training_app__jpg,
       source_url: "https://github.com/gerwld/music-app",
       preview_url: "/training-app/",
@@ -18,7 +18,7 @@ const initialState = {
      },
    {
     id: "dbf0-beqr56b8r8brbe5l",
-    img: null,
+    img: onlinestats__img,
     img__jpg: onlinestats__jpg,
     preview_url: "https://onlinestats.info",
     is_act: true
