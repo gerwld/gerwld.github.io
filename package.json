@@ -9,7 +9,7 @@
     "build": "vite build && pnpm add-domain",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview",
-    "add-domain": "echo \"pjaworskidev.com\" > build/CNAME"
+    "add-domain": "echo \"pjaworskidev.com\" > dist/CNAME"
   },
   "dependencies": {
     "@prefresh/vite": "^2.2.9",
