@@ -12,16 +12,14 @@ const initialState = {
       id: "db64-be46b8r8b54e3f",
       img: training_app__img,
       img__jpg: training_app__jpg,
-      source_url: "https://github.com/gerwld/music-app",
-      preview_url: "/training-app/",
-      is_act: true
+      source_url: "https://github.com/gerwld/training-peaks/",
+      preview_url: "/training-peaks/",
      },
    {
     id: "dbf0-beqr56b8r8brbe5l",
     img: onlinestats__img,
     img__jpg: onlinestats__jpg,
-    preview_url: "https://onlinestats.info",
-    is_act: true
+    preview_url: "https://tgmetrics.com",
    },
    {
     id: "dbf0-beqr0b890eq9r8b98",

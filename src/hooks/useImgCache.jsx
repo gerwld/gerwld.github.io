@@ -17,5 +17,6 @@ export function useImgCache(srcArray) {
 
  useEffect(() => {
   cacheImages(srcArray);
+  console.log(srcArray);
  }, []);
 }

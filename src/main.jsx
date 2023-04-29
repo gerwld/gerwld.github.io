@@ -1,5 +1,5 @@
 import { render } from "preact";
-import { Router, Route } from "preact-router";
+import { Router } from "preact-router";
 import App from "./App";
 
 import { Provider } from "react-redux";
@@ -10,7 +10,6 @@ import "./i18n";
 import "./styles/index.css";
 import "./styles/media.css";
 import "./styles/connect.css";
-import { routes } from "./routes/publicRoutes";
 
 import { Suspense, lazy } from "preact/compat";
 
