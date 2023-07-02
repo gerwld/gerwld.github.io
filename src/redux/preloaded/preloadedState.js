@@ -13,7 +13,6 @@ const initialState = {
         img: training_app__img,
         img__jpg: training_app__jpg,
         source_url: "https://github.com/gerwld/training-peaks/",
-        preview_url: "https://runapp.online",
       },
       {
         id: "dbf0-beqr56b8r8brbe5l",
