@@ -12,16 +12,21 @@ import "./styles/media.css";
 import "./styles/connect.css";
 
 import { Suspense, lazy } from "preact/compat";
+import { DeleteInsta, IndexInsta, WelcomeInsta } from "./pages";
 
 setThemeFromStorage();
 
 render(
- <Suspense>
-  <Provider store={store}>
-   <Router>
-    <App path="/" />
-   </Router>
-  </Provider>
- </Suspense>,
- document.getElementById("root")
+  <Suspense>
+    <Provider store={store}>
+      <Router>
+        <App path="/" />
+
+        <IndexInsta path="/extensions/instaplus" />
+        <WelcomeInsta path="/extensions/instaplus/welcome" />
+        <DeleteInsta path="/extensions/instaplus/feedback" />
+      </Router>
+    </Provider>
+  </Suspense>,
+  document.getElementById("root")
 );

@@ -1,7 +1,20 @@
-import { training_app__img, onlinestats__img, music_app_img, nolk_template_img, twitter_clone_img, anydo_clone_img, music_app_img__jpg, anydo_clone_img__jpg, twitter_clone_img__jpg, nolk_template_img__jpg, onlinestats__jpg, training_app__jpg } from "@/assets"
+import {
+  training_app__img,
+  onlinestats__img,
+  music_app_img,
+  nolk_template_img,
+  twitter_clone_img,
+  anydo_clone_img,
+  music_app_img__jpg,
+  anydo_clone_img__jpg,
+  twitter_clone_img__jpg,
+  nolk_template_img__jpg,
+  onlinestats__jpg,
+  training_app__jpg,
+} from "@/assets";
 
-const currentThemeFromStorage = localStorage.getItem("currentTheme") || "dark"
-const currentLangFromStorage = localStorage.getItem("i18nextLng") || "en"
+const currentThemeFromStorage = localStorage.getItem("currentTheme") || "dark";
+const currentLangFromStorage = localStorage.getItem("i18nextLng") || "en";
 
 const initialState = {
   apr: {
@@ -31,8 +44,8 @@ const initialState = {
         id: "fbd07wavab0987erab709adb",
         img: anydo_clone_img,
         img__jpg: anydo_clone_img__jpg,
-        source_url: "https://github.com/gerwld/anydo-clone",
-        preview_url: "/anydo-clone/",
+        source_url: "https://github.com/gerwld/anydo-tm",
+        preview_url: "/anydo-tm/",
       },
       {
         id: "fadb0978a8f90b7986da0968",
@@ -50,6 +63,6 @@ const initialState = {
       },
     ],
   },
-}
+};
 
-export default initialState
+export default initialState;

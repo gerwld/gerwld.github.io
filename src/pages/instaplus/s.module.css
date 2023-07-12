@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+.landing_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.landing_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  max-width: 800px;
+  text-align: center;
+}
+
+.landing_title {
+  font-size: 4rem;
+  margin: 0.2em 0;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.landing_subtitle {
+  font-size: 1.4rem;
+  line-height: 180%;
+  margin: 0;
+}
+
+.logo {
+  order: -2;
+  width: 5rem;
+  margin: 0 0 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 7px 29px 0px;
+  border-radius: 9px;
+}
+
+.download_links {
+  display: flex;
+  max-width: 400px;
+  margin-top: 2rem;
+}
+
+.download_links a {
+  width: 22%;
+  height: 90%;
+  display: block;
+  flex: 1;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.download_links a.disabled {
+  filter: saturate(0);
+  cursor: default;
+}
+
+.download_links img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.version {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #343451;
+  text-align: center;
+
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .landing_title {
+    font-size: 2.8rem;
+    margin: 0.2em 0;
+    line-height: 120%;
+    font-weight: 600;
+  }
+
+  .landing_subtitle {
+    font-size: 1.2rem;
+    line-height: 180%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .landing_title {
+    font-size: 2rem;
+    margin: 0.2em 0;
+    line-height: 120%;
+    font-weight: 600;
+  }
+
+  .landing_subtitle {
+    font-size: 1rem;
+    line-height: 180%;
+    margin: 0;
+  }
+
+  .download_links {
+    max-width: 90%;
+  }
+
+  .logo {
+    width: 70px;
+  }
+}
