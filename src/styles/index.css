@@ -1,7 +1,10 @@
 :root {
+  /* font-family: 'Inter', sans-serif; */
+  /* font-family: 'Merriweather', serif; */
+  font-family: "Noto Sans", sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Noto Sans', sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Raleway', sans-serif;
+  /* font-family: "Raleway", sans-serif; */
 
   line-height: 1.5em;
   font-weight: 400;
@@ -18,12 +21,12 @@
   --main-bg-color: #1c1c2a;
   --sec-bg-color: #21212e;
   --main-text-color: #fff;
-  --border-color: #2a2c36;
+  --border-color: #5e6171;
 
   --basic-link-color: #74d1f3;
   --tone-1: rgba(255, 255, 255, 0.1);
   --tone-2: rgba(225, 238, 240, 0.2);
-  --tone-3: rgba(255, 255, 255, 0.3);
+  --tone-3: rgba(255, 255, 255, 0.14);
   --tone-4: rgba(255, 255, 255, 0.4);
   --tone-5: rgba(255, 255, 255, 0.5);
   --vp-header: 70px;
@@ -63,11 +66,15 @@ body {
   box-sizing: border-box;
 }
 
+h1, h2, h3,h4,h5,h6 {
+  font-family: 'Merriweather', serif;
+}
+
 h2 {
   display: block;
-  font-size: 1.4em;
+  font-size: 1.6em;
   margin: 1em 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h3 {
@@ -80,7 +87,7 @@ h3 {
 p {
   margin: 0.7em 0;
   line-height: 175%;
-  font-size: 0.96rem;
+  font-size: 0.94rem;
 }
 
 a {
@@ -117,13 +124,17 @@ button:focus {
 
 img,
 svg,
-a>* {
+a > * {
   pointer-events: none;
   user-select: none;
 }
 
-[aria-hidden="true"] { visibility: hidden; }
-svg[aria-hidden="true"] { visibility: visible; }
+[aria-hidden="true"] {
+  visibility: hidden;
+}
+svg[aria-hidden="true"] {
+  visibility: visible;
+}
 
 .app_content {
   padding: 0 40px;
@@ -133,7 +144,6 @@ svg[aria-hidden="true"] { visibility: visible; }
   max-width: 880px;
   margin: 0 auto;
 }
-
 
 .header {
   display: flex;
@@ -148,15 +158,14 @@ a.active_lang {
   color: var(--text-color-contrast);
 }
 
-
 .header__lang-btn {
   padding: 5px 10px;
   height: 40px;
-  font-size: 0.8rem;
+  min-width: 46px;
+  font-size: 0.88rem;
   font-weight: 500;
   text-transform: uppercase;
 }
-
 
 .header__lang-btn img {
   width: 18px;
@@ -165,31 +174,30 @@ a.active_lang {
 }
 
 .header__theme-btn {
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
   margin-right: 10px;
   padding: 0;
 }
 
 .header__theme-btn svg {
   display: block;
-  font-size: 19px;
-  width: 19px;
-  height: 19px;
-  line-height: 19px;
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
 }
-
 
 .header button {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  height: 36px;
+  height: 46px;
   border: none;
   border: 1px solid var(--tone-1);
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .header button:hover {
@@ -231,24 +239,29 @@ a.active_lang {
 }
 
 .hero_pfp img {
-  width: 92%;
-  height: 92%;
-  margin: 4%;
+  width: 93%;
+  height: 93%;
+  margin: 3,5%;
+  margin: 3.5%;
 }
 
-.hero_pfp,
+.hero_pfp {
+  border-radius: 50px;
+}
+
 .hero_pfp img {
-  border-radius: 50%;
+  border-radius: 45px;
 }
 
 .hero__title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  max-width: 12em;
   line-height: 150%;
   margin: 0 0 1rem;
 }
 
 .hero__desc {
-  font-size: 1rem;
+  font-size: 1.02rem;
   line-height: 160%;
   font-weight: 400;
   margin: 0 0 25px;
@@ -287,7 +300,6 @@ a.active_lang {
   height: 28px;
   margin: 4px auto;
   transform: translateX(-0.5px);
-
 }
 
 .hero_socials__links a {
@@ -296,6 +308,10 @@ a.active_lang {
 
 .projects {
   padding-top: 40px;
+}
+
+.projects_init {
+  padding-bottom: 20px;
 }
 
 .projects__item {
@@ -315,7 +331,7 @@ a.active_lang {
   opacity: 0.96;
   overflow: hidden;
   border: 1px solid var(--border-color);
-  border-radius: 3px;
+  border-radius: 14px;
   box-sizing: content-box;
 }
 
@@ -374,54 +390,32 @@ a.active_lang {
 }
 
 .skills__content {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .skills__item {
-  max-width: 103px;
-  position: relative;
-  width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: fit-content;
+  max-width: 150px;
   height: 100%;
-  margin: 0 auto;
+  min-height: 70px;
+  margin: 0 15px 15px 0;
   overflow: visible;
-  transition: transform 0.3s ease;
-}
 
-.skills__item_content {
-  padding-bottom: 100%;
-
-  background-color: var(--main-bg-color);
+  background-color: var(--tone-1);
   border: 1px solid var(--border-color);
   border-radius: 14px;
 
   box-sizing: border-box;
 
-
-  pointer-events: none;
   user-select: none;
-}
-
-
-.skills__item:hover {
-  transform: scale(1.1) !important;
-}
-
-
-/* .projects_init .skills__item {
-  animation: skill_appear_l3 0.3s ease-in-out both;
-}
-
-@keyframes skill_appear_l3 {
-  0% {
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+  padding: 0px 15px; 
 }
 
 .skills__item:nth-child(1) { animation-delay: 0.3s;}
@@ -444,22 +438,16 @@ a.active_lang {
 .skills__item:nth-child(18) { animation-delay: 2s;}
 .skills__item:nth-child(19) { animation-delay: 2.1s;}
 .skills__item:nth-child(20) { animation-delay: 2.2s;}
-.skills__item:nth-child(21) { animation-delay: 2.3s;} */
-
+.skills__item:nth-child(21) { animation-delay: 2.3s;}
 
 .skills__title {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   display: block;
-  position: absolute;
-  top: calc(50% + 15px);
-  left: 50%;
-  transform: translate(-50%, -50%);
   line-height: 1em;
-  font-size: 10px;
-  font-weight: 500;
-  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 10px 0 0;
   padding: 0;
-  opacity: 0;
   pointer-events: none;
   user-select: none;
 
@@ -468,21 +456,18 @@ a.active_lang {
 }
 
 .skills__icon {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
   width: 100%;
-  height: 44%;
-  max-height: 44px;
-  transform: translateY(-50%);
+  height: 38px;
+  padding: 0;
+  margin: 0;
 
   transition: top 0.17s ease-in-out;
   z-index: 10;
+  box-sizing: border-box;
 }
 
+
 .skills__item__bigger .skills__icon {
-  height: 58%;
   max-height: 54px;
 }
 
@@ -491,19 +476,6 @@ a.active_lang {
   width: auto;
   height: 100%;
   margin: 0 auto;
-}
-
-.skills__item:hover {
-  z-index: 40;
-}
-
-.skills__item:hover .skills__icon {
-  top: calc(50% - 10px);
-}
-
-.skills__item:hover .skills__title {
-  top: calc(50% + 20px);
-  opacity: 1;
 }
 
 .project__links span,

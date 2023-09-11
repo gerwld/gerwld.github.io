@@ -12,7 +12,20 @@ import "./styles/media.css";
 import "./styles/connect.css";
 
 import { Suspense, lazy } from "preact/compat";
-import { DeleteInsta, IndexInsta, WelcomeInsta } from "./pages";
+import {
+  DeleteInsta,
+  Deleteec,
+  Deletemt,
+  Deletespotify,
+  IndexInsta,
+  Indexec,
+  Indexmt,
+  Indexspotify,
+  WelcomeInsta,
+  Welcomeec,
+  Welcomemt,
+  Welcomespotify,
+} from "./pages";
 
 setThemeFromStorage();
 
@@ -22,9 +35,21 @@ render(
       <Router>
         <App path="/" />
 
-        <IndexInsta path="/extensions/instaplus" />
-        <WelcomeInsta path="/extensions/instaplus/welcome" />
-        <DeleteInsta path="/extensions/instaplus/feedback" />
+        <IndexInsta path="/extensions/ip" />
+        <WelcomeInsta path="/extensions/ip/welcome" />
+        <DeleteInsta path="/extensions/ip/uninstall" />
+
+        <Indexmt path="/extensions/mt" />
+        <Welcomemt path="/extensions/mt/welcome" />
+        <Deletemt path="/extensions/mt/uninstall" />
+
+        <Indexec path="/extensions/ec" />
+        <Welcomeec path="/extensions/ec/welcome" />
+        <Deleteec path="/extensions/ec/uninstall" />
+
+        <Indexspotify path="/extensions/spte" />
+        <Welcomespotify path="/extensions/spte/welcome" />
+        <Deletespotify path="/extensions/spte/uninstall" />
       </Router>
     </Provider>
   </Suspense>,

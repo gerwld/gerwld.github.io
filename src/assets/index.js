@@ -12,4 +12,4 @@ export { default as music_app_img__jpg } from "./jpg/music-app.jpg";
 export { default as nolk_template_img__jpg } from "./jpg/nolk-template.jpg";
 export { default as twitter_clone_img__jpg } from "./jpg/twitter-clone.jpg";
 export { default as anydo_clone_img__jpg } from "./jpg/anydo-tm.jpg";
-export { default as pfp_img__jpg } from "./jpg/pfp.jpg";
+export { default as pfp_img__jpg } from "./jpg/pfp.png";
