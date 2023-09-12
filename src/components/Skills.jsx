@@ -135,6 +135,27 @@ const Skills = ({ isInit }) => {
           </svg>
         </SkillsItem>
 
+        <SkillsItem title="Python">
+          <svg enable-background="new 0 0 74.1 75.3" version="1.1" viewBox="0 0 74.1 75.3" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg">
+            <linearGradient id="a" x1="-.1145" x2="38.53" y1="3.5792" y2="37.148" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#5C9FD3" offset="0" />
+              <stop stop-color="#316A99" offset="1" />
+            </linearGradient>
+            <path
+              d="m45.1 2.1c-2.9-0.5-6-0.7-8.9-0.7s-5.7 0.3-8.1 0.7c-7.1 1.3-8.5 3.9-8.5 8.8v6.5h17v2.2h-23.3c-4.9 0-9.3 3-10.6 8.6-1.6 6.5-1.6 10.5 0 17.3 1.2 5 4.1 8.6 9 8.6h5.8v-7.8c0-5.6 4.8-10.5 10.6-10.5h17c4.7 0 8.5-3.9 8.5-8.6v-16.3c0-4.6-3.9-8-8.5-8.8zm-18 11c-1.8 0-3.2-1.4-3.2-3.2s1.4-3.2 3.2-3.2 3.2 1.5 3.2 3.2c0 1.8-1.5 3.2-3.2 3.2z"
+              fill="url(#a)"
+            />
+            <linearGradient id="b" x1="54.427" x2="40.571" y1="58.981" y2="39.187" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFD53D" offset="0" />
+              <stop stop-color="#FEE875" offset="1" />
+            </linearGradient>
+            <path
+              d="m71.3 29.5c-1.2-4.9-3.5-8.6-8.5-8.6h-6.4v7.5c0 5.8-5 10.8-10.6 10.8h-17c-4.6 0-8.5 4-8.5 8.6v16.2c0 4.6 4 7.3 8.5 8.6 5.4 1.6 10.5 1.9 17 0 4.3-1.2 8.5-3.7 8.5-8.6v-6.5h-17v-2.2h25.5c4.9 0 6.8-3.4 8.5-8.6 1.8-5.3 1.7-10.4 0-17.2zm-24.4 32.3c1.8 0 3.2 1.4 3.2 3.2s-1.4 3.2-3.2 3.2-3.2-1.5-3.2-3.2 1.5-3.2 3.2-3.2z"
+              fill="url(#b)"
+            />
+          </svg>
+        </SkillsItem>
+
         <SkillsItem title="Photoshop">
           <svg enable-background="new 0 0 240 234" version="1.1" viewBox="0 0 240 234" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg">
             <path fill="#001E36" d="M42.5,0h155C221,0,240,19,240,42.5v149c0,23.5-19,42.5-42.5,42.5h-155C19,234,0,215,0,191.5v-149      C0,19,19,0,42.5,0z" />
