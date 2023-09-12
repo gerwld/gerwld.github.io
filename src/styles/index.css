@@ -88,7 +88,7 @@ h3 {
 
 p {
   margin: 0.7em 0;
-  line-height: 175%;
+  line-height: 160%;
   font-size: 0.94rem;
 }
 
@@ -373,7 +373,7 @@ a.active_lang {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   border-top: 1px solid var(--border-color);
 }
 
@@ -383,6 +383,7 @@ a.active_lang {
   line-height: 140%;
   font-size: 1.1rem;
   margin: 15px 0 0;
+  padding: 3px 7px;
 }
 
 .projects__seemore svg {
@@ -403,20 +404,19 @@ a.active_lang {
   flex-direction: row;
   align-items: center;
   min-width: fit-content;
-  max-width: 150px;
-  height: 100%;
-  min-height: 70px;
-  margin: 0 15px 15px 0;
+  justify-content: space-around;
+  max-width: 170px;
+  margin: 0 10px 10px 0;
   overflow: visible;
 
   background-color: var(--tone-1);
   border: 1px solid var(--border-color);
-  border-radius: 14px;
+  border-radius: 10px;
 
   box-sizing: border-box;
 
   user-select: none;
-  padding: 0px 15px; 
+  padding: 12px; 
 }
 
 .skills__item:nth-child(1) { animation-delay: 0.3s;}
@@ -445,7 +445,7 @@ a.active_lang {
   font-family: "Noto Sans", sans-serif;
   display: block;
   line-height: 1em;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   margin: 0 10px 0 0;
   padding: 0;
@@ -457,8 +457,7 @@ a.active_lang {
 }
 
 .skills__icon {
-  flex: 1;
-  width: 100%;
+  flex: 0 0 auto;
   height: 38px;
   padding: 0;
   margin: 0;
@@ -477,7 +476,7 @@ a.active_lang {
   display: block;
   width: auto;
   height: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .project__links span,
