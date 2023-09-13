@@ -13,23 +13,19 @@
  top: 100%;
  right: -2px;
  left: auto;
-
  min-width: 100%;
-
- border-radius: 3px;
- padding: 5px;
-
+ padding: 4px;
  margin-top: 5px;
- box-shadow: 6px 7px 10px 3px rgb(0 0 0 / 4%);
- border: 1px solid var(--light-border-color);
+ box-shadow: 5px 5px 9px 2px rgb(0, 0, 0, 0.1);
+ border: 1px solid var(--main-border-color);
 
  /*on hidden styles */
  transform: translate(30%, -30%) scale(0.4);
  opacity: 0;
  pointer-events: none;
  user-select: none;
-
- transition: 0.14s ease;
+ border-radius: 10px;
+ transition: 140ms ease;
 }
 
 .modal_visible {
@@ -67,7 +63,7 @@
  white-space: nowrap;
  color: var(--basic-link-color);
 
- border-radius: 2px;
+ border-radius: 5px;
  border: none;
  background-color: transparent;
  cursor: pointer;

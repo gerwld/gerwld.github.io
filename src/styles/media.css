@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
   h3 {
     display: block;
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
   .hero {
     display: flex;
@@ -13,7 +13,7 @@
   }
 
   .hero__desc {
-    line-height: 170%;
+    line-height: 165%;
   }
 
   .hero_l2 {
@@ -41,21 +41,24 @@
     left: 0;
     margin: 2px 0 0;
     display: block;
-    padding: 6px;
+    padding: 8px;
     font-size: 0.92rem;
     line-height: 100%;
 
     color: var(--main-text-color);
     border-radius: 5px;
-    border: 1px solid #e3e3e3;
-    background-color: var(--main-bg-color);
+    border: 1px solid var(--border-color);
+    background-color: var(--sec-bg-color);
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
+    transform: translateY(-10px);
+    transition: transform 120ms ease;
   }
 
   .hero_socials__links a:hover::before {
     opacity: 1;
+    transform: translateY(0);
   }
 
   .skills__title {
@@ -110,6 +113,14 @@
     border-radius: 14px;
     padding: 15px; 
     max-width: 150px;
+  }
+
+  .skills__content {
+    margin-right: 0;
+  }
+
+  .hero_block__1 {
+    padding-right: 30px;
   }
 
 }
@@ -168,7 +179,5 @@
   .skills__item {
     flex: 1 0 40%;
     padding: 10px;
-    max-width: 230px;
-    min-width: 150px;
   }
 }
