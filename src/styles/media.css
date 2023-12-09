@@ -3,6 +3,7 @@
     display: block;
     font-size: 1.25em;
   }
+
   .hero {
     display: flex;
     flex-direction: row;
@@ -70,8 +71,6 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: stretch;
-    margin-bottom: 46px;
-    
   }
 
   .projects__img {
@@ -111,7 +110,7 @@
     justify-content: space-around;
     margin: 0 15px 15px 0;
     border-radius: 14px;
-    padding: 15px; 
+    padding: 15px;
     max-width: 150px;
   }
 
@@ -120,7 +119,7 @@
   }
 
   .hero_block__1 {
-    padding-right: 30px;
+    padding-right: 40px;
   }
 
 }

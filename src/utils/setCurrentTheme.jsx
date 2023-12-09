@@ -1,5 +1,5 @@
 const setCurrentTheme = (theme) => {
-  const DARK_BG = "#1c1c2a";
+  const DARK_BG = "#18181b";
   const LIGHT_BG = "#f2f5fb";
   if (theme) {
     document.body.classList.toggle("lightModeOn", theme === "light");

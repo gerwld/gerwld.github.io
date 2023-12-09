@@ -164,7 +164,7 @@ const Hero = () => {
           <div class="reflection-grid-cell reflection-grid-cell-100"></div>
           <div class="reflection-content hero_pfp">
             <picture>
-              <source srcset={pfp_img} type="image/webp" />
+              {/* <source srcset={pfp_img} type="image/webp" /> */}
               <source srcset={pfp_img__jpg} type="image/jpeg" />
               <img class="img-fluid" src={pfp_img__jpg} alt="Profile Picture" />
             </picture>
