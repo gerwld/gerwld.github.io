@@ -10,16 +10,19 @@ const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url }
   return (
     <article className="projects__item">
       <div className="projects__group">
+        <p className="project__crdate">21.02.2022</p>
         <h3 className="projects__title">
           <a href={preview_url?.length ? preview_url : source_url} target="_blank" rel="noopener">
             {t(`projects.items.${id}.title`)}
           </a>
         </h3>
+
+
         <p className="project__desc">{t(`projects.items.${id}.desc`)}</p>
 
         <div className="project__links">
           {preview_url?.length ? (
-            <a href={preview_url} target="_blank" rel="noopener">
+            <a className="grho" href={preview_url} target="_blank" rel="noopener">
               <HiOutlineExternalLink />
               {t("projects.navigation.live")}
             </a>
@@ -28,7 +31,7 @@ const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url }
           )}
 
           {source_url?.length ? (
-            <a href={source_url} target="_blank" rel="noopener">
+            <a className="grho" href={source_url} target="_blank" rel="noopener">
               <AiOutlineGithub />
               {t("projects.navigation.source")}
             </a>
@@ -43,6 +46,11 @@ const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url }
           <source srcset={img__jpg} type="image/jpeg" />
           <img src={img__jpg} alt={title ? title : t(`projects.items.${id}.title`)} />
         </picture>
+        {(preview_url?.length || source_url?.length) ?
+          <a href={preview_url?.length ? preview_url : source_url} target="_blank">
+            <HiOutlineExternalLink />
+          </a>
+          : ""}
       </div>
     </article>
   );
