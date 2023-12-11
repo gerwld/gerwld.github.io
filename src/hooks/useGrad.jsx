@@ -2,29 +2,21 @@ import { useEffect } from "preact/hooks";
 
 export function useGrad() {
     useEffect(() => {
-        const grads = document.querySelectorAll(".grho");
-        function onMouseMove(event, item) {
-            // get cursor coordinates to container (the link itself).
-            const { x, y } = item.getBoundingClientRect();
+        const handleMouseMove = (event) => {
+            if (event.target.classList.contains("grho")) {
+                const { x, y } = event.target.getBoundingClientRect();
+                const relativeX = event.clientX - x;
+                const relativeY = event.clientY - y;
 
-            // get relative coordinates.
-            const relativeX = event.clientX - x;
-            const relativeY = event.clientY - y;
+                event.target.style.setProperty("--x-cursor-position", relativeX);
+                event.target.style.setProperty("--y-cursor-position", relativeY);
+            }
+        };
 
-            // apply coordinates values to CSS variables.
-            item.style.setProperty("--x-cursor-position", relativeX);
-            item.style.setProperty("--y-cursor-position", relativeY);
-        }
-
-        grads.forEach(item => {
-            item.addEventListener("mousemove", (e) => onMouseMove(e, item));
-        })
-
+        document.addEventListener("mousemove", handleMouseMove);
 
         return () => {
-            grads.forEach(item => {
-                item.removeEventListener("mousemove", (e) => onMouseMove(e, item));
-            })
-        }
-    }, [])
+            document.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, []);
 }

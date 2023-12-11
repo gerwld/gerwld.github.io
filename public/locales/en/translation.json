@@ -2,8 +2,8 @@
   "main": {
     "view-more": "View more on GitHub",
     "theme": {
-      "light": "Change theme to light",
-      "dark": "Change theme to dark"
+      "light": "Switch to Light Mode",
+      "dark": "Switch to Dark Mode"
     }
   },
   "hero": {
@@ -22,6 +22,34 @@
       "source": "View Source"
     },
     "items": {
+      "dbbetb-e46b8r8b54e3f": {
+        "title": "IGPlus Browser Extension",
+        "desc": "Responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+      },
+      "db64-be4dbf8r8b54e3f": {
+        "title": "GPT 3.5 / 4 Automatisation Tool | Python",
+        "desc": "Responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+      },
+      "db64-betnrwnrt45v4gn": {
+        "title": "Lichess Browser Extension",
+        "desc": "Responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+      },
+      "db64-be46bmyr8b54egf": {
+        "title": "ChessHelper for Chess.com",
+        "desc": "Responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+      },
+      "db64-be46b8rht53f": {
+        "title": "Parallax Gallery",
+        "desc": "Responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+      },
+      "db64-rt46b8r8b543f": {
+        "title": "SpoPlus Extension for Spotify",
+        "desc": "Responsive template. Uses svg animation and simple 3-steps form created on vanilla Js. Also contains beautiful CSS animations and transitions. Task-runner for minify files, etc - Gulp."
+      },
+      "db64-betnrgn-ntrt44v4gn": {
+        "title": "Chess in Browser | TypeScript",
+        "desc": "Monitoring for personal trainings. Contains 3 main resources - plans, day feel and trainings. Every section is customizable, and its possible to simply drag-n-drop some training from one day to another, or get a weekly statistics."
+      },
       "db64-be46b8r8b54e3f": {
         "title": "TrainingPeaks - Sport Monitoring",
         "desc": "Monitoring for personal trainings. Contains 3 main resources - plans, day feel and trainings. Every section is customizable, and its possible to simply drag-n-drop some training from one day to another, or get a weekly statistics."

@@ -3,20 +3,25 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import { useImgCache } from "../../hooks/useImgCache";
 import { useTranslation } from "react-i18next";
 
-const ProjectItem = ({ id, title, desc, img, img__jpg, source_url, preview_url }) => {
+const ProjectItem = ({ id, title, date, img, img__jpg, source_url, preview_url, stack }) => {
   const { t } = useTranslation();
   useImgCache([img]);
 
   return (
     <article className="projects__item">
       <div className="projects__group">
-        <p className="project__crdate">21.02.2022</p>
+        <p className="project__crdate"> {date ? date : "21.02.2022"}</p>
         <h3 className="projects__title">
           <a href={preview_url?.length ? preview_url : source_url} target="_blank" rel="noopener">
             {t(`projects.items.${id}.title`)}
           </a>
         </h3>
 
+        {stack?.length
+          ? <div className="projects__stack">
+            {stack.map(tech => <span aria-label={tech}>{tech}</span>)}
+          </div>
+          : ""}
 
         <p className="project__desc">{t(`projects.items.${id}.desc`)}</p>
 

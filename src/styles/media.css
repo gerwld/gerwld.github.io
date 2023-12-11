@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
   h3 {
     display: block;
-    font-size: 1.35em;
+    font-size: 1.45em;
   }
 
   .hero {
@@ -77,7 +77,7 @@
 
   .projects__img {
     max-width: 320px;
-    margin: -2px 10px;
+    margin: 10px 10px -2px;
     overflow: hidden;
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -91,6 +91,7 @@
   .projects__group {
     display: flex;
     flex-direction: column;
+    padding: 0 0.8rem;
   }
 
   .projects__title {
@@ -114,6 +115,10 @@
     border-radius: 14px;
     padding: 12.5px;
     max-width: 150px;
+  }
+
+  .skills__item__sm {
+    max-width: 136px;
   }
 
   .skills__content {

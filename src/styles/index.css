@@ -54,12 +54,14 @@
 }
 
 body.lightModeOn {
-  --main-bg-color: #f2f5fb;
+  --main-bg-color: #fcfeff;
   --sec-bg-color: #ffffff;
   --main-text-color: #18181b;
-  --border-color: #dde1f0;
-  --border-color-2: #dde1f0;
-  --basic-link-color: #0f89b1;
+  --border-color: #ecf1fe;
+  --border-color-2: #ecf1fe;
+  --basic-link-color: #8aabcc;
+  --basic-link-color: #4b5864;
+
   --tone-1: rgba(224, 229, 235, 0);
   --tone-1-5: rgba(158, 171, 191, 0.15);
   --tone-2: rgba(157, 198, 243, 0.2);
@@ -113,7 +115,8 @@ h2 {
 
 h3 {
   display: block;
-  font-size: 1.15em;
+  font-size: 1.35em;
+  line-height: 140%;
   margin: 0.5em 0;
   font-weight: bold;
 }
@@ -123,6 +126,10 @@ p {
   line-height: 165%;
   font-size: 0.96rem;
   color: var(--gray-300);
+}
+
+body.lightModeOn p {
+  color: rgb(82, 82, 91);
 }
 
 a {
@@ -140,6 +147,10 @@ a {
 
 a:hover {
   background-color: var(--tone-05);
+}
+
+.lightModeOn a:hover {
+  background-color: #eef5f8;
 }
 
 button {
@@ -255,7 +266,41 @@ a.active_lang {
   border-color: #707478;
 }
 
-.header button:hover {
+body.lightModeOn .header button {
+  background-color: var(--main-bg-color);
+  border-width: 1px;
+}
+
+body.lightModeOn .header button,
+body.lightModeOn .header path,
+body.lightModeOn .header circle,
+body.lightModeOn .header line {
+  stroke: #9dacbc;
+  color: #9dacbc;
+}
+
+body.lightModeOn .header button:hover,
+body.lightModeOn .header button:hover path,
+body.lightModeOn .header button:hover circle,
+body.lightModeOn .header button:hover line {
+  stroke: #000;
+  color: #000;
+  border-color: rgba(121, 125, 132, 0.2);
+}
+
+body.lightModeOn .hero_pfp,
+body.lightModeOn .skills__item {
+  color: #52525b;
+  /* border-color: #d8e2f1; */
+  border-width: 0px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(14 14 132 / 5%) 0px 0px 0px 1px, rgb(43 89 152 / 5%) 0px 10px 15px -3px, rgb(82 82 185 / 5%) 0px 4px 6px -4px;
+}
+
+body.lightModeOn .skills__item {
+  /* background-color: #fff; */
+}
+
+body.lightModeOn .header button:hover {
   background-color: var(--tone-1);
 }
 
@@ -263,6 +308,11 @@ a.active_lang {
   background-color: var(--sec-bg-color);
   border-radius: 10px;
   border: 0.9px solid var(--border-color);
+}
+
+body.lightModeOn .modal_l03 {
+  border: 1px solid var(--border-color);
+  box-shadow: 5px 5px 20px 5px rgba(248, 252, 255, 0.5);
 }
 
 .hero {
@@ -293,10 +343,6 @@ a.active_lang {
   padding-top: 1em;
 }
 
-body.lightModeOn .hero_pfp {
-  box-shadow: 0px 0px 0px 2px #d5e1e5;
-}
-
 .hero_pfp {
   width: 150px;
   height: 150px;
@@ -304,6 +350,10 @@ body.lightModeOn .hero_pfp {
   user-select: none;
   pointer-events: none;
   box-shadow: var(--box-shadow);
+}
+
+.lightModeOn .hero_pfp {
+  background-color: transparent;
 }
 
 .hero_pfp img {
@@ -394,6 +444,10 @@ body.lightModeOn .hero_pfp {
   border-bottom: 0.9px solid var(--border-color);
 }
 
+body.lightModeOn .projects__item {
+  border-bottom: 2px solid rgb(239, 243, 250);
+}
+
 .projects__item:nth-child(1) {
   margin-top: 2rem;
 }
@@ -403,6 +457,7 @@ body.lightModeOn .hero_pfp {
 }
 
 .projects__img {
+  position: relative;
   flex: 1;
   width: 100%;
   max-width: 100%;
@@ -415,6 +470,10 @@ body.lightModeOn .hero_pfp {
   border-radius: 21px;
   box-sizing: content-box;
   filter: brightness(0.95);
+}
+
+.lightModeOn .projects__img {
+  filter: none;
 }
 
 .projects__img a {
@@ -444,13 +503,17 @@ body.lightModeOn .hero_pfp {
   margin: 0;
 }
 
+
 .projects__img:hover a {
   backdrop-filter: blur(5px);
   opacity: 1;
+  background: transparent;
 }
 
 body.lightModeOn .projects__img {
-  border: 0.9px solid #d2dfeb;
+  border: 1px solid #fff;
+  box-shadow: rgba(83, 106, 166, 0.2) 0px 13px 27px -5px, rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+  box-shadow: rgba(121, 152, 197, 0.12) 0px 1px 3px, rgba(75, 93, 129, 0.24) 0px 1px 2px;
 }
 
 .projects__img img {
@@ -479,6 +542,10 @@ body.lightModeOn .projects__img {
   text-underline-offset: 0.3em;
   text-decoration-thickness: 2px;
   text-decoration-color: var(--border-color);
+}
+
+body.lightModeOn .projects__title a:hover {
+  text-decoration-color: var(--gray-400);
 }
 
 .section__title {
@@ -563,6 +630,22 @@ body.lightModeOn .projects__img {
   }
 }
 
+@keyframes appear-3 {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.projects__item {
+  animation: appear-3 240ms linear;
+}
+
 .skills__item {
   flex: 1 0 auto;
   display: flex;
@@ -584,10 +667,6 @@ body.lightModeOn .projects__img {
   animation: appear-1 400ms ease both;
 }
 
-
-body.lightModeOn .skills__item {
-  border-color: #c7cde3;
-}
 
 .skills__item:nth-child(1) {
   animation-delay: 0.3s;
@@ -772,6 +851,10 @@ body.lightModeOn .skills__item {
   max-height: 54px;
 }
 
+.skills__item__sm {
+  max-width: 120px;
+}
+
 .skills__icon svg {
   display: block;
   width: auto;
@@ -822,9 +905,14 @@ body.lightModeOn .skills__item {
   font-size: 0.86em;
 }
 
+body.lightModeOn .project__crdate {
+  border-left: 2px solid rgb(221, 225, 232);
+  color: #afbbc6;
+
+}
+
 .projects__group {
   max-width: 470px;
-  padding: 0 0.8rem;
 }
 
 /* fancy hover */
@@ -832,6 +920,10 @@ body.lightModeOn .skills__item {
 .grho {
   position: relative;
   overflow: hidden;
+}
+
+.grho>* {
+  pointer-events: none;
 }
 
 .grho::after {
@@ -853,7 +945,42 @@ body.lightModeOn .skills__item {
 .grho__medium::after {
   --gradient-size: 200px;
   transition: opacity 400ms;
-  background: radial-gradient(rgba(163, 255, 220, 0.3), rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(rgba(19, 209, 136, 0.3), rgba(0, 0, 0, 0) 70%);
+}
+
+
+body.lightModeOn .grho__medium::after,
+body.lightModeOn .grho::after {
+  transition: opacity 800ms;
+  background: radial-gradient(rgba(251, 255, 177, 0.2), rgba(71, 212, 194, 0.1), transparent, transparent);
+}
+
+body.lightModeOn .grho::after {
+  --gradient-size: 200px;
+}
+
+body.lightModeOn .grho__medium::after {
+  --gradient-size: 400px;
+  background: radial-gradient(rgba(251, 255, 177, 0.5), rgba(71, 212, 194, 0.2), transparent, transparent);
+}
+
+body.lightModeOn .grho:hover::after {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.grho__pfp::after {
+  display: none;
+  content: none;
+}
+
+.grho__pfp {
+  overflow: visible;
+}
+
+.grho__pfp .hero__pfp {
+  overflow: hidden;
+  position: relative;
 }
 
 .grho:hover::after {
@@ -863,4 +990,40 @@ body.lightModeOn .skills__item {
 
 .grho__medium:hover::after {
   transition: opacity 200ms;
+}
+
+.projects__stack {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0.46rem 0 -0.2em;
+  cursor: default;
+}
+
+.projects__stack span {
+  display: block;
+  padding: 0.3rem 0.6em;
+  margin: 0 0.3em 0.3em 0;
+
+
+  line-height: 0.74rem;
+  font-size: 0.74rem;
+  height: 1.3rem;
+  color: var(--main-bg-color);
+  background-color: var(--basic-link-color);
+  border-radius: 50px;
+  opacity: 0.5;
+  transition: opacity 100ms ease;
+}
+
+.lightModeOn .projects__stack span {
+  opacity: 0.7;
+}
+
+.projects__stack span:hover {
+  opacity: 1;
+}
+
+.projects__stack span:nth-last-child(1) {
+  margin: 0;
 }

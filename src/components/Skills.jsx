@@ -140,7 +140,7 @@ const Skills = ({ isInit }) => {
           </svg>
         </SkillsItem>
 
-        <SkillsItem title="Git">
+        <SkillsItem title="Git" small>
           <svg version="1.1" viewBox="0 0 97 97" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <style type="text/css">{`.st0{fill:#F05133;}`}</style>
             <path
@@ -149,6 +149,9 @@ const Skills = ({ isInit }) => {
             />
           </svg>
         </SkillsItem>
+
+
+
 
         <SkillsItem title="Python">
           <svg enable-background="new 0 0 74.1 75.3" version="1.1" viewBox="0 0 74.1 75.3" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg">

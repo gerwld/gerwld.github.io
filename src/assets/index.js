@@ -13,3 +13,12 @@ export { default as nolk_template_img__jpg } from "./jpg/nolk-template.jpg";
 export { default as twitter_clone_img__jpg } from "./jpg/twitter-clone.jpg";
 export { default as anydo_clone_img__jpg } from "./jpg/anydo-tm.jpg";
 export { default as pfp_img__jpg } from "./jpg/pfp.png";
+
+export { default as igplus__jpg } from "./jpg/igplus.jpg";
+export { default as gpt__jpg } from "./jpg/gpt.jpg";
+export { default as gallery__jpg } from "./jpg/gallery.jpg";
+export { default as chesspro__jpg } from "./jpg/chesspro.jpg";
+export { default as lichesspro__jpg } from "./jpg/lichesspro.jpg";
+export { default as spoplus__jpg } from "./jpg/spoplus2.jpg";
+export { default as chessgame__jpg } from "./jpg/chessgame.jpg";
+

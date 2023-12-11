@@ -1,53 +1,53 @@
 .reflection-container {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    transform-style: preserve-3d;
-    perspective: 1000px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 
-    .reflection-content {
-        background-size: cover;
-        background-position: center;
-        transform: rotateX(0) rotateY(0);
-        pointer-events: none;
-        transition: 100ms linear transform, 100ms ease box-shadow;
-        overflow: hidden;
-        overflow: hidden;
-    }
+  .reflection-content {
+    background-size: cover;
+    background-position: center;
+    transform: rotateX(0) rotateY(0);
+    pointer-events: none;
+    transition: 100ms linear transform, 100ms ease box-shadow;
+    overflow: hidden;
+    overflow: hidden;
+  }
 
-    .reflection-grid-cell {
-        position: absolute;
-        z-index: 1;
-        width: 10%;
-        height: 10%;
-    }
+  .rf-gridc {
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    height: 10%;
+  }
 
-    img {
-        width: 100%;
-        height: 100%;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+  }
 
-    @for $r from 1 to 11 {
-        @for $c from 1 to 11 {
-            .reflection-grid-cell-#{( ($r*10) + $c - 10)} {
-                top: ($r*10%)-10%;
-                left: ($c*10%)-10%;
-            }
+  @for $r from 1 to 11 {
+    @for $c from 1 to 11 {
+      .rf-gridc-#{( ($r*10) + $c - 10)} {
+        top: ($r*10%)-10%;
+        left: ($c*10%)-10%;
+      }
 
-            .reflection-grid-cell-#{( ($r*10) + $c - 10)}:hover~.reflection-content {
-                transform: rotateX((($r*-5)+25deg)) rotateY((-25deg+($c*5)));
+      .rf-gridc-#{( ($r*10) + $c - 10)}:hover~.reflection-content {
+        transform: rotateX((($r*-5)+25deg)) rotateY((-25deg+($c*5)));
 
-                &:before {
-                    transform: translateY(25-(5%*$r));
-                }
-            }
+        &:before {
+          transform: translateY(25-(5%*$r));
         }
+      }
     }
+  }
 }
 
 
-$animation-delay: 0.1s; 
-$animation-duration: 0.2s; 
+$animation-delay: 0.1s;
+$animation-duration: 0.2s;
 
 .typewriter {
   display: inline-block;
@@ -68,10 +68,11 @@ $animation-duration: 0.2s;
 }
 
 @keyframes fadeIn {
-from {
+  from {
     opacity: 0;
-    transform: translateY(1em);  
-}
+    transform: translateY(1em);
+  }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -81,7 +82,7 @@ from {
 
 
 @media only screen and (max-width: 768px) {
-    .reflection-container {
-        pointer-events: none;
-    }
+  .reflection-container {
+    pointer-events: none;
+  }
 }
