@@ -1,22 +1,68 @@
-// service-worker.js
+// Import the workbox-build library
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/7.0.0/workbox-sw.js');
 
 const CACHE_NAME = 'preact-cache-v1';
+const MAX_AGE_SECONDS = 28 * 24 * 60 * 60; // 28 days in seconds
 
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll([
-        '/assets/'
-      ]);
-    })
-  );
+// Set up workbox options
+workbox.setConfig({
+  debug: false, // Set to true for debugging
 });
 
-self.addEventListener('fetch', event => {
+// Use workbox to generate a list of files matching the glob pattern
+workbox.precaching.precacheAndRoute([
+  {
+    url: '/assets/',
+    revision: null,
+  },
+  // Add other specific URLs here if needed
+]);
+
+// Cache expiration strategy for images, CSS, HTML, JS, and fonts
+workbox.routing.registerRoute(
+  /\.(?:png|gif|jpg|jpeg|svg)$/,
+  new workbox.strategies.CacheFirst({
+    cacheName: 'images-cache',
+    plugins: [
+      new workbox.expiration.ExpirationPlugin({
+        maxAgeSeconds: MAX_AGE_SECONDS,
+        purgeOnQuotaError: true,
+      }),
+    ],
+  })
+);
+
+workbox.routing.registerRoute(
+  /\.(?:css|html|js)$/,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: 'static-resources',
+    plugins: [
+      new workbox.expiration.ExpirationPlugin({
+        maxAgeSeconds: MAX_AGE_SECONDS,
+        purgeOnQuotaError: true,
+      }),
+    ],
+  })
+);
+
+workbox.routing.registerRoute(
+  /\.(?:woff2|woff|ttf|otf)$/,
+  new workbox.strategies.CacheFirst({
+    cacheName: 'fonts-cache',
+    plugins: [
+      new workbox.expiration.ExpirationPlugin({
+        maxAgeSeconds: MAX_AGE_SECONDS,
+        purgeOnQuotaError: true,
+      }),
+    ],
+  })
+);
+
+self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request).then(fetchResponse => {
-        return caches.open(CACHE_NAME).then(cache => {
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request).then((fetchResponse) => {
+        return caches.open(CACHE_NAME).then((cache) => {
           cache.put(event.request, fetchResponse.clone());
           return fetchResponse;
         });
