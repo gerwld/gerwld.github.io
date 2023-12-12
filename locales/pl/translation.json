@@ -1,0 +1,86 @@
+{
+  "main": {
+    "view-more": "Zobacz więcej na GitHubie",
+    "theme": {
+      "light": "Tryb jasny",
+      "dark": "Tryb ciemny"
+    }
+  },
+  "notifications": {
+    "email-copied": "Skopiowano do schowka",
+    "email-client": "Otwieranie poczty",
+    "email-ns": "Ta przeglądarka jeszcze tego nie obsługuje."
+  },
+  "hero": {
+    "title": "Frontend Developer, web entuzjasta.",
+    "desc": "Jestem Patryk, Frontend Developer z Warszawy, specjalizujący się w tworzeniu aplikacji PWA, optymalizacjach kodu po stronie klienta, wsparciu oraz udoskonaleniach projektów, itp. Lubię tworzyć projekty, które pomagają innym osiągnąć własne cele.",
+    "email-lable": "Email kontaktowy",
+    "email-client": "Otwórz w kliencie pocztowym",
+    "email-copy": "Skopiuj do schowka",
+    "subtitle": "Śledź mnie"
+  },
+  "skills": {
+    "title": "Umiejętności"
+  },
+  "projects": {
+    "title": "Ostatnie Projekty",
+    "navigation": {
+      "live": "Podgląd na żywo",
+      "source": "Zobacz źródło"
+    },
+    "items": {
+      "dbbetb-e46b8r8b54e3f": {
+        "title": "IGPlus Browser Extension",
+        "desc": "Rozszerzenie do Instagrama, które pozwala użytkownikom wyłączać Reels, Stories, rekomendacje, wskaźniki próżności i dostosowywać motyw, czcionki itp. Obecnie ma ~500 aktywnych użytkowników na wszystkich platformach. Dostępne dla Google Chrome, Firefox i MS Edge."
+      },
+      "db64-be4dbf8r8b54e3f": {
+        "title": "Narzędzie automatyzacji GPT 3.5 / 4",
+        "desc": "Narzędzie CLI z pipelajnami do automatycznego generowania postów przy użyciu OpenAI GPT 3.5 / 4. Posiada takie funkcje jak łączenie fragmentów postów, walidacje postów, QuillBot Paraphraser dla wszystkich / losowych ciągów (aby uniknąć plagiatu i wykrycia AI), wyszukiwanie obrazów do postu za pomocą API Unsplash (+wielokonto dla API) i wiele innych."
+      },
+      "db64-betnrwnrt45v4gn": {
+        "title": "Rozszerzenie przeglądarki Lichess",
+        "desc": "Rozszerzenie dla Lichess. Dodaje nowe motywy, figury, plansze, czcionki i funkcje, takie jak wyłączanie irytujących popupów, modern mode, koordynaty na każdym polu i wiele innych. Dostępne dla Google Chrome, Firefox i MS Edge."
+      },
+      "db64-be46bmyr8b54egf": {
+        "title": "ChessHelper dla Chess.com",
+        "desc": "Podobny projekt do LichessHelper. Zawiera prawie te same funkcje, ale dla Chess.com. Obecnie ma ~350 aktywnych użytkowników na wszystkich platformach. Większość figur i plansz została również stworzona przeze mnie, ale niektóre pochodzą z internetu z licencją GNU / CC0. Dostępne dla Google Chrome, Firefox, Opery i MS Edge."
+      },
+      "db64-be46b8rht53f": {
+        "title": "Galeria Parallax",
+        "desc": "Projekt galerii z płynnym efektem parallax. Lekki i wydajny, składający się z zaledwie ~100 linii kodu."
+      },
+      "db64-rt46b8r8b543f": {
+        "title": "SpoPlus dla Spotify",
+        "desc": "Rozszerzenie umożliwiające dostosowanie i personalizację wersji webowej Spotify. Ustawiaj nowe motywy, czcionki, usuwaj irytujące powiadomienia, wyskakujące okienka i inne. ~600 aktywnych użytkowników na wszystkich platformach. Dostępne dla Google Chrome, Firefox i MS Edge."
+      },
+      "db64-betnrgn-ntrt44v4gn": {
+        "title": "Szachy w przeglądarce | TypeScript",
+        "desc": "Gra w szachy w przeglądarce. OOP, TypeScript, z wersja mobilna. Obecnie zaimplementowane funkcje obejmują zbicie figur, główne zasady poruszania się figur oraz en passant. W trakcie prac są roszady krótkie i długie, szachy, mata, pojedyncza przestrzeń króla i wiele więcej."
+      },
+      "db64-be46b8r8b54e3f": {
+        "title": "TrainingPeaks - Monitorowanie Sportowe",
+        "desc": "Monitoring treningów osobistych z trzema głównymi zasobami: planami, codziennym samopoczuciem i treningami. Każda sekcja jest konfigurowalna, pozwalajac użytkownikom łatwy drag-n-drop sesji treningowych z jednego dnia na drugi. Dodatkowo jest możliwość przeglądu statystyk tygodniowych."
+      },
+      "dbf0-beqr56b8r8brbe5l": {
+        "title": "OnlineStats.info - Usługa Monitorowania",
+        "desc": "Startup do monitorowania własnego statusu online lub statusu dzieci w aplikacji Telegram Messenger. Wykorzystuje Auth JWT, wykresy bizcharts, formularze final-form. Posiada także lokalizacje i18n i motyw ciemny."
+      },
+      "dbf0-beqr0b890eq9r8b98": {
+        "title": "Projekt Aplikacji Muzycznej",
+        "desc": "Odtwarzacz muzyczny ReactJS & Redux. Zawiera użyteczną wersję mobilną, pamięć localStorage. Działa z interfejsem AudioSession Api, dzięki czemu funkcje przeglądarki (takie jak przyciski skrótu Następny/Poprzedni, podgląd albumu) działają poprawnie."
+      },
+      "fbd07wavab0987erab709adb": {
+        "title": "Aplikacja Lista Zadań",
+        "desc": "Aplikacja do tworzenia listy zadań w stylu Anydo z pełną funkcjonalnością, obejmującą wszystkie operacje CRUD (Dodaj, Aktualizuj, Odczytaj lub Usuń dowolne zadanie), sortowanie według tagów i uwierzytelnianie JWT. Zawiera także wersję mobilną z widokiem na Safari i inne udoskonalenia."
+      },
+      "fadb0978a8f90b7986da0968": {
+        "title": "Klon Twittera",
+        "desc": "Wykorzystuje walidację final-form do obsługi formularzy, umożliwia publikowanie tweetów, posiada routing dla gości oraz zalogowanych użytkowników, i fetch tweetów."
+      },
+      "0879fbd9078adfb0a7dfb908": {
+        "title": "Szablon Nolk",
+        "desc": "Responsywny szablon z wielu animacji SVG i prostym 3-step formularzem email. Zbudowany na vanilla JavaScript, narzędzie do minimalizacji plików - Gulp."
+      }
+    }
+  }
+}
