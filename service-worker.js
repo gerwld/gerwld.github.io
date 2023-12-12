@@ -1,14 +1,12 @@
 // service-worker.js
 
 const CACHE_NAME = 'preact-cache-v1';
-const ASSETS_DIRECTORY = '/assets/';
 
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       return cache.addAll([
-        '/', // Add the root URL if necessary
-        ASSETS_DIRECTORY,
+        '/assets/'
       ]);
     })
   );
