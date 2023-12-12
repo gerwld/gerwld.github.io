@@ -1,11 +1,11 @@
-.reflection-container {
+.rfc {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   transform-style: preserve-3d;
   perspective: 1000px;
 
-  .reflection-content {
+  .rfcc {
     background-size: cover;
     background-position: center;
     transform: rotateX(0) rotateY(0);
@@ -15,7 +15,7 @@
     overflow: hidden;
   }
 
-  .rf-gridc {
+  .rfcg {
     position: absolute;
     z-index: 1;
     width: 10%;
@@ -29,12 +29,12 @@
 
   @for $r from 1 to 11 {
     @for $c from 1 to 11 {
-      .rf-gridc-#{( ($r*10) + $c - 10)} {
+      .rfcg-#{( ($r*10) + $c - 10)} {
         top: ($r*10%)-10%;
         left: ($c*10%)-10%;
       }
 
-      .rf-gridc-#{( ($r*10) + $c - 10)}:hover~.reflection-content {
+      .rfcg-#{( ($r*10) + $c - 10)}:hover~.rfcc {
         transform: rotateX((($r*-5)+25deg)) rotateY((-25deg+($c*5)));
 
         &:before {
@@ -82,11 +82,11 @@ $animation-duration: 0.2s;
 
 
 @media only screen and (max-width: 768px) {
-  .reflection-container {
+  .rfc {
     pointer-events: none;
   }
 
-  .rf-gridc {
+  .rfcg {
     display: none;
   }
 }

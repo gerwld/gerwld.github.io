@@ -52,7 +52,7 @@ const ProjectItem = ({ id, title, date, img, img__jpg, source_url, preview_url, 
           <img src={img__jpg} alt={title ? title : t(`projects.items.${id}.title`)} />
         </picture>
         {(preview_url?.length || source_url?.length) ?
-          <a href={preview_url?.length ? preview_url : source_url} target="_blank">
+          <a href={preview_url?.length ? preview_url : source_url} target="_blank" aria-label={t(`projects.items.${id}.title`)}>
             <HiOutlineExternalLink />
           </a>
           : ""}
