@@ -12,7 +12,7 @@ workbox.setConfig({
 // Use workbox to generate a list of files matching the glob pattern
 workbox.precaching.precacheAndRoute([
   {
-    url: '/assets/',
+    url: '/assets/*',
     revision: null,
   },
   // Add other specific URLs here if needed
@@ -47,7 +47,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
   /\.(?:woff2|woff|ttf|otf)$/,
-  new workbox.strategies.CacheFirst({
+  new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'fonts-cache',
     plugins: [
       new workbox.expiration.ExpirationPlugin({
