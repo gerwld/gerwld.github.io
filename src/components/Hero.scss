@@ -10,7 +10,7 @@
     background-position: center;
     transform: rotateX(0) rotateY(0);
     pointer-events: none;
-    transition: 100ms linear transform, 100ms ease box-shadow;
+    transition: 100ms linear transform, 0ms ease box-shadow;
     overflow: hidden;
     overflow: hidden;
   }
@@ -84,5 +84,9 @@ $animation-duration: 0.2s;
 @media only screen and (max-width: 768px) {
   .reflection-container {
     pointer-events: none;
+  }
+
+  .rf-gridc {
+    display: none;
   }
 }

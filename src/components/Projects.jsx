@@ -12,7 +12,7 @@ const Projects = ({ latestPosts }) => {
         isInit: true,
         page: 1,
         totalPages: Math.ceil(latestPosts.length / PORTION),
-        delay: 240,
+        delay: 260,
     });
 
     useEffect(() => {

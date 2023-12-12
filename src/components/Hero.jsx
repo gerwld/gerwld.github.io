@@ -3,13 +3,49 @@ import { useTranslation } from "react-i18next";
 import { AiOutlineGithub, AiFillLinkedin, AiOutlineTwitter, AiOutlineBehance, AiOutlineInstagram, AiOutlineCodepen } from "react-icons/ai";
 import { IoMailOutline } from "react-icons/io5";
 import "./Hero.scss";
-import { useEffect, useState } from "preact/hooks";
+import { toast, Toaster } from "./rht.mjs";
+import { useRef, useState } from "preact/hooks";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const [isError, setError] = useState(false);
+
+  function copyToClipboard(text) {
+    var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    dummy.setAttribute('value', text);
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+  }
+
+  const copyEmail = () => {
+    const cp = 'pjaworski.dev@gmail.com'
+    if (!isError) {
+      if (!navigator.clipboard) {
+        copyToClipboard(cp)
+        toast.success(t("notifications.email-copied"), { duration: 2000 })
+      } else {
+        navigator.clipboard.writeText(cp).then(
+          () => {
+            toast.success(t("notifications.email-copied"), { duration: 2000 })
+          })
+          .catch(
+            () => {
+              toast.error(t("notifications.email-ns"), { duration: 2000 })
+              setError(true)
+            })
+      }
+    }
+  }
+
+  const openEmail = () => {
+    toast.loading(t("notifications.email-client"), { duration: 2000 })
+  }
 
   return (
     <section className="hero content_wrapper">
+      <Toaster />
       <div className="hero_l1">
         <div className="hero_block hero_block__1">
           <h1 className="hero__title">{t("hero.title")}</h1>
@@ -53,10 +89,18 @@ const Hero = () => {
               <AiOutlineCodepen />
               Codepen
             </a>
-            <a href="mailto:pjaworski.dev@gmail.com" data-title={t("hero.email-lable")}>
-              <IoMailOutline />
-              Email
-            </a>
+            <div className="hero_socials__email">
+              <button className="hero_socials__embtn" data-title={t("hero.email-lable")}>
+                <IoMailOutline />
+                Email</button>
+              <div className="hero_socials__dropdown">
+                <a onClick={openEmail} href="mailto:pjaworski.dev@gmail.com" className="grho grho__sml">
+                  {t("hero.email-client")}
+                </a>
+                <button onClick={copyEmail} className={isError ? "textlnk" : "grho grho__sml"}  >{isError ? "pjaworski.dev@gmail.com" : t("hero.email-copy")
+                }</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -164,13 +208,14 @@ const Hero = () => {
           <div className="rf-gridc rf-gridc-100"></div>
           <div className="reflection-content hero_pfp">
             <picture>
-              {/* <source srcset={pfp_img} type="image/webp" /> */}
+              <source srcset={pfp_img} type="image/webp" />
               <source srcset={pfp_img__jpg} type="image/jpeg" />
               <img className="img-fluid" src={pfp_img__jpg} alt="Profile Picture" />
             </picture>
           </div>
         </div>
       </div>
+
     </section>
   );
 };

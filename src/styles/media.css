@@ -24,7 +24,7 @@
 
   .hero_l1 {
     text-align: left;
-    max-width: 600px;
+    max-width: 580px;
   }
 
   .hero_pfp {
@@ -32,11 +32,23 @@
     height: 240px;
   }
 
+  .hero_pfp {
+    border-radius: 50px;
+  }
+
+  .hero_pfp img {
+    border-radius: 43px;
+    width: 93%;
+    height: 93%;
+    margin: 3.5%;
+  }
+
   .hero__title {
     font-size: 1.86rem;
   }
 
-  .hero_socials__links a::before {
+
+  .hero_socials__links>a::before {
     content: attr(data-title);
     position: absolute;
     top: 100%;
@@ -58,7 +70,9 @@
     transition: transform 120ms ease;
   }
 
-  .hero_socials__links a:hover::before {
+
+  .hero_socials__links>button,
+  .hero_socials__links>a:hover::before {
     opacity: 1;
     transform: translateY(0);
   }
@@ -77,7 +91,7 @@
 
   .projects__img {
     max-width: 320px;
-    margin: 10px 10px -2px;
+    margin: 0px 10px -2px;
     overflow: hidden;
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -140,8 +154,19 @@
     justify-content: center;
   }
 
-  .skills__item {
-    padding: 11px;
+  body .skills__item {
+    padding: 10px 9px;
+    margin: 0 8px 9px 0;
+    max-width: 136px;
+    flex: 1;
+  }
+
+  .skills__title {
+    font-size: 0.9rem;
+  }
+
+  .skills__icon {
+    height: 34px;
   }
 }
 
@@ -149,6 +174,63 @@
   .hero__title {
     margin: 0 0 1rem;
     max-width: unset;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  body .hero_socials__dropdown {
+    bottom: 100%;
+    right: 0;
+    left: unset;
+    top: unset;
+    max-width: 300px;
+    min-width: 200px;
+  }
+
+  .hero_socials__dropdown a,
+  .hero_socials__dropdown button {
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+  body .hero_socials__dropdown {
+    position: fixed;
+    left: calc(50% - min(47vw, 150px));
+    top: calc(50% - 50px);
+    bottom: unset;
+    right: unset;
+    width: 94vw;
+    max-width: 300px;
+    z-index: 100;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(14 14 132 / 5%) 0px 0px 0px 1px, rgb(43 89 152 / 5%) 0px 10px 15px -3px, rgb(82 82 185 / 5%) 0px 4px 6px -4px;
+  }
+
+  .hero_socials__dropdown a,
+  .hero_socials__dropdown button {
+    height: 45px;
+    line-height: 45px;
+    font-size: 0.9rem;
+  }
+
+  .hero_socials__dropdown>*,
+  .hero_socials__dropdown {
+    transition: 120ms ease 20ms;
+  }
+
+
+  body .hero_socials__embtn:focus+.hero_socials__dropdown>*,
+  body .hero_socials__embtn:focus+.hero_socials__dropdown>*,
+  body .hero_socials__embtn:focus+.hero_socials__dropdown {
+    opacity: 1;
+    pointer-events: all !important;
+    user-select: auto !important;
+    z-index: 10;
+    transform: translateY(0px);
+    transition: transform 120ms ease;
   }
 }
 
@@ -167,8 +249,8 @@
   }
 
   .hero_pfp {
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
   }
 
   .hero__desc {
@@ -192,5 +274,14 @@
   .skills__item {
     flex: 1 0 40%;
     padding: 10px;
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  .hero_socials__dropdown {
+    bottom: 100%;
+    top: unset;
+    right: 0;
+    left: unset;
   }
 }
