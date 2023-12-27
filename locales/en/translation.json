@@ -34,7 +34,7 @@
         "desc": "An Instagram extension that allows users to disable Reels, Stories, recommendations, vanity metrics, and customize themes, fonts, and more. Currently, it has ~500 active users across all platforms. Available for Google Chrome, Firefox, and MS Edge."
       },
       "db64-be4dbf8r8b54e3f": {
-        "title": "GPT 3.5 / 4 Automatisation Tool",
+        "title": "GPT 3.5 / 4 Automatization Tool",
         "desc": "A CLI tool with multiple pipelines for automated posts generation using OpenAI GPT 3.5 / 4. Has such features, as combining post chunks, post validations, QuillBot Paraphraser for all / random strings (to avoid plagiarism and AI detection), Unsplash API relative image search (+multiaccount for API), and more."
       },
       "db64-betnrwnrt45v4gn": {
