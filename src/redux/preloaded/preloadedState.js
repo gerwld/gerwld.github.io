@@ -98,7 +98,7 @@ const initialState = {
         img__jpg: spoplus__jpg,
         stack: ['Chrome', "MS Egde", "Firefox", "Opera"],
         source_url: "https://github.com/gerwld/spoplus-extension/",
-        preview_url: "https://chromewebstore.google.com/detail/spoplus-edit-spotify-them/ijkboaojikgaanlgigobkmbpnjgjljnc/",
+        preview_url: "https://chrome.google.com/webstore/detail/spoplus-edit-spotify-them/ijkboaojikgaanlgigobkmbpnjgjljnc",
       },
 
 

@@ -597,11 +597,13 @@ body.lightModeOn .projects__item {
 }
 
 .projects__img {
+  display: block;
   position: relative;
   flex: 1;
   width: 100%;
   max-width: 100%;
   max-height: 490px;
+  min-width: 220px;
   margin: -2px -2px 20px;
 
   opacity: 0.96;
