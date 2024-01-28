@@ -13,11 +13,11 @@ const ModalSetLang = ({ hocLang, hocIsCurrent, isShow, toggleShow, refElement })
                         <div className={`${s.modal_window} ${isShow ? s.modal_visible : ""} modal_l03`} aria-hidden={!isShow}>
                                 <ul>
                                         <li><Link href="/?setLn=en" className={hocIsCurrent("en") + " grho grho__sml"}>English</Link></li>
-                                        <li><Link href="/?setLn=uk" className={hocIsCurrent("uk") + " grho grho__sml"}>Українська</Link></li>
-                                        <li><Link href="/?setLn=be" className={hocIsCurrent("be") + " grho grho__sml"}>Беларуская</Link></li>
-                                        <li><Link href="/?setLn=pl" className={hocIsCurrent("pl") + " grho grho__sml"}>Polski</Link></li>
-                                        <li><Link href="/?setLn=ka" className={hocIsCurrent("ka") + " grho grho__sml"}>ქართული (Beta)</Link></li>
-                                        <li><Link href="/?setLn=de" className={hocIsCurrent("de") + " grho grho__sml"}>Deutsch (Beta)</Link></li>
+                                        <li><Link href="/?setLn=uk" className={hocIsCurrent("uk") + " grho grho__sml"}>Ukrainian - українська</Link></li>
+                                        <li><Link href="/?setLn=be" className={hocIsCurrent("be") + " grho grho__sml"}>Belarusian - беларуская</Link></li>
+                                        <li><Link href="/?setLn=pl" className={hocIsCurrent("pl") + " grho grho__sml"}>Polish - polski</Link></li>
+                                        <li><Link href="/?setLn=ka" className={hocIsCurrent("ka") + " grho grho__sml"}>Georgian - ქართული</Link></li>
+                                        <li><Link href="/?setLn=de" className={hocIsCurrent("de") + " grho grho__sml"}>German - Deutsch</Link></li>
                                 </ul>
                         </div>
 

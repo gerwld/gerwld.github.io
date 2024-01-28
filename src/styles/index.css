@@ -604,6 +604,7 @@ body.lightModeOn .projects__item {
   max-width: 100%;
   max-height: 490px;
   min-width: 220px;
+  min-height: 180px;
   margin: -2px -2px 20px;
 
   opacity: 0.96;
@@ -613,6 +614,7 @@ body.lightModeOn .projects__item {
   box-sizing: content-box;
   filter: brightness(0.95);
 }
+
 
 .lightModeOn .projects__img {
   filter: none;

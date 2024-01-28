@@ -7,12 +7,12 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 const Projects = ({ latestPosts }) => {
     const { t } = useTranslation();
     const bottom = useRef(null);
-    const PORTION = 3;
+    const PORTION = 4;
     const [lazy, setLazy] = useState({
         isInit: true,
         page: 1,
         totalPages: Math.ceil(latestPosts.length / PORTION),
-        delay: 260,
+        delay: 400,
     });
 
     useEffect(() => {
@@ -53,7 +53,7 @@ const Projects = ({ latestPosts }) => {
                     : <SecLoader />}
             </div>
 
-            <div ref={bottom} />
+            <div className='projects__intersect' ref={bottom} />
 
             {!lazy.isInit && <SecLoader />}
 
