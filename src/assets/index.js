@@ -21,6 +21,10 @@ export { default as lichesspro__jpg } from "./jpg/lichesspro.jpg";
 export { default as spoplus__jpg } from "./jpg/spoplus.jpg";
 export { default as chessgame__jpg } from "./jpg/chessgame.jpg";
 
+export { default as gwarda__jpg } from "./jpg/gwarda.jpg";
+export { default as matro__jpg } from "./jpg/matro.jpg";
+export { default as docu__jpg } from "./jpg/docu.jpg";
+
 export { default as igplus__img } from "./igplus.webp";
 export { default as gpt__img } from "./gpt.webp";
 export { default as gallery__img } from "./gallery.webp";
@@ -29,3 +33,7 @@ export { default as lichesspro__img } from "./lichesspro.webp";
 export { default as spoplus__img } from "./spoplus.webp";
 export { default as chessgame__img } from "./chessgame.webp";
 export { default as pfp_img } from "./pfp.webp";
+
+export { default as gwarda__img } from "./gwarda.webp";
+export { default as matro__img } from "./matro.webp";
+export { default as docu__img } from "./docu.webp";

@@ -73,10 +73,10 @@ const Hero = () => {
               <AiFillLinkedin />
               Linkedin
             </a>
-            <a href="https://twitter.com/p_jaworski63" data-title="Twitter" target="_blank" rel="noopener">
+            {/* <a href="https://twitter.com/p_jaworski63" data-title="Twitter" target="_blank" rel="noopener">
               <AiOutlineTwitter />
               Twitter
-            </a>
+            </a> */}
             <a href="https://www.behance.net/patryk_jaworski" data-title="Behance" target="_blank" rel="noopener">
               <AiOutlineBehance />
               Behance

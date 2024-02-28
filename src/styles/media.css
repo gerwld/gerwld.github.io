@@ -9,7 +9,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-height: 57vh;
+    min-height: 50vh;
     padding-top: 5vh;
   }
 
@@ -28,8 +28,8 @@
   }
 
   .hero_pfp {
-    width: 240px;
-    height: 240px;
+    width: 224px;
+    height: 224px;
   }
 
   .hero_pfp {
@@ -38,13 +38,13 @@
 
   .hero_pfp img {
     border-radius: 43px;
-    width: 93%;
-    height: 93%;
-    margin: 3.5%;
+    width: 94%;
+    height: 94%;
+    margin: 3%;
   }
 
   .hero__title {
-    font-size: 1.86rem;
+    font-size: 1.76rem;
   }
 
 
@@ -105,7 +105,7 @@
   .projects__group {
     display: flex;
     flex-direction: column;
-    padding: 0 0.8rem;
+    padding: 0 0.5em;
   }
 
   .projects__title {
@@ -125,10 +125,10 @@
   .skills__item {
     flex: 1 0 auto;
     justify-content: space-around;
-    margin: 0 15px 15px 0;
-    border-radius: 14px;
-    padding: 12.5px;
-    max-width: 150px;
+    margin: 0 12px 12px 0;
+    border-radius: 8px;
+    padding: 8px 10px;
+    max-width: 140px;
   }
 
   .skills__item__sm {

@@ -26,6 +26,12 @@ import {
   lichesspro__img,
   spoplus__img,
   chessgame__img,
+  gwarda__jpg,
+  matro__jpg,
+  docu__jpg,
+  gwarda__img,
+  matro__img,
+  docu__img,
 } from "@/assets";
 
 const currentThemeFromStorage = localStorage.getItem("currentTheme") || "dark";
@@ -37,11 +43,55 @@ const initialState = {
     currentLang: currentLangFromStorage,
     lastProjects: [
       {
+        id: "d0c97369-e345-4759-a619-0520d4e58274",
+        date: "28.02.2024",
+        img: docu__img,
+        img__jpg: docu__jpg,
+        stack: [
+          "webpack",
+          "React",
+          "npmjs"
+        ],
+        source_url: "https://github.com/gerwld/docusaurus-plugin-fix-react",
+        preview_url: "https://www.npmjs.com/package/docusaurus-plugin-fix-react",
+      },
+      {
+        id: "a79e04bc-4bf4-4d23-b23d-c2c8221a6180",
+        date: "26.02.2024",
+        img: matro__img,
+        img__jpg: matro__jpg,
+        stack: [
+          "Open Source",
+          "npmjs",
+          "Web Accessibility",
+          "UIKit",
+          "React"
+        ],
+        source_url: "https://github.com/matro-ui/matro-ui",
+        preview_url: "https://matro-ui.github.io/docs/intro/",
+      },
+      {
+        id: "8fc7da5b-799a-4415-b0ef-f2633b0e55a6",
+        date: "10.01.2024",
+        img: gwarda__img,
+        img__jpg: gwarda__jpg,
+        stack: [
+          "Amazon",
+          "Research",
+          'Chrome',
+          "Firefox",
+        ],
+        source_url: "https://github.com/gerwld/gwardaapp_amazon",
+        preview_url: "https://github.com/gerwld/gwardaapp_amazon",
+      },
+
+
+      {
         id: "dbbetb-e46b8r8b54e3f",
         date: "12.11.2023",
         img: igplus__img,
         img__jpg: igplus__jpg,
-        stack: ['Chrome', "MS Egde", "Firefox", "Extension"],
+        stack: ['Chrome', "MS Egde", "Firefox"],
         source_url: "https://github.com/gerwld/igplus-extension/",
         preview_url: "https://chromewebstore.google.com/detail/igplus-remove-instagram-r/dbbopjndlaginbghfoibbndhlbpdpapd",
       },
@@ -117,15 +167,22 @@ const initialState = {
         preview_url: "https://tgmetrics.com",
         source_url: "https://github.com/123-develop/is-online-telegram-frontend/"
       },
-
       {
         id: "fbd07wavab0987erab709adb",
         date: "12.09.2022",
         img: anydo_clone_img,
         img__jpg: anydo_clone_img__jpg,
         stack: ['JWT Auth', "RWD"],
-        source_url: "https://github.com/gerwld/anydo-tm",
-        preview_url: "/anydo-tm/",
+        source_url: "https://github.com/gerwld/anydo",
+        preview_url: "/anydo/",
+      },
+      {
+        id: "db64-betnrgn-ntrt44v4gn",
+        date: "16.08.2023",
+        img: chessgame__img,
+        img__jpg: chessgame__jpg,
+        source_url: "https://github.com/gerwld/chess_game/",
+        preview_url: "/chess_game/",
       },
       {
         id: "fadb0978a8f90b7986da0968",
@@ -134,14 +191,6 @@ const initialState = {
         img__jpg: twitter_clone_img__jpg,
         source_url: "https://github.com/gerwld/reactTS-twitter",
         preview_url: null,
-      },
-      {
-        id: "db64-betnrgn-ntrt44v4gn",
-        date: "16.10.2023",
-        img: chessgame__img,
-        img__jpg: chessgame__jpg,
-        source_url: "https://github.com/gerwld/chess_game/",
-        preview_url: "/chess_game/",
       },
       {
         id: "0879fbd9078adfb0a7dfb908",

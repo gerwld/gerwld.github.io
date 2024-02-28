@@ -163,6 +163,7 @@ button {
   user-select: none;
   transition: outline 0.1s ease-in-out;
   outline: 0px;
+  overflow: hidden;
 }
 
 a:focus,
@@ -190,7 +191,7 @@ svg[aria-hidden="true"] {
 }
 
 .content_wrapper {
-  max-width: 850px;
+  max-width: 830px;
   margin: 0 auto;
 }
 
@@ -246,9 +247,10 @@ a.active_lang {
   height: 44px;
   width: 56px;
   border: none;
+  border: 1px solid var(--border-color-2);
   border: 0.9px solid var(--border-color-2);
   background-color: #1f1f23;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .header button,
@@ -332,8 +334,8 @@ body.lightModeOn .modal_l03 {
 
 .hero_l2 {
   order: -1;
-  animation: pfp-appear 1400ms ease both;
-  animation-delay: 300ms;
+  /* animation: pfp-appear 1400ms ease both; */
+  /* animation-delay: 300ms; */
 }
 
 .hero_l1 {
@@ -355,9 +357,9 @@ body.lightModeOn .modal_l03 {
 }
 
 .hero_pfp img {
-  width: 92%;
-  height: 92%;
-  margin: 4%;
+  width: 94%;
+  height: 94%;
+  margin: 3%;
 }
 
 .hero_pfp {
@@ -376,7 +378,7 @@ body.lightModeOn .modal_l03 {
 }
 
 .hero__desc {
-  font-size: 1.02rem;
+  font-size: 1rem;
   line-height: 165%;
   font-weight: 400;
   margin: 0 0 25px;
@@ -802,12 +804,12 @@ body.lightModeOn .projects__title a:hover {
 
   background-color: var(--tone-1);
   border: 0.9px solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 8px;
 
   box-sizing: border-box;
   user-select: none;
-  padding: 12px;
-  animation: appear-1 400ms ease both;
+  padding: 9px;
+  /* animation: appear-1 400ms ease both; */
 }
 
 
@@ -895,7 +897,7 @@ body.lightModeOn .projects__title a:hover {
   animation-delay: 2.3s;
 }
 
-.hero_socials__links>div:nth-child(7)>button,
+.hero_socials__links>div:nth-child(6)>button,
 .hero_socials__links>a {
   animation: appear-2 400ms ease both;
 }
@@ -926,6 +928,7 @@ body.lightModeOn .projects__title a:hover {
   animation-delay: 0.7s;
 }
 
+.hero_socials__links>div:nth-child(6)>button,
 .hero_socials__links>a:nth-child(6) {
   animation-delay: 0.8s;
 }
@@ -1172,11 +1175,12 @@ body.lightModeOn .grho:hover::after {
 
   line-height: 0.74rem;
   font-size: 0.74rem;
-  height: 1.3rem;
+  font-weight: 500;
+  height: 1.32rem;
   color: var(--main-bg-color);
   background-color: var(--basic-link-color);
-  border-radius: 50px;
-  opacity: 0.5;
+  border-radius: 5px;
+  opacity: 0.55;
   transition: opacity 100ms ease;
 }
 
