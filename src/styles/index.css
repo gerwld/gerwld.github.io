@@ -1195,3 +1195,7 @@ body.lightModeOn .grho:hover::after {
 .projects__stack span:nth-last-child(1) {
   margin: 0;
 }
+
+#bmc-wbtn {
+  border-radius: 25% !important;
+}
