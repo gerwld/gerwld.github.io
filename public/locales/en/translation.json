@@ -35,7 +35,7 @@
       },
       "db64-be4dbf8r8b54e3f": {
         "title": "GPT 3.5 / 4 Automation CLI Tool",
-        "desc": "A CLI tool with multiple pipelines for automated posts generation using OpenAI GPT 3.5 / 4. It offers: combining post chunks, post validations, QuillBot Paraphraser for all / random str (to avoid plagiarism and AI detection), Unsplash API relative image search +multiaccount for API, and more."
+        "desc": "A CLI tool with multiple pipelines for automated posts generation using OpenAI GPT 3.5 / 4. It offers combining post chunks, post validations, QuillBot Paraphraser for all / random string (to avoid plagiarism and AI detection), Unsplash API relative image search, multi-accounts, and more."
       },
       "db64-betnrwnrt45v4gn": {
         "title": "Lichess Browser Extension",
