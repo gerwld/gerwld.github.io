@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Frontend Developer, web enthusiast",
-    "desc": "I’m Patryk, a Frontend Developer based in Warsaw, Poland, specialising in creating PWA apps, client-side code optimisations, projects support & improvements, and so on. I enjoy creating things that help others to achieve their goals.",
+    "desc": "I’m Patryk, a Frontend Developer based in Warsaw, Poland, specializing in creating PWA apps, client-side code optimizations, project support and improvements, and so on. I'm passionate about creating things that help others achieve their goals.",
     "email-lable": "Contact Email",
     "email-client": "Open Email Client",
     "email-copy": "Copy to Clipboard",
@@ -31,11 +31,11 @@
     "items": {
       "dbbetb-e46b8r8b54e3f": {
         "title": "IGPlus Browser Extension",
-        "desc": "An Instagram extension that allows users to disable Reels, Stories, recommendations, vanity metrics, and customize themes, fonts, and more. Has ~1400 active users across all platforms."
+        "desc": "An Instagram extension that allows users to disable Reels, Stories, recommendations, vanity metrics, and customize themes, fonts, and more. Has ~3400 active users across all platforms."
       },
       "db64-be4dbf8r8b54e3f": {
         "title": "GPT 3.5 / 4 Automation CLI Tool",
-        "desc": "A CLI tool with multiple pipelines for automated posts generation using OpenAI GPT 3.5 / 4. It offers: combining post chunks, post validations, QuillBot Paraphraser for all / random str (to avoid plagiarism and AI detection), Unsplash API relative image search +multiaccount for API, and more."
+        "desc": "A CLI tool with multiple pipelines for automated posts generation using OpenAI GPT 3.5 / 4. It offers combining post chunks, post validations, QuillBot Paraphraser for all / random string (to avoid plagiarism and AI detection), Unsplash API relative image search, multi-accounts, and more."
       },
       "db64-betnrwnrt45v4gn": {
         "title": "Lichess Browser Extension",
@@ -43,7 +43,7 @@
       },
       "db64-be46bmyr8b54egf": {
         "title": "ChessHelper for Chess.com",
-        "desc": "Contains almost the same features but for Chess.com. Has ~800 active users on all platforms. Most of the pieces and boards were created by myself, and some are from web with GNU / CC0 License."
+        "desc": "It has almost the same features as LichessHelper, but for Chess.com. Has ~1600 active users across all platforms. Most of the pieces and boards were created by me, while others are sourced from the web under the GNU/CC0 license."
       },
       "db64-be46b8rht53f": {
         "title": "Parallax Gallery",
@@ -51,7 +51,7 @@
       },
       "db64-rt46b8r8b543f": {
         "title": "SpoPlus Extension for Spotify",
-        "desc": "Extension that enables customization and personalization of the web version of Spotify. Set up new themes, fonts, remove annoying notifications, popups, and more. ~800 active users on all platforms."
+        "desc": "Extension that enables customization and personalization of the web version of Spotify. Set up new themes, fonts, remove annoying notifications, popups, and more. ~2800 active users on all platforms."
       },
       "db64-betnrgn-ntrt44v4gn": {
         "title": "Chess in Browser",
