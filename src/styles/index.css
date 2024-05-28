@@ -584,7 +584,7 @@ body .hero_socials__email {
 
   margin: 1rem 0 2rem;
   padding-bottom: 2rem;
-  border-bottom: 0.9px solid var(--border-color);
+  /* border-bottom: 0.9px solid var(--border-color); */
 }
 
 body.lightModeOn .projects__item {
