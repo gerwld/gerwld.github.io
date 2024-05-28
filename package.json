@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "rm -rf dist && vite build && pnpm add-domain && node build-cache.js",
+    "build-nodomain": "rm -rf dist && vite build && node build-cache.js",
     "deploy": "gh-pages -d dist",
     "gdeploy": "pnpm run build && pnpm run deploy",
     "preview": "vite preview",

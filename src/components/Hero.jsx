@@ -208,7 +208,7 @@ const Hero = () => {
           <div className="rfcg rfcg-100"></div>
           <div className="rfcc hero_pfp">
             <picture>
-              <source srcset={pfp_img} type="image/webp" />
+              {/* <source srcset={pfp_img} type="image/webp" /> */}
               <source srcset={pfp_img__jpg} type="image/jpeg" />
               <img className="img-fluid" src={pfp_img__jpg} alt="Profile Picture" />
             </picture>
