@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Hero, MainLoader, Navbar, Projects, Skills } from "./components/";
 import { setInit } from "./redux/reducers/app-reducer";
 import { useGrad } from "./hooks/useGrad";
-import HexGrid from "./components/HexGrid/HexGrid";
+import HexGrid from "./components/UI/HexGrid/HexGrid";
 
 const App = () => {
   const d = useDispatch();
