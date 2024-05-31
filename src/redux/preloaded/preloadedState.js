@@ -43,6 +43,15 @@ const initialState = {
     currentLang: currentLangFromStorage,
     lastProjects: [
       {
+        id: "db64-betnrwnrt45v4gn",
+        date: "27.08.2023",
+        img: lichesspro__img,
+        img__jpg: lichesspro__jpg,
+        stack: ['Chrome', "MS Egde", "Firefox", "Extension"],
+        source_url: "https://github.com/chesshelper/lichesshelper/",
+        preview_url: "https://weblxapplications.com/lc/",
+      },
+      {
         id: "d0c97369-e345-4759-a619-0520d4e58274",
         date: "28.02.2024",
         img: docu__img,
@@ -55,6 +64,7 @@ const initialState = {
         source_url: "https://github.com/gerwld/docusaurus-plugin-fix-react",
         preview_url: "https://www.npmjs.com/package/docusaurus-plugin-fix-react",
       },
+
       {
         id: "a79e04bc-4bf4-4d23-b23d-c2c8221a6180",
         date: "26.02.2024",
@@ -69,6 +79,15 @@ const initialState = {
         ],
         source_url: "https://github.com/matro-ui/matro-ui",
         preview_url: "https://matro-ui.github.io/docs/intro/",
+      },
+      {
+        id: "dbbetb-e46b8r8b54e3f",
+        date: "12.11.2023",
+        img: igplus__img,
+        img__jpg: igplus__jpg,
+        stack: ['Chrome', "MS Egde", "Firefox"],
+        source_url: "https://github.com/gerwld/igplus-extension/",
+        preview_url: "https://weblxapplications.com/igp/",
       },
       {
         id: "8fc7da5b-799a-4415-b0ef-f2633b0e55a6",
@@ -86,15 +105,7 @@ const initialState = {
       },
 
 
-      {
-        id: "dbbetb-e46b8r8b54e3f",
-        date: "12.11.2023",
-        img: igplus__img,
-        img__jpg: igplus__jpg,
-        stack: ['Chrome', "MS Egde", "Firefox"],
-        source_url: "https://github.com/gerwld/igplus-extension/",
-        preview_url: "https://chromewebstore.google.com/detail/igplus-remove-instagram-r/dbbopjndlaginbghfoibbndhlbpdpapd",
-      },
+
       {
         id: "db64-be4dbf8r8b54e3f",
         date: "14.03.2023",
@@ -102,7 +113,7 @@ const initialState = {
         img__jpg: gpt__jpg,
         stack: ["Python", 'Selenium', "Pipelines"],
         source_url: "https://github.com/gerwld/gpt4_selenium/",
-        preview_url: "https://qianwublog.me/",
+        preview_url: "https://github.com/gerwld/gpt4_selenium/",
       },
       {
         id: "dbf0-beqr0b890eq9r8b98",
@@ -113,15 +124,7 @@ const initialState = {
         source_url: "https://github.com/gerwld/music-app",
         preview_url: "/music-app/",
       },
-      {
-        id: "db64-betnrwnrt45v4gn",
-        date: "27.08.2023",
-        img: lichesspro__img,
-        img__jpg: lichesspro__jpg,
-        stack: ['Chrome', "MS Egde", "Firefox", "Extension"],
-        source_url: "https://github.com/chesshelper/lichesshelper/",
-        preview_url: "https://chromewebstore.google.com/detail/lichess-pro-better-liches/jmbbkjpjhchfelfflgainekgdmoddgcg",
-      },
+
       {
         id: "db64-be46bmyr8b54egf",
         date: "02.08.2023",
@@ -129,7 +132,7 @@ const initialState = {
         img__jpg: chesspro__jpg,
         stack: ['Chrome', "MS Egde", "Firefox", "Opera"],
         source_url: "https://github.com/chesshelper/chesshelper",
-        preview_url: "https://chesscolibri.pro/",
+        preview_url: "https://weblxapplications.com/ch/",
       },
       {
         id: "db64-be46b8rht53f",
@@ -148,7 +151,7 @@ const initialState = {
         img__jpg: spoplus__jpg,
         stack: ['Chrome', "MS Egde", "Firefox", "Opera"],
         source_url: "https://github.com/gerwld/spoplus-extension/",
-        preview_url: "https://chrome.google.com/webstore/detail/spoplus-edit-spotify-them/ijkboaojikgaanlgigobkmbpnjgjljnc",
+        preview_url: "https://weblxapplications.com/sp/",
       },
 
 
