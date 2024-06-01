@@ -48,9 +48,15 @@ const Hero = () => {
       <Toaster />
       <div className="hero_l1">
         <div className="hero_block hero_block__1">
-          <h1 className="hero__title">{t("hero.title")}</h1>
+          {/* <h1 className="hero__title">{t("hero.title")}</h1> */}
           <p className="hero__desc">
-            <span className="typewriter">
+            {/* 
+            <code>
+              Hi! I’m Patryk and I'm a front-end developer with 3+ years of experience. I specialise in creating modern responsive websites, browser extensions, progressive web applications, client-side code optimisations and more. I love to code from scratch, but I can deliver the HTML, CSS, and JS you need packaged within a modern web framework.
+              I achieve high-quality products with a proven software development process. Take a look at my profile and, let's chat!
+            </code> */}
+
+            <code className="typewriter">
               {t("hero.desc")
                 .split(" ")
                 .map((e) => (
@@ -59,7 +65,7 @@ const Hero = () => {
                     <> </>
                   </>
                 ))}
-            </span>
+            </code>
           </p>
         </div>
         <div className="hero_block hero_socials">
@@ -208,7 +214,7 @@ const Hero = () => {
           <div className="rfcg rfcg-100"></div>
           <div className="rfcc hero_pfp">
             <picture>
-              <source srcset={pfp_img} type="image/webp" />
+              {/* <source srcset={pfp_img} type="image/webp" /> */}
               <source srcset={pfp_img__jpg} type="image/jpeg" />
               <img className="img-fluid" src={pfp_img__jpg} alt="Profile Picture" />
             </picture>

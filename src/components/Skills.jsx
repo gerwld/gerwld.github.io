@@ -6,7 +6,7 @@ const Skills = ({ isInit }) => {
 
   return (
     <section className={`projects content_wrapper ${isInit ? "projects_init" : ""}`}>
-      <h2 className="section__title">{t("skills.title")}:</h2>
+      {/* <h2 className="section__title">{t("skills.title")}:</h2> */}
 
       <div className="skills__content">
         <SkillsItem title="TypeScript">

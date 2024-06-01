@@ -42,6 +42,41 @@ const initialState = {
     currentTheme: currentThemeFromStorage,
     currentLang: currentLangFromStorage,
     lastProjects: [
+
+
+      {
+        id: "dbbetb-e46b8r8b54e3f",
+        date: "12.11.2023",
+        img: igplus__img,
+        img__jpg: igplus__jpg,
+        stack: ['Chrome', "MS Egde", "Firefox"],
+        source_url: "https://github.com/gerwld/igplus-extension/",
+        preview_url: "https://weblxapplications.com/igp/",
+      },
+      {
+        id: "a79e04bc-4bf4-4d23-b23d-c2c8221a6180",
+        date: "26.02.2024",
+        img: matro__img,
+        img__jpg: matro__jpg,
+        stack: [
+          "Open Source",
+          "npmjs",
+          "Web Accessibility",
+          "UIKit",
+          "React"
+        ],
+        source_url: "https://github.com/matro-ui/matro-ui",
+        preview_url: "https://matro-ui.github.io/docs/intro/",
+      },
+      {
+        id: "db64-be4dbf8r8b54e3f",
+        date: "14.03.2023",
+        img: gpt__img,
+        img__jpg: gpt__jpg,
+        stack: ["Python", 'Selenium', "Pipelines"],
+        source_url: "https://github.com/gerwld/gpt4_selenium/",
+        preview_url: "https://github.com/gerwld/gpt4_selenium/",
+      },
       {
         id: "db64-betnrwnrt45v4gn",
         date: "27.08.2023",
@@ -66,30 +101,6 @@ const initialState = {
       },
 
       {
-        id: "a79e04bc-4bf4-4d23-b23d-c2c8221a6180",
-        date: "26.02.2024",
-        img: matro__img,
-        img__jpg: matro__jpg,
-        stack: [
-          "Open Source",
-          "npmjs",
-          "Web Accessibility",
-          "UIKit",
-          "React"
-        ],
-        source_url: "https://github.com/matro-ui/matro-ui",
-        preview_url: "https://matro-ui.github.io/docs/intro/",
-      },
-      {
-        id: "dbbetb-e46b8r8b54e3f",
-        date: "12.11.2023",
-        img: igplus__img,
-        img__jpg: igplus__jpg,
-        stack: ['Chrome', "MS Egde", "Firefox"],
-        source_url: "https://github.com/gerwld/igplus-extension/",
-        preview_url: "https://weblxapplications.com/igp/",
-      },
-      {
         id: "8fc7da5b-799a-4415-b0ef-f2633b0e55a6",
         date: "10.01.2024",
         img: gwarda__img,
@@ -104,17 +115,6 @@ const initialState = {
         preview_url: "https://github.com/gerwld/gwardaapp_amazon",
       },
 
-
-
-      {
-        id: "db64-be4dbf8r8b54e3f",
-        date: "14.03.2023",
-        img: gpt__img,
-        img__jpg: gpt__jpg,
-        stack: ["Python", 'Selenium', "Pipelines"],
-        source_url: "https://github.com/gerwld/gpt4_selenium/",
-        preview_url: "https://github.com/gerwld/gpt4_selenium/",
-      },
       {
         id: "dbf0-beqr0b890eq9r8b98",
         date: "26.04.2022",
@@ -153,8 +153,6 @@ const initialState = {
         source_url: "https://github.com/gerwld/spoplus-extension/",
         preview_url: "https://weblxapplications.com/sp/",
       },
-
-
       {
         id: "db64-be46b8r8b54e3f",
         date: "27.06.2022",
@@ -187,14 +185,14 @@ const initialState = {
         source_url: "https://github.com/gerwld/chess_game/",
         preview_url: "/chess_game/",
       },
-      {
-        id: "fadb0978a8f90b7986da0968",
-        date: "02.07.2021",
-        img: twitter_clone_img,
-        img__jpg: twitter_clone_img__jpg,
-        source_url: "https://github.com/gerwld/reactTS-twitter",
-        preview_url: null,
-      },
+      // {
+      //   id: "fadb0978a8f90b7986da0968",
+      //   date: "02.07.2021",
+      //   img: twitter_clone_img,
+      //   img__jpg: twitter_clone_img__jpg,
+      //   source_url: "https://github.com/gerwld/reactTS-twitter",
+      //   preview_url: null,
+      // },
       {
         id: "0879fbd9078adfb0a7dfb908",
         date: "21.08.2021",

@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="app_content">
-      <HexGrid />
+      {/* <HexGrid /> */}
       <Navbar />
       <Hero />
       <Skills isInit={isInit} />
