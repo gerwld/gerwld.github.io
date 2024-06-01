@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Frontend Developer, web enthusiast",
-    "desc": "I’m Patryk, a Frontend Developer based in Warsaw, Poland, specializing in creating PWA apps, client-side code optimizations, project support and improvements, and so on. I'm passionate about creating things that help others achieve their goals.",
+    "desc": "I’m Patryk, a Frontend Developer based in Warsaw, Poland, specializing in creating PWA apps, client-side code optimizations, project support, improvements, and more. I'm passionate about creating things that help others achieve their goals.",
     "email-lable": "Contact Email",
     "email-client": "Open Email Client",
     "email-copy": "Copy to Clipboard",
@@ -43,7 +43,7 @@
       },
       "db64-be46bmyr8b54egf": {
         "title": "ChessHelper for Chess.com",
-        "desc": "It has almost the same features as LichessHelper, but for Chess.com. Has ~1600 active users across all platforms. Most of the pieces and boards were created by me, while others are sourced from the web under the GNU/CC0 license."
+        "desc": "It has almost the same features as LichessHelper, but for Chess.com. Has ~1600 active users across all platforms. Most of the pieces and boards were created by me, while others are sourced from the web under the GNU/CC0 licenses."
       },
       "db64-be46b8rht53f": {
         "title": "Parallax Gallery",
@@ -51,7 +51,7 @@
       },
       "db64-rt46b8r8b543f": {
         "title": "SpoPlus Extension for Spotify",
-        "desc": "Extension that enables customization and personalization of the web version of Spotify. Set up new themes, fonts, remove annoying notifications, popups, and more. ~2800 active users on all platforms."
+        "desc": "An extension that enables customization and personalization of the web version of Spotify. Set up new themes, fonts, remove annoying notifications, popups, and more. ~2800 active users on all platforms."
       },
       "db64-betnrgn-ntrt44v4gn": {
         "title": "Chess in Browser",
@@ -67,7 +67,7 @@
       },
       "dbf0-beqr0b890eq9r8b98": {
         "title": "Music App",
-        "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Works with AudioSession Api, so browser features (like hotkey buttons Next/Prev, album preview) is working right."
+        "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Works with AudioSession Api, so browser features like hotkey buttons (Next/Prev, album preview) work correctly."
       },
       "fbd07wavab0987erab709adb": {
         "title": "Todo",
@@ -91,7 +91,7 @@
       }
       ,"8fc7da5b-799a-4415-b0ef-f2633b0e55a6": {
         "title": "Amazon Research Tool",
-        "desc": "Discover Amazon product info, find best prices, leverage SEO keywords, locate top suppliers with Reverse ASIN, and more. Available on the Google Chrome Store and Firefox Add-on's."
+        "desc": "Discover Amazon product info, find best prices, leverage SEO keywords, locate top suppliers with Reverse ASIN, and more. Available on the Google Chrome Store and Firefox Add-ons."
       }
     }
   }
