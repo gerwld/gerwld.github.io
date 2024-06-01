@@ -12,8 +12,8 @@
     "email-ns": "This browser doesn't support it yet."
   },
   "hero": {
-    "title": "Frontend Developer, web enthusiast",
-    "desc": "I’m Patryk, a Frontend Developer based in Warsaw, Poland, specializing in creating PWA apps, client-side code optimizations, project support, improvements, and more. I'm passionate about creating things that help others achieve their goals.",
+    "title": "Front-End Developer | React.js | JS | TS | Python | Figma | Bootstrap",
+    "desc": "Hi! I’m Patryk and I'm a front-end developer with 3+ years of experience. I specialise in creating modern responsive websites, browser extensions, progressive web applications, client-side code optimisations and more. I love to code from scratch, but I can deliver the HTML, CSS, and JS you need packaged within a modern web framework. I achieve high-quality products with a proven software development process. Take a look at my profile and, let's chat!",
     "email-lable": "Contact Email",
     "email-client": "Open Email Client",
     "email-copy": "Copy to Clipboard",
@@ -35,7 +35,7 @@
       },
       "db64-be4dbf8r8b54e3f": {
         "title": "GPT 3.5 / 4 Automation CLI Tool",
-        "desc": "A CLI tool with multiple pipelines for automated posts generation using OpenAI GPT 3.5 / 4. It offers combining post chunks, post validations, QuillBot Paraphraser for all / random string (to avoid plagiarism and AI detection), Unsplash API relative image search, multi-accounts, and more."
+        "desc": "A CLI tool with pipelines for automated posts generation using OpenAI GPT 3.5 / 4. It offers combining post chunks, post validations, paraphraser for each or random strings (to avoid plagiarism and AI detection), Unsplash API relative images search, multi-accounts, and more."
       },
       "db64-betnrwnrt45v4gn": {
         "title": "Lichess Browser Extension",
@@ -58,11 +58,11 @@
         "desc": "Chess game in the browser. Developed using OOP, TypeScript, with mobile support. Currently implemented features include pieces capture, main pieces move rules, and en passant. In progress are short and long castle, checks, checkmate, kings' single square gap, and more."
       },
       "db64-be46b8r8b54e3f": {
-        "title": "TrainingPeaks - Sport Monitoring",
+        "title": "TrainingPeaks",
         "desc": "Monitoring for personal training with three main resources: plans, daily feelings, and workouts. Each section is customizable, allowing users to easily drag and drop training sessions from one day to another. Additionally, it provides weekly statistics."
       },
       "dbf0-beqr56b8r8brbe5l": {
-        "title": "OnlineStats.info",
+        "title": "OnlineStats.com",
         "desc": "Service for monitoring users publicly shared online status in Telegram Messenger. Utilizes JWT Auth, bizcharts charts, final-form for forms. Also it offers i18n locales and a dark theme."
       },
       "dbf0-beqr0b890eq9r8b98": {
@@ -70,8 +70,8 @@
         "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Works with AudioSession Api, so browser features like hotkey buttons (Next/Prev, album preview) work correctly."
       },
       "fbd07wavab0987erab709adb": {
-        "title": "Todo",
-        "desc": "Anydo-like to-do list application with full functionality, including all CRUD operations (add, update, read, or delete any task), sorting by tags, and JWT Auth. It also includes a mobile version with Safari viewport and other enhancements."
+        "title": "Anydo",
+        "desc": "To-do list application, includes all CRUD operations (add, update, read or delete any task), sorting by tags, and JWT Auth. It also has a mobile version with Safari viewport and other improvements."
       },
       "fadb0978a8f90b7986da0968": {
         "title": "Twitter Clone",
