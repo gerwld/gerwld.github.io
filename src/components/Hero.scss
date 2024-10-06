@@ -45,6 +45,10 @@
   }
 }
 
+.rfc .rfcc {
+  filter: saturate(0) contrast(1.2);
+}
+
 
 $animation-delay: 0.1s;
 $animation-duration: 0.2s;

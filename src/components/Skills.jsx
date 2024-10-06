@@ -41,7 +41,16 @@ const Skills = ({ isInit }) => {
             </g>
           </svg>
         </SkillsItem>
-
+        <SkillsItem title="React Native">
+          <svg viewBox="-11.5 -10.232 23 20.463" xmlns="http://www.w3.org/2000/svg">
+            <circle r="2.05" fill="#61dafb" />
+            <g fill="none" stroke="#61dafb" strokeWidth="1">
+              <ellipse rx="11" ry="4.2" />
+              <ellipse transform="rotate(60)" rx="11" ry="4.2" />
+              <ellipse transform="rotate(120)" rx="11" ry="4.2" />
+            </g>
+          </svg>
+        </SkillsItem>
         <SkillsItem title="Redux">
           <svg enable-background="new 0 0 550.6 524.9" version="1.1" viewBox="0 0 550.6 524.9" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -231,6 +240,42 @@ const Skills = ({ isInit }) => {
 		c0-18.3-3-33.8-9.1-46.2c-6.1-12.5-14.6-22.5-25.6-30c-11-7.5-24.2-12.9-39.6-16.2c-15.4-3.3-32.5-5-51.2-5H258.2L258.2,203.5z
 		 M344.6,529.4V421.5h94.1c18.7,0,33.8,4.3,45.1,12.9c11.4,8.6,17.1,23,17.1,43.2c0,10.3-1.7,18.7-5.2,25.3
 		c-3.5,6.6-8.2,11.8-14,15.7c-5.9,3.9-12.7,6.6-20.4,8.3c-7.7,1.7-15.8,2.5-24.2,2.5H344.6L344.6,529.4z"/>
+            </g>
+          </svg>
+
+        </SkillsItem>
+
+        <SkillsItem title="Jekyll" small>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 385.8 696.2" style="enable-background:new 0 0 385.8 696.2;" xmlSpace="preserve">
+            <path style="opacity:0.5;enable-background:new    ;" d="M218.2,14.2c-0.3,1.3-0.3,2.7,0,4c2.3,13.7,2.1,27.6-0.7,41.2l-206.4,537
+	c-15.2,39.7,4.7,84.2,44.3,99.4c39.7,15.2,84.2-4.7,99.4-44.4l0,0l206.4-537c7.5-11.5,16.6-21.9,27.1-30.8c1-0.9,1.9-1.9,2.7-3v-0.3
+	c0-0.3,0.3-0.3,0.3-0.7c5.4-13.7-29.1-39.8-76.7-58.3s-90.8-22.1-96.1-8.1C218.3,13.5,218.2,13.9,218.2,14.2z"/>
+            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="181.613" y1="327.6652" x2="181.625" y2="327.6682" gradientTransform="matrix(14025.375 0 0 25289.8262 -2547096.5 -8286280.5)">
+              <stop offset="0" style="stop-color:#919191" />
+              <stop offset="1" style="stop-color:#FFFFFF" />
+            </linearGradient>
+            <path style="fill:url(#SVGID_1_);" d="M212.1,9.6c-0.3,1.3-0.3,2.7,0,4c2.3,13.7,2.1,27.6-0.7,41.2L5.1,591.7
+	c-15.2,39.7,4.7,84.2,44.3,99.4c39.7,15.2,84.2-4.7,99.4-44.4l206.3-537c7.5-11.5,16.6-21.9,27.1-30.8c1-0.9,1.9-1.9,2.7-3v-0.3
+	c0-0.3,0.3-0.3,0.3-0.7c5.4-13.7-29.2-39.9-76.7-58.3s-90.8-22.1-96.1-8.1C212.5,8.9,212.4,9.3,212.1,9.6L212.1,9.6z"/>
+            <linearGradient id="SVGID_00000102518441286397718230000009766571653949036427_" gradientUnits="userSpaceOnUse" x1="179.8102" y1="327.0731" x2="179.8212" y2="327.076" gradientTransform="matrix(9342.2754 0 0 15352.6992 -1679743.875 -5021026)">
+              <stop offset="0" style="stop-color:#990000" />
+              <stop offset="1" style="stop-color:#E80000" />
+            </linearGradient>
+            <path style="fill:url(#SVGID_00000102518441286397718230000009766571653949036427_);" d="M277.1,252.5L128.1,639.6
+	c-11.3,28.2-43,42-71.3,31.2c-28.4-11-43.1-42.5-33.1-71.4l95.1-247.5c9.1-13.4,21.1-24.6,35.2-32.8c23.4-13.7,42.5-10.7,68.3-22.1
+	C243,285.5,261.6,270.4,277.1,252.5L277.1,252.5z"/>
+            <path style="fill:#333333;" d="M349.4,63.7c3-7.8-18.4-23.2-47.7-34.5s-55.6-14.1-58.5-6.5s18.4,23.2,47.7,34.5
+	S346.4,71.4,349.4,63.7L349.4,63.7z"/>
+            <path style="opacity:0.3;fill:#FFFFFF;enable-background:new    ;" d="M210.7,13.5c2.3,13.6,2.1,27.5-0.7,41.1L5.1,590
+	c-14.7,39.3,5,83.2,44.3,98.2c6.6,2.7,13.5,4.3,20.6,4.7c-26.9-20.6-37.3-56.3-25.6-88.1L245.4,80C227.5,61.8,215.4,38.6,210.7,13.5
+	L210.7,13.5z"/>
+            <g style="opacity:0.5;">
+              <circle style="fill:#FFFFFF;" cx="144.9" cy="358.9" r="6" />
+              <circle style="fill:#FFFFFF;" cx="183.8" cy="402" r="9" />
+              <circle style="fill:#FFFFFF;" cx="124.2" cy="453.4" r="17" />
+              <circle style="fill:#FFFFFF;" cx="96.9" cy="484.8" r="9" />
+              <circle style="fill:#FFFFFF;" cx="132.5" cy="551.6" r="6" />
             </g>
           </svg>
 

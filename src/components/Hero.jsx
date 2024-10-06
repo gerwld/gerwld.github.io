@@ -109,7 +109,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hero_l2">
+      {/* <div className="hero_l2">
         <div className="rfc">
 
           <div className="rfcg rfcg-1"></div>
@@ -220,7 +220,7 @@ export const Hero = () => {
             </picture>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </section>
   );
