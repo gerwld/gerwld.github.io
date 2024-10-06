@@ -18,7 +18,6 @@ import {
   lichesspro__jpg,
   spoplus__jpg,
   chessgame__jpg,
-
   igplus__img,
   gpt__img,
   gallery__img,
@@ -34,7 +33,7 @@ import {
   docu__img,
 } from "@/assets";
 
-const currentThemeFromStorage = localStorage.getItem("currentTheme") || "dark";
+const currentThemeFromStorage = localStorage.getItem("currentTheme") || "light";
 const currentLangFromStorage = localStorage.getItem("i18nextLng") || "en";
 
 const initialState = {
@@ -42,14 +41,12 @@ const initialState = {
     currentTheme: currentThemeFromStorage,
     currentLang: currentLangFromStorage,
     lastProjects: [
-
-
       {
         id: "dbbetb-e46b8r8b54e3f",
         date: "12.11.2023",
         img: igplus__img,
         img__jpg: igplus__jpg,
-        stack: ['Chrome', "MS Egde", "Firefox"],
+        stack: ["Chrome", "MS Egde", "Firefox"],
         source_url: "https://github.com/gerwld/igplus-extension/",
         preview_url: "https://weblxapplications.com/igp/",
       },
@@ -58,13 +55,7 @@ const initialState = {
         date: "26.02.2024",
         img: matro__img,
         img__jpg: matro__jpg,
-        stack: [
-          "Open Source",
-          "npmjs",
-          "Web Accessibility",
-          "UIKit",
-          "React"
-        ],
+        stack: ["Open Source", "npmjs", "Web Accessibility", "UIKit", "React"],
         source_url: "https://github.com/matro-ui/matro-ui",
         preview_url: "https://matro-ui.github.io/docs/intro/",
       },
@@ -73,7 +64,7 @@ const initialState = {
         date: "14.03.2023",
         img: gpt__img,
         img__jpg: gpt__jpg,
-        stack: ["Python", 'Selenium', "Pipelines"],
+        stack: ["Python", "Selenium", "Pipelines"],
         source_url: "https://github.com/gerwld/gpt4_selenium/",
         preview_url: "https://github.com/gerwld/gpt4_selenium/",
       },
@@ -82,7 +73,7 @@ const initialState = {
         date: "27.08.2023",
         img: lichesspro__img,
         img__jpg: lichesspro__jpg,
-        stack: ['Chrome', "MS Egde", "Firefox", "Extension"],
+        stack: ["Chrome", "MS Egde", "Firefox", "Extension"],
         source_url: "https://github.com/chesshelper/lichesshelper/",
         preview_url: "https://weblxapplications.com/lc/",
       },
@@ -91,13 +82,10 @@ const initialState = {
         date: "28.02.2024",
         img: docu__img,
         img__jpg: docu__jpg,
-        stack: [
-          "webpack",
-          "React",
-          "npmjs"
-        ],
+        stack: ["webpack", "React", "npmjs"],
         source_url: "https://github.com/gerwld/docusaurus-plugin-fix-react",
-        preview_url: "https://www.npmjs.com/package/docusaurus-plugin-fix-react",
+        preview_url:
+          "https://www.npmjs.com/package/docusaurus-plugin-fix-react",
       },
 
       {
@@ -105,12 +93,7 @@ const initialState = {
         date: "10.01.2024",
         img: gwarda__img,
         img__jpg: gwarda__jpg,
-        stack: [
-          "Amazon",
-          "Research",
-          'Chrome',
-          "Firefox",
-        ],
+        stack: ["Amazon", "Research", "Chrome", "Firefox"],
         source_url: "https://github.com/gerwld/gwardaapp_amazon",
         preview_url: "https://github.com/gerwld/gwardaapp_amazon",
       },
@@ -120,7 +103,7 @@ const initialState = {
         date: "26.04.2022",
         img: music_app_img,
         img__jpg: music_app_img__jpg,
-        stack: ["AudioSession API", 'React', "RWD"],
+        stack: ["AudioSession API", "React", "RWD"],
         source_url: "https://github.com/gerwld/music-app",
         preview_url: "/music-app/",
       },
@@ -130,7 +113,7 @@ const initialState = {
         date: "02.08.2023",
         img: chesspro__img,
         img__jpg: chesspro__jpg,
-        stack: ['Chrome', "MS Egde", "Firefox", "Opera"],
+        stack: ["Chrome", "MS Egde", "Firefox", "Opera"],
         source_url: "https://github.com/chesshelper/chesshelper",
         preview_url: "https://weblxapplications.com/ch/",
       },
@@ -139,7 +122,7 @@ const initialState = {
         date: "14.04.2022",
         img: gallery__img,
         img__jpg: gallery__jpg,
-        stack: ['JavaScript'],
+        stack: ["JavaScript"],
         source_url: "https://codepen.io/gerwld/pen/poxyvrg/",
         preview_url: "https://github.com/gerwld/parallax-gallery/",
       },
@@ -149,7 +132,7 @@ const initialState = {
         date: "23.10.2022",
         img: spoplus__img,
         img__jpg: spoplus__jpg,
-        stack: ['Chrome', "MS Egde", "Firefox", "Opera"],
+        stack: ["Chrome", "MS Egde", "Firefox", "Opera"],
         source_url: "https://github.com/gerwld/spoplus-extension/",
         preview_url: "https://weblxapplications.com/sp/",
       },
@@ -166,14 +149,15 @@ const initialState = {
         img: onlinestats__img,
         img__jpg: onlinestats__jpg,
         preview_url: "https://tgmetrics.com",
-        source_url: "https://github.com/123-develop/is-online-telegram-frontend/"
+        source_url:
+          "https://github.com/123-develop/is-online-telegram-frontend/",
       },
       {
         id: "fbd07wavab0987erab709adb",
         date: "12.09.2022",
         img: anydo_clone_img,
         img__jpg: anydo_clone_img__jpg,
-        stack: ['JWT Auth', "RWD"],
+        stack: ["JWT Auth", "RWD"],
         source_url: "https://github.com/gerwld/anydo",
         preview_url: "/anydo/",
       },

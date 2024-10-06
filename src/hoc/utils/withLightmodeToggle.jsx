@@ -18,7 +18,7 @@ const withLightmodeToggle = (WrappedComponent) => {
 
     //Goes to WrappedComponent, so theme can be manually changed
     const hocToggleLightmodeManual = () => {
-      let theme = currentTheme && currentTheme === "dark" ? "light" : "dark";
+      let theme = currentTheme && currentTheme === "light" ? "dark" : "light";
       toggleLightmode(theme);
     };
 
@@ -38,6 +38,7 @@ const withLightmodeToggle = (WrappedComponent) => {
     //Body class toggle on change
     useEffect(() => {
       setCurrentTheme(currentTheme);
+      console.log(currentTheme);
     }, [currentTheme]);
 
     return (
