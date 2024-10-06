@@ -30,7 +30,7 @@
     "items": {
       "dbbetb-e46b8r8b54e3f": {
         "title": "IGPlus Browser Extension",
-        "desc": "An Instagram extension that allows users to disable Reels, Stories, recommendations, vanity metrics, and customize themes, fonts, and more. Has ~3400 active users across all platforms."
+        "desc": "An Instagram extension that allows users to disable Reels, Stories, recommendations, vanity metrics, and customize themes, fonts, and more. Has ~6000 active users across all platforms."
       },
       "db64-be4dbf8r8b54e3f": {
         "title": "GPT 3.5 / 4 Automation CLI Tool",
@@ -42,7 +42,7 @@
       },
       "db64-be46bmyr8b54egf": {
         "title": "ChessHelper for Chess.com",
-        "desc": "It has almost the same features as LichessHelper, but for Chess.com. Has ~1600 active users across all platforms. Most of the pieces and boards were created by me, while others are sourced from the web under the GNU/CC0 licenses."
+        "desc": "It has almost the same features as LichessHelper, but for Chess.com. Has ~2200 active users across all platforms. Most of the pieces and boards were created by me, while others are sourced from the web under the GNU/CC0 licenses."
       },
       "db64-be46b8rht53f": {
         "title": "Parallax Gallery",
@@ -50,7 +50,7 @@
       },
       "db64-rt46b8r8b543f": {
         "title": "SpoPlus Extension for Spotify",
-        "desc": "An extension that enables customization and personalization of the web version of Spotify. Set up new themes, fonts, remove annoying notifications, popups, and more. ~2800 active users on all platforms."
+        "desc": "An extension that enables customization and personalization of the web version of Spotify. Set up new themes, fonts, remove annoying notifications, popups, and more. ~6400 active users on all platforms."
       },
       "db64-betnrgn-ntrt44v4gn": {
         "title": "Chess in Browser",
@@ -79,16 +79,16 @@
       "0879fbd9078adfb0a7dfb908": {
         "title": "Nolk Landing Page",
         "desc": "Responsive template with SVG animations and a simple 3-step email form. Built on JS, utilizes Gulp as the main task runner."
-      }
-      ,"a79e04bc-4bf4-4d23-b23d-c2c8221a6180": {
+      },
+      "a79e04bc-4bf4-4d23-b23d-c2c8221a6180": {
         "title": "Matro UI",
         "desc": "👁️ Highly optimized UI Components in one, tiny package for your React Applications."
-      }
-      ,"d0c97369-e345-4759-a619-0520d4e58274": {
+      },
+      "d0c97369-e345-4759-a619-0520d4e58274": {
         "title": "docusaurus-plugin-fix-react",
         "desc": "Fixes the issue when npm package / exported Component uses React import, so webpack resolves it not from global node_modules/react but instead from package directory."
-      }
-      ,"8fc7da5b-799a-4415-b0ef-f2633b0e55a6": {
+      },
+      "8fc7da5b-799a-4415-b0ef-f2633b0e55a6": {
         "title": "Amazon Research Tool",
         "desc": "Discover Amazon product info, find best prices, leverage SEO keywords, locate top suppliers with Reverse ASIN, and more. Available on the Google Chrome Store and Firefox Add-ons."
       }
