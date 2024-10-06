@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <!-- ALL RIGHTS RESERVED. Do not copy any part without legal permission. pjaworskidev © 2021-present  -->
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patryk Jaworski - Full-stack Developer</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patryk Jaworski - Full-stack Developer</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="mask-icon" href="./assets/favicon.svg" color="#000000" />
 
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-  <link rel="icon" href="./assets/favicon.svg">
-  <link rel="mask-icon" href="./assets/favicon.svg" color="#000000">
+    <meta
+      name="description"
+      content="I’m Patryk, a Frontend Developer based in Warsaw, Poland, specialising in creating PWA apps, client-side code optimisations, projects support & improvements, and so on. I enjoy creating things that help others to achieve their goals. Feel free to look on my portfolio and reach out if you would be interested in connecting."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pjaworskidev.com/" />
+    <meta property="og:title" content="Patryk Jaworski - Frontend Developer" />
+    <meta
+      property="og:description"
+      content="I’m Patryk, a Frontend Developer based in Warsaw, Poland, specialising in creating PWA apps, client-side code optimisations, projects support & improvements, and so on. I enjoy creating things that help others to achieve their goals. Feel free to look on my portfolio and reach out if you would be interested in connecting."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Patryk Jaworski - Frontend Developer" />
+    <meta
+      name="twitter:description"
+      content="I’m Patryk, a Frontend Developer based in Warsaw, Poland, specialising in creating PWA apps, client-side code optimisations, projects support & improvements, and so on. I enjoy creating things that help others to achieve their goals. Feel free to look on my portfolio and reach out if you would be interested in connecting."
+    />
 
-  <meta name="description"
-    content="I’m Patryk, a Frontend Developer based in Warsaw, Poland, specialising in creating PWA apps, client-side code optimisations, projects support & improvements, and so on. I enjoy creating things that help others to achieve their goals. Feel free to look on my portfolio and reach out if you would be interested in connecting.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pjaworskidev.com/">
-  <meta property="og:title" content="Patryk Jaworski - Frontend Developer">
-  <meta property="og:description"
-    content="I’m Patryk, a Frontend Developer based in Warsaw, Poland, specialising in creating PWA apps, client-side code optimisations, projects support & improvements, and so on. I enjoy creating things that help others to achieve their goals. Feel free to look on my portfolio and reach out if you would be interested in connecting.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Patryk Jaworski - Frontend Developer">
-  <meta name="twitter:description"
-    content="I’m Patryk, a Frontend Developer based in Warsaw, Poland, specialising in creating PWA apps, client-side code optimisations, projects support & improvements, and so on. I enjoy creating things that help others to achieve their goals. Feel free to look on my portfolio and reach out if you would be interested in connecting.">
+    <meta name="theme-color" content="#18181b" />
 
-  <meta name="theme-color" content="#18181b">
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans:wght@400;500&display=swap"
     rel="stylesheet"> -->
-  <script type="module" crossorigin src="./assets/index-be8651ce.js"></script>
-  <link rel="stylesheet" href="./assets/index-9cb74482.css">
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NTZGE0Z2C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-8NTZGE0Z2C');
-</script>
-
-
-<body>
-  <div id="root"></div>
+    <script type="module" crossorigin src="./assets/index-0fee620a.js"></script>
+    <link rel="stylesheet" href="./assets/index-fa1f101d.css">
+  </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8NTZGE0Z2C"
+  ></script>
   <script>
-    const bgColor = (localStorage.getItem("currentTheme") === "light") ? "#f2f5fb" : '#18181b';
-    document.querySelector("html").style.backgroundColor = bgColor;
-    document.querySelector('meta[name="theme-color"]').setAttribute("content", bgColor);
-    document.querySelector("html").setAttribute("lang", localStorage.getItem("i18nextLng") || "en")
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-8NTZGE0Z2C");
   </script>
-  
-  <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+
+  <body class="lightModeOn">
+    <div id="root"></div>
+    <script>
+      const bgColor =
+        localStorage.getItem("currentTheme") === "dark" ? "#18181b" : "#f2f5fb";
+      document.querySelector("html").style.backgroundColor = bgColor;
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute("content", bgColor);
+      document
+        .querySelector("html")
+        .setAttribute("lang", localStorage.getItem("i18nextLng") || "en");
+    </script>
+    
+    <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
     data-id="pjaworski" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF"
     data-position="Right" data-x_margin="18" data-y_margin="18"></script> -->
-</body>
-
+  </body>
 </html>
