@@ -29,7 +29,7 @@
     },
     "items": {
       "dbbetb-e46b8r8b54e3f": {
-        "title": "IGPlus Browser Extension",
+        "title": "IGPlus",
         "desc": "An Instagram extension that allows users to disable Reels, Stories, recommendations, vanity metrics, and customize themes, fonts, and more. Has ~6000 active users across all platforms."
       },
       "db64-be4dbf8r8b54e3f": {
@@ -37,7 +37,7 @@
         "desc": "A CLI tool with pipelines for automated posts generation using OpenAI GPT 3.5 / 4. It offers combining post chunks, post validations, paraphraser for each or random strings (to avoid plagiarism and AI detection), Unsplash API relative images search, multi-accounts, and more."
       },
       "db64-betnrwnrt45v4gn": {
-        "title": "Lichess Browser Extension",
+        "title": "LichessHelper",
         "desc": "Extension for Lichess. Adds new themes, pieces, boards, fonts, and features such as annoying popups disable, modern layout, coordinates on each square, and many more. Available for Google Chrome, Firefox, and MS Edge."
       },
       "db64-be46bmyr8b54egf": {
