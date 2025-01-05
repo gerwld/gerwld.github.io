@@ -1,86 +1,90 @@
 {
-  "main": {
-    "view-more": "Zobacz więcej na GitHubie",
-    "theme": {
-      "light": "Tryb jasny",
-      "dark": "Tryb ciemny"
-    }
-  },
-  "notifications": {
-    "email-copied": "Skopiowano do schowka",
-    "email-client": "Otwieranie poczty",
-    "email-ns": "Ta przeglądarka jeszcze tego nie obsługuje."
-  },
-  "hero": {
-    "title": "Frontend Developer, web entuzjasta",
-    "desc": "Witam. Jestem Patryk, frontend & mobile developer z 3-letnim doświadczeniem komercyjnym. Specjalizuję się w tworzeniu nowoczesnych, responsywnych stron internetowych, rozszerzeń do przeglądarek, progresywnych aplikacji webowych, aplikacji mobilnych, optymalizacji kodu po stronie klienta i wielu innych. Lubię pisać kod od podstaw, ale mogę również dostarczyć HTML, CSS i JS zapakowane w nowoczesny framework webowy. Tworzę produkty wysokiej jakości dzięki sprawdzonemu procesowi tworzenia oprogramowania.",
-    "email-lable": "Email kontaktowy",
-    "email-client": "Otwórz w kliencie pocztowym",
-    "email-copy": "Skopiuj do schowka",
-    "subtitle": "Śledź mnie"
-  },
-  "skills": {
-    "title": "Skills"
-  },
-  "projects": {
-    "title": "Projekty Własne",
-    "navigation": {
-      "live": "Podgląd na żywo",
-      "source": "Zobacz źródło"
-    },
-    "items": {
-      "dbbetb-e46b8r8b54e3f": {
-        "title": "IGPlus",
-        "desc": "Rozszerzenie do Instagrama, które pozwala użytkownikom wyłączyć Reels, Stories, polecane, metryki oraz dostosowywać motywy, czcionki i inne. Ma około 3400 aktywnych użytkowników na wszystkich platformach."
-      },
-      "db64-be4dbf8r8b54e3f": {
-        "title": "GPT 3.5 / 4 CLI Automation Tool",
-        "desc": "Tool do automatyzacji generowania postów za pomocą GPT 3.5 / 4. Funkcje obejmują łączenie fragmentów postu, walidację postów, QuillBot Paraphraser dla wszystkich / losowych linii (w celu uniknięcia plagiatu i wykrywania SZI), wyszukiwanie zdjęć związanych za pomocą interfejsu API Unsplash (+ wielokrotne konto dla API) i inne."
-      },
-      "db64-betnrwnrt45v4gn": {
-        "title": "LichesHelper",
-        "desc": "Rozszerzenie dla Lichessa. Dodaje nowe motywy, figury, szachownice, czcionki oraz funkcje - wyłączanie irytujących okienek pop-up, modern design, współrzędne na każdej komórce itp."
-      },
-      "db64-be46bmyr8b54egf": {
-        "title": "ChessHelper dla Chess.com",
-        "desc": "Zawiera podobne funkcje, ale dla Chess.com. Ma ~2200 aktywnych użytkowników na wszystkich platformach. Większość figurek i szachownic została również stworzona przeze mnie, choć niektóre z nich zostały pobrane z internetu na licencji GNU / CC0. Dostępne dla Google Chrome, Firefox, Opery i MS Edge."
-      },
-      "db64-be46b8rht53f": {
-        "title": "Galeria paralaksowa",
-        "desc": "Projekt galerii z efektem paralaksu. Wydajny, zawiera około 100 linii kodu."
-      },
-      "db64-rt46b8r8b543f": {
-        "title": "SpoPlus dla Spotify",
-        "desc": "Pozwala dostosować i personalizować wersję webową Spotify. Dodaje nowe motywy, czcionki, usuwa irytujące powiadomienia, wyskakujące okna itd. ~6400 aktywnych użytkowników na wszystkich platformach."
-      },
-      "db64-betnrgn-ntrt44v4gn": {
-        "title": "Szachy w przeglądarce | TypeScript",
-        "desc": "OOP, TypeScript, wsparcie dla urządzeń mobilnych. Zaimplementowane funkcje obejmują przechwytywanie figur, podstawowe zasady ruchu figur i en passant."
-      },
-      "db64-be46b8r8b54e3f": {
-        "title": "TrainingPeaks - Monitorowanie treningu",
-        "desc": "Monitorowanie osobistych treningów z trzema głównymi zasobami: planowanie, codzienne samopoczucie i ukończone treningi. Każdą sekcję można dostosować oraz „przeciągać” drag-n-drop z jednego dnia na inny. Ponadto, pod koniec tygodnia można uzyskać statystyki tygodniowe."
-      },
-      "dbf0-beqr56b8r8brbe5l": {
-        "title": "OnlineStats.info",
-        "desc": "Serwis monitorujący publiczny status online w Telegram. Wykorzystuje JWT Auth, bizcharts, final-form. Obejmuje również lokalizację i18n oraz ciemny motyw."
-      },
-      "dbf0-beqr0b890eq9r8b98": {
-        "title": "Projekt aplikacji muzycznej",
-        "desc": "Odtwarzacz muzyczny. Ma wersję mobilną, pamięć podręczną localStorage. Pracuje z interfejsem AudioSession Api, dzięki czemu funkcje przeglądarki (takie jak skróty klawiszowe Next/Prev, przeglądanie albumu) działają."
-      },
-      "fbd07wavab0987erab709adb": {
-        "title": "Lista zadań SPA",
-        "desc": "Aplikacja do listy zadań, podobna do Anydo, obejmuje wszystkie operacje CRUD (dodawanie, aktualizacja, odczyt lub usuwanie dowolnego zadania), sortowanie według tagów i uwierzytelnianie JWT. Posiada również wersję mobilną."
-      },
-      "fadb0978a8f90b7986da0968": {
-        "title": "Klon Twittera",
-        "desc": "Stary projekt na praktyki. Wykorzystuje walidację final-form do obsługi formularzy, umożliwia publikację tweetów, posiada zarówno trasy dla gości, jak i uwierzytelnionych użytkowników oraz pobieranie tweetów."
-      },
-      "0879fbd9078adfb0a7dfb908": {
-        "title": "Szablon Nolk",
-        "desc": "Adaptacyjny szablon z animacjami SVG i prostym formularzem e-mail 3-krokowym. Zbudowany na Js, menedżer zadań Gulp."
-      }
-    }
+ "main": {
+  "view-more": "Zobacz więcej na GitHubie",
+  "theme": {
+   "light": "Tryb jasny",
+   "dark": "Tryb ciemny"
   }
+ },
+ "notifications": {
+  "email-copied": "Skopiowano do schowka",
+  "email-client": "Otwieranie poczty",
+  "email-ns": "Ta przeglądarka jeszcze tego nie obsługuje."
+ },
+ "hero": {
+  "title": "Frontend Developer, web entuzjasta",
+  "desc": "Witam. Jestem Patryk, frontend & mobile developer z 3-letnim doświadczeniem komercyjnym. Specjalizuję się w tworzeniu nowoczesnych, responsywnych stron internetowych, rozszerzeń do przeglądarek, progresywnych aplikacji webowych, aplikacji mobilnych, optymalizacji kodu po stronie klienta i wielu innych. Lubię pisać kod od podstaw, ale mogę również dostarczyć HTML, CSS i JS zapakowane w nowoczesny framework webowy. Tworzę produkty wysokiej jakości dzięki sprawdzonemu procesowi tworzenia oprogramowania.",
+  "email-lable": "Email kontaktowy",
+  "email-client": "Otwórz w kliencie pocztowym",
+  "email-copy": "Skopiuj do schowka",
+  "subtitle": "Śledź mnie"
+ },
+ "skills": {
+  "title": "Skills"
+ },
+ "projects": {
+  "title": "Projekty Własne",
+  "navigation": {
+   "live": "Podgląd na żywo",
+   "source": "Zobacz źródło"
+  },
+  "items": {
+   "dbbetb-e46b8r8b54e3f": {
+    "title": "IGPlus",
+    "desc": "Rozszerzenie do Instagrama, które pozwala użytkownikom wyłączyć Reels, Stories, polecane, metryki oraz dostosowywać motywy, czcionki i inne. Ma około 3400 aktywnych użytkowników na wszystkich platformach."
+   },
+   "db64-be4dbf8r8b54e3f": {
+    "title": "GPT 3.5 / 4 CLI Automation Tool",
+    "desc": "Tool do automatyzacji generowania postów za pomocą GPT 3.5 / 4. Funkcje obejmują łączenie fragmentów postu, walidację postów, QuillBot Paraphraser dla wszystkich / losowych linii (w celu uniknięcia plagiatu i wykrywania SZI), wyszukiwanie zdjęć związanych za pomocą interfejsu API Unsplash (+ wielokrotne konto dla API) i inne."
+   },
+   "db64-betnrwnrt45v4gn": {
+    "title": "LichesHelper",
+    "desc": "Rozszerzenie dla Lichessa. Dodaje nowe motywy, figury, szachownice, czcionki oraz funkcje - wyłączanie irytujących okienek pop-up, modern design, współrzędne na każdej komórce itp."
+   },
+   "db64-be46bmyr8b54egf": {
+    "title": "ChessHelper dla Chess.com",
+    "desc": "Zawiera podobne funkcje, ale dla Chess.com. Ma ~2200 aktywnych użytkowników na wszystkich platformach. Większość figurek i szachownic została również stworzona przeze mnie, choć niektóre z nich zostały pobrane z internetu na licencji GNU / CC0. Dostępne dla Google Chrome, Firefox, Opery i MS Edge."
+   },
+   "db64-be46b8rht53f": {
+    "title": "Galeria paralaksowa",
+    "desc": "Projekt galerii z efektem paralaksu. Wydajny, zawiera około 100 linii kodu."
+   },
+   "db64-rt46b8r8b543f": {
+    "title": "SpoPlus dla Spotify",
+    "desc": "Pozwala dostosować i personalizować wersję webową Spotify. Dodaje nowe motywy, czcionki, usuwa irytujące powiadomienia, wyskakujące okna itd. ~6400 aktywnych użytkowników na wszystkich platformach."
+   },
+   "db64-betnrgn-ntrt44v4gn": {
+    "title": "Szachy w przeglądarce | TypeScript",
+    "desc": "OOP, TypeScript, wsparcie dla urządzeń mobilnych. Zaimplementowane funkcje obejmują przechwytywanie figur, podstawowe zasady ruchu figur i en passant."
+   },
+   "db64-be46b8r8b54e3f": {
+    "title": "TrainingPeaks - Monitorowanie treningu",
+    "desc": "Monitorowanie osobistych treningów z trzema głównymi zasobami: planowanie, codzienne samopoczucie i ukończone treningi. Każdą sekcję można dostosować oraz „przeciągać” drag-n-drop z jednego dnia na inny. Ponadto, pod koniec tygodnia można uzyskać statystyki tygodniowe."
+   },
+   "dbf0-beqr56b8r8brbe5l": {
+    "title": "OnlineStats.info",
+    "desc": "Serwis monitorujący publiczny status online w Telegram. Wykorzystuje JWT Auth, bizcharts, final-form. Obejmuje również lokalizację i18n oraz ciemny motyw."
+   },
+   "dbf0-beqr0b890eq9r8b98": {
+    "title": "Projekt aplikacji muzycznej",
+    "desc": "Odtwarzacz muzyczny. Ma wersję mobilną, pamięć podręczną localStorage. Pracuje z interfejsem AudioSession Api, dzięki czemu funkcje przeglądarki (takie jak skróty klawiszowe Next/Prev, przeglądanie albumu) działają."
+   },
+   "fbd07wavab0987erab709adb": {
+    "title": "Lista zadań SPA",
+    "desc": "Aplikacja do listy zadań, podobna do Anydo, obejmuje wszystkie operacje CRUD (dodawanie, aktualizacja, odczyt lub usuwanie dowolnego zadania), sortowanie według tagów i uwierzytelnianie JWT. Posiada również wersję mobilną."
+   },
+   "fadb0978a8f90b7986da0968": {
+    "title": "Klon Twittera",
+    "desc": "Stary projekt na praktyki. Wykorzystuje walidację final-form do obsługi formularzy, umożliwia publikację tweetów, posiada zarówno trasy dla gości, jak i uwierzytelnionych użytkowników oraz pobieranie tweetów."
+   },
+   "0879fbd9078adfb0a7dfb908": {
+    "title": "Szablon Nolk",
+    "desc": "Adaptacyjny szablon z animacjami SVG i prostym formularzem e-mail 3-krokowym. Zbudowany na Js, menedżer zadań Gulp."
+   },
+   "sbbetb-l43b8r4b54e3f": {
+    "title": "NorithalCV Pure",
+    "desc": "Motyw WordPress, zaprojektowany dla profesjonalistów i twórców, którzy potrzebują szybkiego, lekkiego rozwiązania do zaprezentowania swoich umiejętności i osiągnięć. Niezależnie od tego, czy tworzysz CV, portfolio, czy minimalistyczny blog, ten motyw to doskonały wybór."
+   }
+  }
+ }
 }

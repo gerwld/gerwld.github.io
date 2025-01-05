@@ -1,86 +1,90 @@
 {
-  "main": {
-    "view-more": "Mehr auf GitHub anzeigen",
-    "theme": {
-      "light": "Auf Hellmodus umschalten",
-      "dark": "Auf Dunkelmodus umschalten"
-    }
-  },
-  "notifications": {
-    "email-copied": "In die Zwischenablage kopiert",
-    "email-client": "Öffne E-Mail-Client",
-    "email-ns": "Dieser Browser unterstützt dies noch nicht."
-  },
-  "hero": {
-    "title": "Frontend-Entwickler, web enthusiast",
-    "desc": "Hallo. Ich bin Patrick, ein Frontend- und Mobile-Entwickler mit 3 Jahren kommerzieller Erfahrung. Ich spezialisiere mich auf die Erstellung moderner, responsiver Websites, Browser-Erweiterungen, progressiver Webanwendungen, mobiler Apps, die Optimierung von Client-Code und vieles mehr. Ich schreibe gerne Code von Grund auf, kann aber auch HTML, CSS und JS bereitstellen, die in ein modernes Webframework eingebettet sind. Dank eines bewährten Softwareentwicklungsprozesses entwickle ich hochwertige Produkte.",
-    "email-lable": "Kontakt-E-Mail",
-    "email-client": "In E-Mail-Client öffnen",
-    "email-copy": "In die Zwischenablage kopieren",
-    "subtitle": "Folge mir"
-  },
-  "skills": {
-    "title": "Fähigkeiten"
-  },
-  "projects": {
-    "title": "Letzte Projekte",
-    "navigation": {
-      "live": "Live-Vorschau",
-      "source": "Quellcode anzeigen"
-    },
-    "items": {
-      "dbbetb-e46b8r8b54e3f": {
-        "title": "IGPlus Browser-Erweiterung",
-        "desc": "Eine Instagram-Erweiterung, die es Benutzern ermöglicht, Reels, Stories, Empfehlungen, Vanity Metrics zu deaktivieren und Themen, Schriftarten und mehr anzupassen. Derzeit hat sie ~6000 aktive Benutzer auf allen Plattformen. Verfügbar für Google Chrome, Firefox und MS Edge."
-      },
-      "db64-be4dbf8r8b54e3f": {
-        "title": "GPT 3.5 / 4 Automatisierungstool",
-        "desc": "Ein CLI-Tool mit mehreren Pipelines für die automatisierte Generierung von Beiträgen mit OpenAI GPT 3.5 / 4. Enthält Funktionen wie das Zusammenführen von Beitragsteilen, die Validierung von Beiträgen, den QuillBot Paraphraser für alle / zufällige Zeichenfolgen (um Plagiate und KI-Erkennung zu vermeiden), relative Bildsuche mit Unsplash API (+ Multi-Accounting für API) und mehr."
-      },
-      "db64-betnrwnrt45v4gn": {
-        "title": "Lichess Browser-Erweiterung",
-        "desc": "Erweiterung für Lichess. Fügt neue Themen, Figuren, Bretter, Schriftarten hinzu und Funktionen wie das Ausschalten lästiger Pop-ups, modernes Layout, Koordinaten auf jedem Feld und vieles mehr. Verfügbar für Google Chrome, Firefox und MS Edge."
-      },
-      "db64-be46bmyr8b54egf": {
-        "title": "ChessHelper für Chess.com",
-        "desc": "Ähnliches Projekt wie LichessHelper. Enthält fast die gleichen Funktionen, aber für Chess.com. Derzeit hat es ~2200 aktive Benutzer auf allen Plattformen. Die meisten Figuren und Bretter wurden auch von mir erstellt, einige stammen jedoch aus dem Web mit GNU / CC0-Lizenz. Verfügbar für Google Chrome, Firefox, Opera und MS Edge."
-      },
-      "db64-be46b8rht53f": {
-        "title": "Parallax-Galerie",
-        "desc": "Galerieprojekt mit sanftem Parallaxeneffekt. Leicht und effizient, besteht nur aus ~100 Zeilen Code."
-      },
-      "db64-rt46b8r8b543f": {
-        "title": "SpoPlus Erweiterung für Spotify",
-        "desc": "Erweiterung, die die Anpassung und Personalisierung der Webversion von Spotify ermöglicht. Setzt neue Themen, Schriftarten, entfernt lästige Benachrichtigungen, Pop-ups und mehr. ~6400 aktive Benutzer auf allen Plattformen. Verfügbar für Google Chrome, Firefox und MS Edge."
-      },
-      "db64-betnrgn-ntrt44v4gn": {
-        "title": "Schach im Browser | TypeScript",
-        "desc": "Schachspiel im Browser. Entwickelt mit OOP, TypeScript, mit Unterstützung für mobile Geräte. Derzeit implementierte Funktionen umfassen das Erfassen von Figuren, grundlegende Regeln für den Figurenumzug und en passant. In Arbeit sind kurze und lange Rochaden, Schach, Matt, die Lücke von einem Quadrat zwischen den Königen und mehr."
-      },
-      "db64-be46b8r8b54e3f": {
-        "title": "TrainingPeaks - Sportüberwachung",
-        "desc": "Überwachung für das persönliche Training mit drei Hauptressourcen: Pläne, tägliches Gefühl und Training. Jeder Abschnitt ist anpassbar und ermöglicht es Benutzern, Trainingseinheiten einfach von einem Tag auf den anderen zu verschieben. Darüber hinaus bietet es wöchentliche Statistiken."
-      },
-      "dbf0-beqr56b8r8brbe5l": {
-        "title": "OnlineStats.info - Überwachungsdienst",
-        "desc": "Startup-Dienst zur Überwachung des eigenen oder des Online-Status Ihrer Kinder im Telegram Messenger. Verwendet JWT Auth, bizcharts Diagramme, final-form für Formulare. Enthält auch i18n-Lokalisierungen und ein dunkles Thema."
-      },
-      "dbf0-beqr0b890eq9r8b98": {
-        "title": "Musik-App-Projekt",
-        "desc": "ReactJS & Redux Musikplayer. Enthält eine nutzbare mobile Version, localStorage-Cache. Funktioniert mit AudioSession Api, sodass browserbasierte Funktionen (wie Hotkey-Buttons Next/Prev, Albumvorschau) richtig funktionieren."
-      },
-      "fbd07wavab0987erab709adb": {
-        "title": "Todo-Liste SPA",
-        "desc": "Ähnlich wie Anydo To-Do-Liste-Anwendung mit vollständiger Funktionalität, einschließlich aller CRUD-Operationen (Hinzufügen, Aktualisieren, Lesen oder Löschen einer Auf gabe), Sortierung nach Tags und JWT Auth. Enthält auch eine mobile Version mit Safari-Ansichtsfenster und anderen Verbesserungen."
-      },
-      "fadb0978a8f90b7986da0968": {
-        "title": "Twitter-Klon",
-        "desc": "Verwendet die Validierung von final-form zur Formularverarbeitung, ermöglicht das Veröffentlichen von Tweets, hat Routen sowohl für Gäste als auch für authentifizierte Benutzer und das Abrufen von Tweets."
-      },
-      "0879fbd9078adfb0a7dfb908": {
-        "title": "Nolk-Vorlage",
-        "desc": "Adaptive Vorlage mit vielen SVG-Animationen und einem einfachen 3-Schritte-E-Mail-Formular. Auf Vanilla JavaScript aufgebaut, der Taskrunner für die Dateiminimierung ist Gulp."
-      }
-    }
+ "main": {
+  "view-more": "Mehr auf GitHub anzeigen",
+  "theme": {
+   "light": "Auf Hellmodus umschalten",
+   "dark": "Auf Dunkelmodus umschalten"
   }
+ },
+ "notifications": {
+  "email-copied": "In die Zwischenablage kopiert",
+  "email-client": "Öffne E-Mail-Client",
+  "email-ns": "Dieser Browser unterstützt dies noch nicht."
+ },
+ "hero": {
+  "title": "Frontend-Entwickler, web enthusiast",
+  "desc": "Hallo. Ich bin Patrick, ein Frontend- und Mobile-Entwickler mit 3 Jahren kommerzieller Erfahrung. Ich spezialisiere mich auf die Erstellung moderner, responsiver Websites, Browser-Erweiterungen, progressiver Webanwendungen, mobiler Apps, die Optimierung von Client-Code und vieles mehr. Ich schreibe gerne Code von Grund auf, kann aber auch HTML, CSS und JS bereitstellen, die in ein modernes Webframework eingebettet sind. Dank eines bewährten Softwareentwicklungsprozesses entwickle ich hochwertige Produkte.",
+  "email-lable": "Kontakt-E-Mail",
+  "email-client": "In E-Mail-Client öffnen",
+  "email-copy": "In die Zwischenablage kopieren",
+  "subtitle": "Folge mir"
+ },
+ "skills": {
+  "title": "Fähigkeiten"
+ },
+ "projects": {
+  "title": "Letzte Projekte",
+  "navigation": {
+   "live": "Live-Vorschau",
+   "source": "Quellcode anzeigen"
+  },
+  "items": {
+   "dbbetb-e46b8r8b54e3f": {
+    "title": "IGPlus Browser-Erweiterung",
+    "desc": "Eine Instagram-Erweiterung, die es Benutzern ermöglicht, Reels, Stories, Empfehlungen, Vanity Metrics zu deaktivieren und Themen, Schriftarten und mehr anzupassen. Derzeit hat sie ~6000 aktive Benutzer auf allen Plattformen. Verfügbar für Google Chrome, Firefox und MS Edge."
+   },
+   "db64-be4dbf8r8b54e3f": {
+    "title": "GPT 3.5 / 4 Automatisierungstool",
+    "desc": "Ein CLI-Tool mit mehreren Pipelines für die automatisierte Generierung von Beiträgen mit OpenAI GPT 3.5 / 4. Enthält Funktionen wie das Zusammenführen von Beitragsteilen, die Validierung von Beiträgen, den QuillBot Paraphraser für alle / zufällige Zeichenfolgen (um Plagiate und KI-Erkennung zu vermeiden), relative Bildsuche mit Unsplash API (+ Multi-Accounting für API) und mehr."
+   },
+   "db64-betnrwnrt45v4gn": {
+    "title": "Lichess Browser-Erweiterung",
+    "desc": "Erweiterung für Lichess. Fügt neue Themen, Figuren, Bretter, Schriftarten hinzu und Funktionen wie das Ausschalten lästiger Pop-ups, modernes Layout, Koordinaten auf jedem Feld und vieles mehr. Verfügbar für Google Chrome, Firefox und MS Edge."
+   },
+   "db64-be46bmyr8b54egf": {
+    "title": "ChessHelper für Chess.com",
+    "desc": "Ähnliches Projekt wie LichessHelper. Enthält fast die gleichen Funktionen, aber für Chess.com. Derzeit hat es ~2200 aktive Benutzer auf allen Plattformen. Die meisten Figuren und Bretter wurden auch von mir erstellt, einige stammen jedoch aus dem Web mit GNU / CC0-Lizenz. Verfügbar für Google Chrome, Firefox, Opera und MS Edge."
+   },
+   "db64-be46b8rht53f": {
+    "title": "Parallax-Galerie",
+    "desc": "Galerieprojekt mit sanftem Parallaxeneffekt. Leicht und effizient, besteht nur aus ~100 Zeilen Code."
+   },
+   "db64-rt46b8r8b543f": {
+    "title": "SpoPlus Erweiterung für Spotify",
+    "desc": "Erweiterung, die die Anpassung und Personalisierung der Webversion von Spotify ermöglicht. Setzt neue Themen, Schriftarten, entfernt lästige Benachrichtigungen, Pop-ups und mehr. ~6400 aktive Benutzer auf allen Plattformen. Verfügbar für Google Chrome, Firefox und MS Edge."
+   },
+   "db64-betnrgn-ntrt44v4gn": {
+    "title": "Schach im Browser | TypeScript",
+    "desc": "Schachspiel im Browser. Entwickelt mit OOP, TypeScript, mit Unterstützung für mobile Geräte. Derzeit implementierte Funktionen umfassen das Erfassen von Figuren, grundlegende Regeln für den Figurenumzug und en passant. In Arbeit sind kurze und lange Rochaden, Schach, Matt, die Lücke von einem Quadrat zwischen den Königen und mehr."
+   },
+   "db64-be46b8r8b54e3f": {
+    "title": "TrainingPeaks - Sportüberwachung",
+    "desc": "Überwachung für das persönliche Training mit drei Hauptressourcen: Pläne, tägliches Gefühl und Training. Jeder Abschnitt ist anpassbar und ermöglicht es Benutzern, Trainingseinheiten einfach von einem Tag auf den anderen zu verschieben. Darüber hinaus bietet es wöchentliche Statistiken."
+   },
+   "dbf0-beqr56b8r8brbe5l": {
+    "title": "OnlineStats.info - Überwachungsdienst",
+    "desc": "Startup-Dienst zur Überwachung des eigenen oder des Online-Status Ihrer Kinder im Telegram Messenger. Verwendet JWT Auth, bizcharts Diagramme, final-form für Formulare. Enthält auch i18n-Lokalisierungen und ein dunkles Thema."
+   },
+   "dbf0-beqr0b890eq9r8b98": {
+    "title": "Musik-App-Projekt",
+    "desc": "ReactJS & Redux Musikplayer. Enthält eine nutzbare mobile Version, localStorage-Cache. Funktioniert mit AudioSession Api, sodass browserbasierte Funktionen (wie Hotkey-Buttons Next/Prev, Albumvorschau) richtig funktionieren."
+   },
+   "fbd07wavab0987erab709adb": {
+    "title": "Todo-Liste SPA",
+    "desc": "Ähnlich wie Anydo To-Do-Liste-Anwendung mit vollständiger Funktionalität, einschließlich aller CRUD-Operationen (Hinzufügen, Aktualisieren, Lesen oder Löschen einer Auf gabe), Sortierung nach Tags und JWT Auth. Enthält auch eine mobile Version mit Safari-Ansichtsfenster und anderen Verbesserungen."
+   },
+   "fadb0978a8f90b7986da0968": {
+    "title": "Twitter-Klon",
+    "desc": "Verwendet die Validierung von final-form zur Formularverarbeitung, ermöglicht das Veröffentlichen von Tweets, hat Routen sowohl für Gäste als auch für authentifizierte Benutzer und das Abrufen von Tweets."
+   },
+   "0879fbd9078adfb0a7dfb908": {
+    "title": "Nolk-Vorlage",
+    "desc": "Adaptive Vorlage mit vielen SVG-Animationen und einem einfachen 3-Schritte-E-Mail-Formular. Auf Vanilla JavaScript aufgebaut, der Taskrunner für die Dateiminimierung ist Gulp."
+   },
+   "sbbetb-l43b8r4b54e3f": {
+    "title": "NorithalCV Pure",
+    "desc": "WordPress-Theme, entwickelt für Profis und Kreative, die ein schnelles, leichtgewichtiges Theme benötigen, um ihre Fähigkeiten und Erfolge zu präsentieren. Egal, ob Sie einen Lebenslauf, ein Portfolio oder einen minimalistischen Blog erstellen – dieses Theme ist eine ausgezeichnete Wahl."
+   }
+  }
+ }
 }
