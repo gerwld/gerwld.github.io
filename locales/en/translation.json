@@ -23,6 +23,11 @@
   },
   "projects": {
     "title": "Personal Projects",
+    "sort_by": "Sort by:",
+    "featured": "Featured",
+    "date_new": "Date (Most Recent)",
+    "date_old": "Date (Oldest First)",
+    "github": "GitHub Stars",
     "navigation": {
       "live": "Live Preview",
       "source": "View Source"
@@ -30,27 +35,27 @@
     "items": {
       "dbbetb-e46b8r8b54e3f": {
         "title": "IGPlus",
-        "desc": "An Instagram extension that allows users to disable Reels, Stories, recommendations, vanity metrics, and customize themes, fonts, and more. Has ~6000 active users across all platforms."
+        "desc": "An Instagram extension that allows users to disable Reels, Stories, recommendations, vanity metrics, and customize themes, fonts, and more. Has ~10,000 active users across all platforms."
       },
       "db64-be4dbf8r8b54e3f": {
         "title": "GPT 3.5 / 4 Automation CLI Tool",
-        "desc": "A CLI tool with pipelines for automated posts generation using OpenAI GPT 3.5 / 4. It offers combining post chunks, post validations, paraphraser for each or random strings (to avoid plagiarism and AI detection), Unsplash API relative images search, multi-accounts, and more."
+        "desc": "A tool for automated posts generation using GPT 3.5 / 4. It offers combining post chunks, post validations, paraphraser for each one / random strings (to avoid plagiarism and AI detection), Unsplash API relative images fetching and multiple OpenAI accounts."
       },
       "db64-betnrwnrt45v4gn": {
         "title": "LichessHelper",
-        "desc": "Extension for Lichess. Adds new themes, pieces, boards, fonts, and features such as annoying popups disable, modern layout, coordinates on each square, and many more. Available for Google Chrome, Firefox, and MS Edge."
+        "desc": "Extension for Lichess that adds new themes, pieces, boards, fonts, and features such as disabling popups, modern layout, coordinates on each square, and many more. Available for Google Chrome, Firefox, and MS Edge."
       },
       "db64-be46bmyr8b54egf": {
         "title": "ChessHelper for Chess.com",
-        "desc": "It has almost the same features as LichessHelper, but for Chess.com. Has ~2200 active users across all platforms. Most of the pieces and boards were created by me, while others are sourced from the web under the GNU/CC0 licenses."
+        "desc": "It has almost the same features as LichessHelper, but for Chess.com. Has ~4,500 active users across all platforms. Most of the pieces and boards were created by me, while others are sourced from the web under the GNU/CC0 licenses."
       },
       "db64-be46b8rht53f": {
         "title": "Parallax Gallery",
         "desc": "Gallery project with a smooth parallax effect. Lightweight and efficient, comprising only ~100 lines of code."
       },
       "db64-rt46b8r8b543f": {
-        "title": "SpoPlus Extension for Spotify",
-        "desc": "An extension that enables customization and personalization of the web version of Spotify. Set up new themes, fonts, remove annoying notifications, popups, and more. ~6400 active users on all platforms."
+        "title": "SpoPlus for Spotify",
+        "desc": "Adds customization and personalization to the web-version of Spotify. Such as: new themes, fonts, hiding popups, and more. Has ~12,000 active users across all the platforms."
       },
       "db64-betnrgn-ntrt44v4gn": {
         "title": "Chess in Browser",
@@ -58,23 +63,23 @@
       },
       "db64-be46b8r8b54e3f": {
         "title": "TrainingPeaks",
-        "desc": "Monitoring for personal training with three main resources: plans, daily feelings, and workouts. Each section is customizable, allowing users to easily drag and drop training sessions from one day to another. Additionally, it provides weekly statistics."
+        "desc": "Personal training PWA with as three main resources – plans, daily feelings and workouts. Each section is customizable, allowing users to easily drag-n-drop training sessions from one day to another. It aslo provides weekly statistics."
       },
       "dbf0-beqr56b8r8brbe5l": {
         "title": "OnlineStats.com",
-        "desc": "Service for monitoring users publicly shared online status in Telegram Messenger. Utilizes JWT Auth, bizcharts charts, final-form for forms. Also it offers i18n locales and a dark theme."
+        "desc": "Service for collecting and reviewing users publicly shared online status in Telegram Messenger. Utilizes JWT Auth, bizcharts charts, final-form for forms. Also it offers i18n locales and a dark theme mode."
       },
       "dbf0-beqr0b890eq9r8b98": {
         "title": "Music App",
-        "desc": "ReactJS & Redux Music player. Contains usable mobile version, localStorage cache. Works with AudioSession Api, so browser features like hotkey buttons (Next/Prev, album preview) work correctly."
+        "desc": "ReactJS & Redux Music player. Has mobile version, uses localStorage. Utilizes AudioSession Api, which allows browser features, such as hotkey buttons (Next/Prev, album preview)."
       },
       "fbd07wavab0987erab709adb": {
         "title": "Anydo",
-        "desc": "To-do list application, includes all CRUD operations (add, update, read or delete any task), sorting by tags, and JWT Auth. It also has a mobile version with Safari viewport and other improvements."
+        "desc": "To-do list application, utilizes all the CRUD operations (add, update, read or delete – for any task), and aslo has such features, as sorting by Tags, JWT Auth and mobile version."
       },
       "fadb0978a8f90b7986da0968": {
         "title": "Twitter Clone",
-        "desc": "Utilizes final-form validation for form handling, allows posting tweets, has routings for both guests and logged-in users, and tweets fetching."
+        "desc": "This project uses final-form validation for form handling, allows posting tweets, has routings for both guests and logged-in users, and tweets fetching."
       },
       "0879fbd9078adfb0a7dfb908": {
         "title": "Nolk Landing Page",
@@ -82,19 +87,32 @@
       },
       "a79e04bc-4bf4-4d23-b23d-c2c8221a6180": {
         "title": "Matro UI",
-        "desc": "👁️ Highly optimized UI Components in one, tiny package for your React Applications."
+        "desc": "👁️ Highly optimized UI Components in one, tiny package. It's a simple, modular library that provides all essential components for any React project."
       },
       "d0c97369-e345-4759-a619-0520d4e58274": {
         "title": "docusaurus-plugin-fix-react",
-        "desc": "Fixes the issue when npm package / exported Component uses React import, so webpack resolves it not from global node_modules/react but instead from package directory."
+        "desc": "Fixes the issue where node package / exported component uses \"from react\" import, so webpack resolves it not from global node_modules/react but instead from the package directory."
       },
       "8fc7da5b-799a-4415-b0ef-f2633b0e55a6": {
         "title": "Amazon Research Tool",
-        "desc": "Discover Amazon product info, find best prices, leverage SEO keywords, locate top suppliers with Reverse ASIN, and more. Available on the Google Chrome Store and Firefox Add-ons."
+        "desc": "Helps users to discover Amazon product info, find best prices, leverage SEO keywords, locate top suppliers with Reverse ASIN, and more. Available on the Google Chrome Store and Firefox Add-ons."
       },
+    
       "sbbetb-l43b8r4b54e3f":{
         "title": "NorithalCV Pure",
         "desc": "Wordpress theme, designed for professionals and creatives who need a snappy, lightweight solution to showcase their skills and achievements. Whether you’re creating a CV, portfolio, or minimalist blog, this theme is an excellent choice."
+      },
+      "6034b3c5-a218-4169-a807-e0684d40213f": {
+        "title": "DoHabbit App",
+        "desc": "Open-source habits tracker for both iOS and Android. Designed to help users stay consistent and improve their daily routine. It makes tracking and achieving progress easier and way more engaging."
+      },
+      "3aa5099f-23ad-42a7-a545-340365938388": {
+        "title": "Memento. - Minimalistic Homepage",
+        "desc": "Open-source, lightweight, and customizable start page extension for browsers. Features include: uploading custom backgrounds, selecting which one to display, and drag-and-drop toolbar widgets."
+      },
+      "d0c97369-e345-4759-a619-0520d4e58275": {
+        "title": "react-native-drag-n-drop",
+        "desc": "A scrollable React Native drag-n-drop library that does not use FlatList, which sometimes cause framedrop issues on Android. Built with react-native-reanimated and react-native-gesture-handler. Supports custom item rendering, grips for drag initiation, and more."
       }
     }
   }

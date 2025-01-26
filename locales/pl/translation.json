@@ -24,6 +24,11 @@
  },
  "projects": {
   "title": "Projekty Własne",
+  "sort_by": "Sortuj według:",
+  "featured": "Polecane",
+  "date_new": "Daty (Od najnowszych)",
+  "date_old": "Daty (Od najstarszych)",
+  "github": "Gwiazd na GitHubie",
   "navigation": {
    "live": "Podgląd na żywo",
    "source": "Zobacz źródło"
@@ -43,7 +48,7 @@
    },
    "db64-be46bmyr8b54egf": {
     "title": "ChessHelper dla Chess.com",
-    "desc": "Zawiera podobne funkcje, ale dla Chess.com. Ma ~2200 aktywnych użytkowników na wszystkich platformach. Większość figurek i szachownic została również stworzona przeze mnie, choć niektóre z nich zostały pobrane z internetu na licencji GNU / CC0. Dostępne dla Google Chrome, Firefox, Opery i MS Edge."
+    "desc": "Zawiera podobne funkcje, ale dla Chess.com. Ma ~4,500 aktywnych użytkowników na wszystkich platformach. Większość figurek i szachownic została również stworzona przeze mnie, choć niektóre z nich zostały pobrane z internetu na licencji GNU / CC0. Dostępne dla Google Chrome, Firefox, Opery i MS Edge."
    },
    "db64-be46b8rht53f": {
     "title": "Galeria paralaksowa",
@@ -51,7 +56,7 @@
    },
    "db64-rt46b8r8b543f": {
     "title": "SpoPlus dla Spotify",
-    "desc": "Pozwala dostosować i personalizować wersję webową Spotify. Dodaje nowe motywy, czcionki, usuwa irytujące powiadomienia, wyskakujące okna itd. ~6400 aktywnych użytkowników na wszystkich platformach."
+    "desc": "Pozwala dostosować i personalizować wersję webową Spotify. Dodaje nowe motywy, czcionki, usuwa irytujące powiadomienia, wyskakujące okna itd. ~12,000 aktywnych użytkowników na wszystkich platformach."
    },
    "db64-betnrgn-ntrt44v4gn": {
     "title": "Szachy w przeglądarce | TypeScript",
@@ -84,7 +89,20 @@
    "sbbetb-l43b8r4b54e3f": {
     "title": "NorithalCV Pure",
     "desc": "Motyw WordPress, zaprojektowany dla profesjonalistów i twórców, którzy potrzebują szybkiego, lekkiego rozwiązania do zaprezentowania swoich umiejętności i osiągnięć. Niezależnie od tego, czy tworzysz CV, portfolio, czy minimalistyczny blog, ten motyw to doskonały wybór."
-   }
+   },
+    "6034b3c5-a218-4169-a807-e0684d40213f": {
+      "title": "DoHabbit App",
+      "desc": "Open-source'owy tracker nawyków dla iOS i Androida. Zaprojektowany, aby pomóc użytkownikom zachować regularność i poprawić codzienną rutynę. Ułatwia śledzenie postępów i sprawia, że osiąganie celów jest bardziej angażujące."
+    },
+    "3aa5099f-23ad-42a7-a545-340365938388": {
+      "title": "Memento. - Minimalistyczna Strona Startowa",
+      "desc": "Lekka, open-source'owa i konfigurowalna wtyczka strony startowej do przeglądarek. Funkcje obejmują: przesyłanie własnych tła, wybór wyświetlanego obrazu i przeciąganie-wypuszczanie widżetów paska narzędzi."
+    },
+    "d0c97369-e345-4759-a619-0520d4e58275": {
+      "title": "react-native-drag-n-drop",
+      "desc": "Przewijalna biblioteka React Native do przeciągania i upuszczania, która nie używa FlatList, co czasami powoduje problemy z płynnością na Androidzie. Zbudowana z react-native-reanimated i react-native-gesture-handler. Obsługuje niestandardowe renderowanie elementów, uchwyty do inicjacji przeciągania i wiele więcej."
+    }
+    
   }
  }
 }
