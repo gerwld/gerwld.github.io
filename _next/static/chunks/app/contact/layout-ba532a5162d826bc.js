@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[578],{5228:(e,t,s)=>{"use strict";s.r(t),s.d(t,{default:()=>i});let i={src:"/_next/static/media/favicon.426227ff.svg",height:250,width:250,blurWidth:0,blurHeight:0}},7443:(e,t,s)=>{Promise.resolve().then(s.bind(s,5228))}},e=>{var t=t=>e(e.s=t);e.O(0,[441,684,358],()=>t(7443)),_N_E=e.O()}]);
